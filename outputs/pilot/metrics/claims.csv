@@ -1,0 +1,8 @@
+claim,criterion,evidence,verdict
+C1,run MAE CI < 0 vs conditions_only and physics_only; slope CI contains 1; CCC >= min_volume_ccc,"MAE diff vs conditions_only -0.220 [-0.308, -0.135]; MAE diff vs physics_only +0.003 [-0.048, +0.054]; slope 0.907 [0.862, 0.955]; CCC 0.978 [0.966, 0.986]",against_us
+C1b,within-condition Spearman lower CI bound > 0,"0.907 [0.517, 0.946]",for_us
+C2,wearpg/full run MAE CI < 0 vs physics_only and vs no_mechanism_link,"vs physics_only/default +0.003 [-0.048, +0.054]; vs wearpg/no_mechanism_link -0.001 [-0.030, +0.029]",against_us
+C3,particle_gnn macro-F1 lower CI bound > 0 vs every graph-gate baseline,"vs contour_cnn +0.003 [-0.004, +0.009]; vs fourier_fractal_svm -0.006 [-0.014, +0.001]",against_us
+C4,"detection >= 0.8, false alarm <= 0.2, timing MAE <= 1 interval (point estimates)","detection 0.94, false alarm 0.04, MAE 0.27 intervals (oracle floor 0.25); 30 transition / 24 stable runs",for_us
+H-F (C1 support),physics_conditions/default run MAE CI < 0 vs both components; within-condition Spearman lower CI > 0,"vs physics_only/default +0.001 [-0.001, +0.003]; vs conditions_only/default -0.222 [-0.301, -0.145]; within-condition Spearman 0.931 [0.740, 0.973]",against_us
+H-F with_conditions (secondary),wearpg/with_conditions run MAE CI < 0 vs both components; within-condition Spearman lower CI > 0,"vs wearpg/full -0.070 [-0.107, -0.033]; vs conditions_only/default -0.290 [-0.369, -0.209]; within-condition Spearman 0.908 [0.522, 0.945]",for_us

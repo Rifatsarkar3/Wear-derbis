@@ -1,0 +1,11 @@
+subset,feature,n_pos,n_neg,detection_rate,false_alarm_rate,balanced_accuracy,median_alarm_time_pos,n_extra_negative,extra_negative_false_alarm_rate,tau_min,tau_max
+all_units,rate_cum_Fe_q0,9,9,1.0,0.0,1.0,20.0,9,0.0,2.15,2.3649999999999998
+all_units,rate_cum_wear_metals_q0,9,9,1.0,0.1111111111111111,0.9444444444444444,20.0,9,0.0,2.4295,2.6710000000000003
+all_units,rate_cum_Fe_q0.02,9,9,1.0,0.0,1.0,20.0,9,0.0,2.24224,2.46018
+all_units,age_only,9,9,1.0,0.0,1.0,20.0,9,0.0,8.5,9.0
+all_units,working_hours_only,9,9,1.0,1.0,0.5,100.0,9,1.0,99.0,99.0
+excl_flagged,rate_cum_Fe_q0,9,8,1.0,0.0,1.0,20.0,8,0.0,2.15,2.3649999999999998
+excl_flagged,rate_cum_wear_metals_q0,9,8,1.0,0.0,1.0,20.0,8,0.0,2.4295,2.6710000000000003
+excl_flagged,rate_cum_Fe_q0.02,9,8,1.0,0.0,1.0,20.0,8,0.0,2.24224,2.46018
+excl_flagged,age_only,9,8,1.0,0.0,1.0,20.0,8,0.0,8.5,9.0
+excl_flagged,working_hours_only,9,8,1.0,1.0,0.5,100.0,8,1.0,99.0,99.0

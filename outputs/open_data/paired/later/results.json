@@ -1,0 +1,534 @@
+{
+  "label": "added after the first run; descriptive / exploratory (PAIRED.md part 4)",
+  "A_holzhauer1983": {
+    "primary": {
+      "n_bearings": 4,
+      "role": "descriptive",
+      "end_D_over_W": {
+        "A": 1.779,
+        "B": 1.5307,
+        "C": 1.345,
+        "D": 2.2364
+      },
+      "end_conversion": {
+        "n": 4,
+        "gm": 1.6917700244399412,
+        "gsd": 1.2440098630865621,
+        "min": 1.3450452923414769,
+        "max": 2.2363636363636363,
+        "max_over_min": 1.6626679035250462
+      },
+      "end_spread": {
+        "set": "holzhauer1983/ball_bearings",
+        "n": 4,
+        "decades_wear": 0.3549947773080091,
+        "sd_log_wear": 0.16293317462668402,
+        "sd_log_D_over_W": 0.09482382365631727,
+        "ratio": 1.718272564257951,
+        "gsd": 1.244009863086562,
+        "gsd_ci": [
+          1.1316619267317691,
+          2.257122392684052
+        ],
+        "constant_factor": 1.4286306316602397,
+        "debris_factor": 1.2455516263189568,
+        "gain_log10": -0.05955822458950204,
+        "pi95_factor": 2.1746584058402383
+      },
+      "without_run_in_weighing": {
+        "n": 4,
+        "gm": 1.6009681497326564,
+        "gsd": 1.2419161335046647,
+        "min": 1.3381797034021519,
+        "max": 2.1796788662809594,
+        "max_over_min": 1.6288386834289916
+      },
+      "slope_conc_per_mg": {
+        "A": 1.583311910121435,
+        "B": 1.4054161369750389,
+        "C": 1.3333932868691527,
+        "D": 2.2694763465993826
+      },
+      "slopes_conversion": {
+        "n": 4,
+        "gm": 1.6108823936598076,
+        "gsd": 1.2706725293151107,
+        "min": 1.3333932868691527,
+        "max": 2.2694763465993826,
+        "max_over_min": 1.7020307278793798
+      },
+      "recovery_per_bearing": {
+        "A": 0.5417,
+        "B": 0.4661,
+        "C": 0.4096,
+        "D": 0.681
+      },
+      "recovery_gm": 0.5151439724419622,
+      "recovery_gsd": 1.2440098630865621,
+      "lot_ratio_AD_over_BC": 1.3900889775306078,
+      "cross_bearing": {
+        "n_cups": 4,
+        "n_inspections": 24,
+        "kappa_gm": 0.6160925477543244,
+        "kappa_gsd": 1.2673532398421148,
+        "kappa_max_over_min": 1.689975670200189,
+        "loglog_slope_mean": 1.1113189050573935,
+        "loglog_slopes": [
+          1.1007,
+          1.4106,
+          0.8316,
+          1.1024
+        ],
+        "crosscup_mae_debris_mm": 19.037886302698347,
+        "crosscup_mae_time_mm": 42.11342992939194,
+        "crosscup_diff_mm": -23.075543626693594,
+        "crosscup_signflip_p": 0.25,
+        "cups_debris_better": 3,
+        "increments_n": 20,
+        "increments_rho_dM_dL": 0.9529411764705882,
+        "increments_p_dM_dL": 1e-05,
+        "increments_rho_dt_dL": 0.6272299155387748,
+        "increments_p_dt_dL": 0.010985
+      },
+      "cross_bearing_table": [
+        {
+          "cup": "A",
+          "n": 6,
+          "load_pct": NaN,
+          "M0": 12.21,
+          "L0": 0.0,
+          "M_end": 169.15,
+          "L_end": 95.08,
+          "kappa_mm_per_mg": 0.628,
+          "kappa_end_mm_per_mg": 0.6058,
+          "loglog_slope": 1.1007,
+          "rate_mm_per_h": 3.4125,
+          "mae_debris_mm": 2.5855,
+          "mae_time_mm": 5.855
+        },
+        {
+          "cup": "B",
+          "n": 7,
+          "load_pct": NaN,
+          "M0": 5.2,
+          "L0": 0.0,
+          "M_end": 116.75,
+          "L_end": 76.27,
+          "kappa_mm_per_mg": 0.7056,
+          "kappa_end_mm_per_mg": 0.6837,
+          "loglog_slope": 1.4106,
+          "rate_mm_per_h": 1.7962,
+          "mae_debris_mm": 6.1768,
+          "mae_time_mm": 76.91
+        },
+        {
+          "cup": "C",
+          "n": 6,
+          "load_pct": NaN,
+          "M0": 2.7,
+          "L0": 0.0,
+          "M_end": 98.0,
+          "L_end": 72.86,
+          "kappa_mm_per_mg": 0.7413,
+          "kappa_end_mm_per_mg": 0.7645,
+          "loglog_slope": 0.8316,
+          "rate_mm_per_h": 2.52,
+          "mae_debris_mm": 9.8054,
+          "mae_time_mm": 29.4891
+        },
+        {
+          "cup": "D",
+          "n": 5,
+          "load_pct": NaN,
+          "M0": 0.8,
+          "L0": 0.0,
+          "M_end": 369.0,
+          "L_end": 165.0,
+          "kappa_mm_per_mg": 0.4386,
+          "kappa_end_mm_per_mg": 0.4481,
+          "loglog_slope": 1.1024,
+          "rate_mm_per_h": 7.0544,
+          "mae_debris_mm": 57.5838,
+          "mae_time_mm": 56.1996
+        }
+      ]
+    },
+    "low_scale": {
+      "n_bearings": 4,
+      "role": "descriptive",
+      "end_D_over_W": {
+        "A": 1.779,
+        "B": 1.5307,
+        "C": 1.345,
+        "D": 2.2364
+      },
+      "end_conversion": {
+        "n": 4,
+        "gm": 1.6917700244399412,
+        "gsd": 1.2440098630865621,
+        "min": 1.3450452923414769,
+        "max": 2.2363636363636363,
+        "max_over_min": 1.6626679035250462
+      },
+      "end_spread": {
+        "set": "holzhauer1983/ball_bearings",
+        "n": 4,
+        "decades_wear": 0.3549947773080091,
+        "sd_log_wear": 0.16293317462668402,
+        "sd_log_D_over_W": 0.09482382365631727,
+        "ratio": 1.718272564257951,
+        "gsd": 1.244009863086562,
+        "gsd_ci": [
+          1.1316619267317691,
+          2.257122392684052
+        ],
+        "constant_factor": 1.4286306316602397,
+        "debris_factor": 1.2455516263189568,
+        "gain_log10": -0.05955822458950204,
+        "pi95_factor": 2.1746584058402383
+      },
+      "without_run_in_weighing": {
+        "n": 4,
+        "gm": 1.6009681497326564,
+        "gsd": 1.2419161335046647,
+        "min": 1.3381797034021519,
+        "max": 2.1796788662809594,
+        "max_over_min": 1.6288386834289916
+      },
+      "slope_conc_per_mg": {
+        "A": 1.583311910121435,
+        "B": 1.4054161369750389,
+        "C": 1.2552076654841948,
+        "D": 2.2694763465993826
+      },
+      "slopes_conversion": {
+        "n": 4,
+        "gm": 1.5867304806421803,
+        "gsd": 1.2926982239856453,
+        "min": 1.2552076654841948,
+        "max": 2.2694763465993826,
+        "max_over_min": 1.808048507833112
+      },
+      "recovery_per_bearing": {
+        "A": 0.5417,
+        "B": 0.4661,
+        "C": 0.4096,
+        "D": 0.681
+      },
+      "recovery_gm": 0.5151439724419622,
+      "recovery_gsd": 1.2440098630865621,
+      "lot_ratio_AD_over_BC": 1.3900889775306078,
+      "cross_bearing": {
+        "n_cups": 4,
+        "n_inspections": 24,
+        "kappa_gm": 0.6182085841536011,
+        "kappa_gsd": 1.2719753758707235,
+        "kappa_max_over_min": 1.7133131753297297,
+        "loglog_slope_mean": 1.1208524418049757,
+        "loglog_slopes": [
+          1.1007,
+          1.4106,
+          0.8698,
+          1.1024
+        ],
+        "crosscup_mae_debris_mm": 19.767662819714754,
+        "crosscup_mae_time_mm": 42.11342992939194,
+        "crosscup_diff_mm": -22.345767109677183,
+        "crosscup_signflip_p": 0.25,
+        "cups_debris_better": 3,
+        "increments_n": 20,
+        "increments_rho_dM_dL": 0.9529411764705882,
+        "increments_p_dM_dL": 1e-05,
+        "increments_rho_dt_dL": 0.6272299155387748,
+        "increments_p_dt_dL": 0.010985
+      },
+      "cross_bearing_table": [
+        {
+          "cup": "A",
+          "n": 6,
+          "load_pct": NaN,
+          "M0": 12.21,
+          "L0": 0.0,
+          "M_end": 169.15,
+          "L_end": 95.08,
+          "kappa_mm_per_mg": 0.628,
+          "kappa_end_mm_per_mg": 0.6058,
+          "loglog_slope": 1.1007,
+          "rate_mm_per_h": 3.4125,
+          "mae_debris_mm": 2.7752,
+          "mae_time_mm": 5.855
+        },
+        {
+          "cup": "B",
+          "n": 7,
+          "load_pct": NaN,
+          "M0": 5.2,
+          "L0": 0.0,
+          "M_end": 116.75,
+          "L_end": 76.27,
+          "kappa_mm_per_mg": 0.7056,
+          "kappa_end_mm_per_mg": 0.6837,
+          "loglog_slope": 1.4106,
+          "rate_mm_per_h": 1.7962,
+          "mae_debris_mm": 6.0211,
+          "mae_time_mm": 76.91
+        },
+        {
+          "cup": "C",
+          "n": 6,
+          "load_pct": NaN,
+          "M0": 2.7,
+          "L0": 0.0,
+          "M_end": 98.0,
+          "L_end": 72.86,
+          "kappa_mm_per_mg": 0.7515,
+          "kappa_end_mm_per_mg": 0.7645,
+          "loglog_slope": 0.8698,
+          "rate_mm_per_h": 2.52,
+          "mae_debris_mm": 11.9557,
+          "mae_time_mm": 29.4891
+        },
+        {
+          "cup": "D",
+          "n": 5,
+          "load_pct": NaN,
+          "M0": 0.8,
+          "L0": 0.0,
+          "M_end": 369.0,
+          "L_end": 165.0,
+          "kappa_mm_per_mg": 0.4386,
+          "kappa_end_mm_per_mg": 0.4481,
+          "loglog_slope": 1.1024,
+          "rate_mm_per_h": 7.0544,
+          "mae_debris_mm": 58.3186,
+          "mae_time_mm": 56.1996
+        }
+      ]
+    }
+  },
+  "B_krasmik2018": {
+    "n_pairings": 3,
+    "role": "descriptive",
+    "B1_N_over_displacement_volume_fig7": {
+      "n": 3,
+      "gm": 227.42269603658383,
+      "gsd": 2.875572929701019,
+      "min": 78.65065502183405,
+      "max": 650.2982954545456,
+      "max_over_min": 8.268186644777689,
+      "per_pairing": {
+        "CuZn37/100Cr6": 229.98,
+        "SF-Cu/100Cr6": 650.3,
+        "St-37/100Cr6": 78.65
+      }
+    },
+    "B1_N_over_displacement_volume_table3": {
+      "n": 3,
+      "gm": 224.05343081958995,
+      "gsd": 2.8748478660685346,
+      "min": 76.97008547008546,
+      "max": 635.8472222222226,
+      "max_over_min": 8.260965521070462,
+      "per_pairing": {
+        "CuZn37/100Cr6": 229.82,
+        "SF-Cu/100Cr6": 635.85,
+        "St-37/100Cr6": 76.97
+      }
+    },
+    "B1_N_over_wear_mark": {
+      "n": 3,
+      "gm": 169.77768108056384,
+      "gsd": 2.3642103177469607,
+      "min": 66.46125461254613,
+      "max": 360.48031496062987,
+      "max_over_min": 5.423916792756132,
+      "per_pairing": {
+        "CuZn37/100Cr6": 204.26,
+        "SF-Cu/100Cr6": 360.48,
+        "St-37/100Cr6": 66.46
+      }
+    },
+    "B1_N_over_weight_loss": {
+      "n": 3,
+      "gm": 184.5458634877067,
+      "gsd": 2.433686360509414,
+      "min": 70.63137254901962,
+      "max": 408.75892857142856,
+      "max_over_min": 5.787214856793863,
+      "per_pairing": {
+        "CuZn37/100Cr6": 217.69,
+        "SF-Cu/100Cr6": 408.76,
+        "St-37/100Cr6": 70.63
+      }
+    },
+    "B4_wear_mark_over_weight_loss": {
+      "St-37/100Cr6": 1.0627,
+      "SF-Cu/100Cr6": 1.1339,
+      "CuZn37/100Cr6": 1.0658
+    },
+    "B4_displacement_over_weight_loss": {
+      "St-37/100Cr6": 0.9176,
+      "SF-Cu/100Cr6": 0.6429,
+      "CuZn37/100Cr6": 0.9473
+    },
+    "B2_increments": {
+      "n": 42,
+      "stratified_spearman": 0.21611721611721613,
+      "p": 0.1815,
+      "cross_pairing_mae": {
+        "CuZn37/100Cr6": {
+          "debris_mm3": 0.7337419191649,
+          "constant_rate_mm3": 0.15668571428571426
+        },
+        "SF-Cu/100Cr6": {
+          "debris_mm3": 0.06379985939062026,
+          "constant_rate_mm3": 0.09804642857142858
+        },
+        "St-37/100Cr6": {
+          "debris_mm3": 0.027082892281106084,
+          "constant_rate_mm3": 0.05863928571428571
+        }
+      },
+      "factor_mm3_per_count": {
+        "CuZn37/100Cr6": 0.01107,
+        "SF-Cu/100Cr6": 0.00178,
+        "St-37/100Cr6": 0.03801
+      }
+    },
+    "B3_size_weighted": {
+      "CuZn37/100Cr6": {
+        "sum_n_d3": 305296.36255586805,
+        "hi_over_lo": 2.0535234274171237,
+        "share_above_15um": 0.6320178339170823
+      },
+      "SF-Cu/100Cr6": {
+        "sum_n_d3": 24157.157493176222,
+        "hi_over_lo": 2.546302882541753,
+        "share_above_15um": 0.6616672207231201
+      },
+      "St-37/100Cr6": {
+        "sum_n_d3": 16096.452217748,
+        "hi_over_lo": 4.786812885528929,
+        "share_above_15um": 0.7556272248492109
+      },
+      "interpretable": false
+    }
+  },
+  "C_quinn1980": {
+    "role": "exploratory",
+    "EN31": {
+      "n": 22,
+      "regime_counts": {
+        "Fe3O4": 16,
+        "Fe2O3": 4,
+        "FeO": 2
+      },
+      "mae_constant": 0.09024810581326072,
+      "mae_conditions": 0.09533578190450315,
+      "mae_regime": 0.07218745152524428,
+      "mae_conditions_plus_regime": 0.08059489085540462,
+      "regime_minus_conditions": {
+        "diff": -0.023148330379258866,
+        "lo": -0.04551306828466687,
+        "hi": -0.002346376219268625,
+        "p": 0.049975,
+        "n_units": 22
+      },
+      "conditions_plus_regime_minus_conditions": {
+        "diff": -0.014740891049098516,
+        "lo": -0.03871818477885876,
+        "hi": 0.006408882077977481,
+        "p": 0.24212,
+        "n_units": 22
+      },
+      "regime_minus_constant": {
+        "diff": -0.01806065428801645,
+        "lo": -0.03885176620443479,
+        "hi": 0.005060819832365637,
+        "p": 0.13198,
+        "n_units": 22
+      },
+      "gm_wear_rate_per_load": {
+        "Fe2O3": 1.1321614034236461e-14,
+        "Fe3O4": 8.618171648158027e-15,
+        "FeO": 1.1450380480503866e-14
+      }
+    },
+    "EN8_2ms_check": {
+      "printed_rows": 11,
+      "digitised_rows": 10,
+      "median_rel_diff_of_nearest_wear": 0.06345161290322587,
+      "max": 1.6748202516476933
+    }
+  },
+  "D_nield1961": {
+    "role": "exploratory",
+    "n": 9,
+    "mae_log10_constant": 0.12629343315401917,
+    "mae_log10_humidity": 0.12365199384705362,
+    "mae_log10_ratio": 0.0238538536909526,
+    "mae_log10_both": 0.025116727236989808,
+    "ratio_minus_constant": {
+      "diff": -0.10243957946306656,
+      "lo": -0.15982771608347793,
+      "hi": -0.04940490475137335,
+      "p": 0.00390625,
+      "n_units": 9
+    },
+    "ratio_minus_humidity": {
+      "diff": -0.09979814015610101,
+      "lo": -0.14608983404220796,
+      "hi": -0.05101182193805221,
+      "p": 0.01171875,
+      "n_units": 9
+    },
+    "both_minus_humidity": {
+      "diff": -0.0985352666100638,
+      "lo": -0.14694659455261755,
+      "hi": -0.04968206544005018,
+      "p": 0.01171875,
+      "n_units": 9
+    },
+    "both_minus_ratio": {
+      "diff": 0.0012628735460372099,
+      "lo": -0.004386962368629764,
+      "hi": 0.0066048481673519855,
+      "p": 0.68359375,
+      "n_units": 9
+    },
+    "check_printed_regression": {
+      "slope": 0.23845823373688924,
+      "intercept": -0.1424117974231152,
+      "r": 0.9726405340627687,
+      "printed": [
+        0.242,
+        -0.157,
+        0.973
+      ]
+    },
+    "spearman_rate_ratio": {
+      "n": 9,
+      "rho": 1.0,
+      "p": 5.5114638447971785e-06,
+      "exact": true,
+      "boot_lo": 1.0,
+      "boot_hi": 1.0
+    },
+    "verdict": "supported"
+  },
+  "V6_with_later_study": {
+    "recovery_gm_per_set": {
+      "bu_torres2011/pin_totals": 1.396984372050445,
+      "jsme_higashi2003/plate_intervals": 0.6657720010799566,
+      "phm_raadnui2015/dry_fourball": 1.3626361432755627,
+      "holzhauer1983/ball_bearings": 0.5151439724419622
+    },
+    "between_set_gsd": 1.6583275490671423,
+    "max_over_min": 2.7118328987297504,
+    "verdict": "inconclusive",
+    "first_run": {
+      "between_set_gsd": 1.5233101470225237,
+      "verdict": "inconclusive"
+    }
+  }
+}

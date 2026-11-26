@@ -1,0 +1,5 @@
+{
+  "src/wearpg/segmentation.py": "b97e4e5298dfc4a71d12b71d5a834b905df4d31d3490b907eb4d51fa13229c70",
+  "src/wearpg/open_data.py": "4093215d8854231388b8f93ef513143a74a972dac164c68e19a00ee33a026a87",
+  "scripts/open_ferro_eval.py": "1b631598d946505123cf1b058ac7df36924a5ced65ddb14c10415aecbf80b300"
+}

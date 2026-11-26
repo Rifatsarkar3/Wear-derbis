@@ -1,0 +1,63 @@
+target,pair,a,b,measure,before,after,change,met,role
+a,P1,zenodo_gt,synthetic_raster,AUC texture,0.9998312752428056,0.9944274152348688,-0.0054038600079368004,False,primary
+a,P1,zenodo_gt,synthetic_raster,AUC colour,0.9966888964729816,0.8191705606579165,-0.17751833581506515,True,primary
+a,P1,zenodo_gt,synthetic_raster,AUC efd,0.9877895043614392,0.988861072379262,0.0010715680178228215,False,secondary
+a,P1,zenodo_gt,synthetic_raster,AUC shape_scale_free,0.9738500592933308,0.9738591229829028,9.063689571986444e-06,False,secondary
+a,P1,zenodo_gt,synthetic_raster,AUC fractal,0.9825168556991102,0.9797730921843608,-0.0027437635147493644,,secondary
+a,P1,zenodo_gt,synthetic_raster,AUC size_px,0.6758312090950314,0.671038644142016,-0.004792564953015388,,secondary
+a,P2,zenodo_seg,synthetic_raster,AUC texture,0.990916326237496,0.9818990777414924,-0.009017248496003605,False,secondary
+a,P2,zenodo_seg,synthetic_raster,AUC colour,0.9886874191130222,0.8322395586041198,-0.15644786050890236,True,secondary
+a,P2,zenodo_seg,synthetic_raster,AUC efd,0.9264276059451062,0.9335501573532246,0.007122551408118349,False,secondary
+a,P2,zenodo_seg,synthetic_raster,AUC shape_scale_free,0.9187922710967912,0.9253705093472332,0.0065782382504420145,False,secondary
+a,P2,zenodo_seg,synthetic_raster,AUC fractal,0.9392486141375228,0.9378689232294872,-0.0013796909080355801,,secondary
+a,P2,zenodo_seg,synthetic_raster,AUC size_px,0.7716749347547212,0.7740726555714282,0.002397720816707083,,secondary
+a,P3,tcbgy_seg,synthetic_raster,AUC texture,0.9987403472260256,0.9945505083753932,-0.004189838850632399,False,secondary
+a,P3,tcbgy_seg,synthetic_raster,AUC colour,0.9896489402486444,0.9303818301514152,-0.05926711009722918,False,secondary
+a,P3,tcbgy_seg,synthetic_raster,AUC efd,0.9483177245924383,0.940732206861239,-0.007585517731199309,False,secondary
+a,P3,tcbgy_seg,synthetic_raster,AUC shape_scale_free,0.7838508863209012,0.7925535805720139,0.008702694251112697,True,secondary
+a,P3,tcbgy_seg,synthetic_raster,AUC fractal,0.9496504007156288,0.9503511081852096,0.0007007074695808413,,secondary
+a,P3,tcbgy_seg,synthetic_raster,AUC size_px,0.8402705515088451,0.8499103942652331,0.009639842756387962,,secondary
+a,P4,zenodo_gt,synthetic_chain_fe,AUC texture,0.999243222638294,0.9775657478226648,-0.021677474815629205,False,secondary
+a,P4,zenodo_gt,synthetic_chain_fe,AUC colour,0.9992906167760978,0.6845879746077373,-0.3147026421683604,True,secondary
+a,P4,zenodo_gt,synthetic_chain_fe,AUC efd,0.9800378949256676,0.8709597385486714,-0.10907815637699625,False,primary
+a,P4,zenodo_gt,synthetic_chain_fe,AUC shape_scale_free,0.9673879918543236,0.9277886145475078,-0.03959937730681573,False,primary
+a,P4,zenodo_gt,synthetic_chain_fe,AUC fractal,0.972245381364829,0.9678885837482676,-0.004356797616561381,,secondary
+a,P4,zenodo_gt,synthetic_chain_fe,AUC size_px,0.6305333929921907,0.8296662987868522,0.19913290579466147,,secondary
+a,P5,zenodo_gt,synthetic_chain,AUC texture,0.9997781721384206,0.995000876185284,-0.004777295953136584,False,secondary
+a,P5,zenodo_gt,synthetic_chain,AUC colour,0.9963854542381604,0.8368722731541323,-0.15951318108402812,True,secondary
+a,P5,zenodo_gt,synthetic_chain,AUC efd,0.9866905683786784,0.9596393112135242,-0.02705125716515422,False,secondary
+a,P5,zenodo_gt,synthetic_chain,AUC shape_scale_free,0.9740535824719498,0.960400918421908,-0.01365266405004184,False,secondary
+a,P5,zenodo_gt,synthetic_chain,AUC fractal,0.982869799529072,0.976720056555139,-0.006149742973933003,,secondary
+a,P5,zenodo_gt,synthetic_chain,AUC size_px,0.6809882479248052,0.6924862993078885,0.011498051383083352,,secondary
+a,P1_testO,zenodo_gt_testO,synthetic_raster,AUC texture,0.9995270434149892,0.988921282798834,-0.010605760616155258,False,held-out breakdown
+a,P1_testO,zenodo_gt_testO,synthetic_raster,AUC colour,0.9929808391947612,0.7237427113702624,-0.26923812782449885,True,held-out breakdown
+a,P1_testO,zenodo_gt_testO,synthetic_raster,AUC efd,0.980805238903711,0.982484207968902,0.0016789690651910494,False,held-out breakdown
+a,P1_testO,zenodo_gt_testO,synthetic_raster,AUC shape_scale_free,0.9662854717438758,0.9688326044703596,0.0025471327264837695,False,held-out breakdown
+a,P1_testO,zenodo_gt_testO,synthetic_raster,AUC fractal,0.977929905408683,0.9760507774538388,-0.0018791279548441286,,held-out breakdown
+a,P1_testO,zenodo_gt_testO,synthetic_raster,AUC size_px,0.6878844288139704,0.6867134353741496,-0.0011709934398207444,,held-out breakdown
+a,P4_testO,zenodo_gt_testO,synthetic_chain_fe,AUC texture,0.9992986075296544,0.9833766233766232,-0.015921984153031143,False,held-out breakdown
+a,P4_testO,zenodo_gt_testO,synthetic_chain_fe,AUC colour,0.9990381640020628,0.7298051948051948,-0.269232969196868,True,held-out breakdown
+a,P4_testO,zenodo_gt_testO,synthetic_chain_fe,AUC efd,0.9756266116554924,0.8628138528138528,-0.11281275884163955,False,held-out breakdown
+a,P4_testO,zenodo_gt_testO,synthetic_chain_fe,AUC shape_scale_free,0.964637699845281,0.957012987012987,-0.007624712832294045,False,held-out breakdown
+a,P4_testO,zenodo_gt_testO,synthetic_chain_fe,AUC fractal,0.9616529138731305,0.9665800865800868,0.0049271727069563065,,held-out breakdown
+a,P4_testO,zenodo_gt_testO,synthetic_chain_fe,AUC size_px,0.6337261474987106,0.8477435064935065,0.2140173589947959,,held-out breakdown
+b,P4,zenodo_gt,synthetic_chain_fe,KS D aspect,0.7358525950583712,0.2824675324675325,-0.4533850625908387,False,primary
+b,P4,zenodo_gt,synthetic_chain_fe,KS D roundness,0.4718988435830376,0.1977696216826651,-0.2741292219003725,True,primary
+b,P4,zenodo_gt,synthetic_chain_fe,KS D solidity,0.4093610047149523,0.1883116883116883,-0.221049316403264,True,primary
+b,P4,zenodo_gt,synthetic_chain_fe,KS D fractal_D,0.5441823034171573,0.8143895754353142,0.27020727201815686,,secondary
+b,P4,zenodo_gt,synthetic_chain_fe,KS D size_area_px,0.1822931424249898,0.5788631658196876,0.3965700233946977,,secondary
+b,P5,zenodo_gt,synthetic_chain,KS D aspect,0.7141916054959533,0.6055136767280695,-0.10867792876788374,False,secondary
+b,P5,zenodo_gt,synthetic_chain,KS D roundness,0.470039794573956,0.3731055301520069,-0.09693426442194908,False,secondary
+b,P5,zenodo_gt,synthetic_chain,KS D solidity,0.4033099405770213,0.3012871686035104,-0.1020227719735109,False,secondary
+b,P5,zenodo_gt,synthetic_chain,KS D fractal_D,0.5022822100464757,0.5463136782356393,0.04403146818916359,,secondary
+b,P5,zenodo_gt,synthetic_chain,KS D size_area_px,0.1842045118442634,0.2711389060714398,0.08693439422717641,,secondary
+b,P4_testO,zenodo_gt_testO,synthetic_chain_fe,KS D aspect,0.73455389375967,0.294090909090909,-0.44046298466876094,False,held-out breakdown
+b,P4_testO,zenodo_gt_testO,synthetic_chain_fe,KS D roundness,0.4833522434244456,0.1809090909090909,-0.3024431525153547,True,held-out breakdown
+b,P4_testO,zenodo_gt_testO,synthetic_chain_fe,KS D solidity,0.4331794739556472,0.1626623376623376,-0.27051713629330965,True,held-out breakdown
+b,P4_testO,zenodo_gt_testO,synthetic_chain_fe,KS D fractal_D,0.540314401622718,0.8151926881509458,0.27487828652822777,,held-out breakdown
+b,P4_testO,zenodo_gt_testO,synthetic_chain_fe,KS D size_area_px,0.1983264569365652,0.5804978354978355,0.3821713785612703,,held-out breakdown
+c,P3,tcbgy_seg,synthetic_raster,KS D aspect,0.1567628749292586,0.1614549045424621,0.004692029613203502,True,primary
+c,P3,tcbgy_seg,synthetic_raster,KS D roundness,0.3265421618562535,0.325213956550362,-0.0013282053058915055,True,primary
+c,P3,tcbgy_seg,synthetic_raster,KS D solidity,0.3389926428975665,0.3384902348035988,-0.0005024080939676767,True,primary
+c,P3,tcbgy_seg,synthetic_raster,KS D fractal_D,0.2732600732600732,0.2736820141883433,0.00042194092827013696,,secondary
+c,P3,tcbgy_seg,synthetic_raster,KS D size_area_px,0.6661007357102433,0.6657888962036428,-0.00031183950660051973,,secondary

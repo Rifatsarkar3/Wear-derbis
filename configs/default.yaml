@@ -1,0 +1,147 @@
+# Full experiment configuration. Paths are relative to the project root (run CLI from there).
+name: default
+seed: 0
+device: auto            # auto | cuda | cpu
+
+paths:
+  data_root: data/synthetic_pilot
+  synthetic_config: configs/synthetic_pilot.yaml   # used if data_root does not exist (synthetic only)
+  cache_dir: cache
+  output_dir: outputs/default
+
+data:
+  label_source: adjudicated     # adjudicated | soft | true (true = synthetic ground truth, debugging only)
+  crop_size: 64                 # crop side [px] after rescaling (absolute size goes via shape_* globals)
+  crop_pad: 1.25
+  max_particles_per_sample: 32  # training bag subsample (area-ratio HT factor recorded)
+  max_views: 3
+  min_contour_points: 8
+  efd_order: 10
+  augment:
+    crop_rot90_flip: true
+    point_rotation: true
+
+graph:                          # BUILD parameters (one full graph cache serves every ablation)
+  n_nodes: 128                  # boundary nodes per contour graph = the defined "maximum nodes" (doc sec. 10)
+  ring_hops: [1, 2, 4, 8, 16]
+  curvature_scales: [1, 2, 4, 8]
+  roughness_window: 9
+  texture_depths_frac: [0.05, 0.15, 0.3]   # inward texture depths as fractions of the RMS radius
+  tex_out_frac: 0.1
+  interior_nodes: 16            # "surface" nodes inside the particle
+  interior_knn: 4
+
+model:
+  hidden: 128
+  gnn_layers: 4
+  conv: gine                    # gine | gatv2 (gatv2 needs train.batch_runs <= 2)
+  dropout: 0.1
+  pooling: [mean, max, attention]
+  gnn_chunk_graphs: 1024        # max graphs per GNN call under no_grad (memory)
+  use_graph: true               # ablation no_graph
+  edges: full                   # full | ring | none   (ablation: graph edges)
+  use_interior_nodes: true      # ablation no_interior
+  use_texture_branch: true      # image CNN + tex_* + boundary-texture node features
+  use_multiview: true
+  use_composition: true         # EDS input + colour (crops RGB vs luminance, color_* descriptors)
+  use_fractal_features: true    # fractal_* descriptors + roughness node feature
+  use_run_aggregation: true     # false = late fusion of per-particle predictions
+  aggregator: gated_attention   # gated_attention | mean | set_transformer
+  use_operating_conditions: false   # learned use of load/speed/hardness (shortcut risk; ablation only)
+  physics_head: true            # log10 k = a*log10(V_debris/(F s)) + mlp(emb); false = mlp only
+  mechanism_link: true          # false (ablation no_mechanism_link): metal fraction 1 for every class, volume head on size only
+  image_backbone: small_cnn     # small_cnn | resnet18 | convnext_tiny
+  image_pretrained: false
+  per_material_eta: true        # ln eta = theta[magnetic class] + delta[material]
+  init_log_eta: 0.0
+
+physics:
+  metal_fraction: {oxide: 0.47} # metal-equivalent volume factor per class (others 1.0)
+  min_run_coverage: 0.5
+
+loss:
+  mechanism: 1.0
+  severity: 1.0
+  rate_run: 1.0
+  rate_sample: 0.5              # used only where interval volumes are measured
+  volume: 0.5                   # supervised only where measured volume exists
+  consistency: 0.5              # aggregate debris volume vs gravimetric volume (run level)
+  monotone: 0.1                 # condition-mean severity non-decreasing in load within mono groups
+  monotone_margin: 0.0
+  eta_offset_l2: 0.1
+
+train:
+  epochs: 60
+  batch_runs: 4
+  eval_batch_runs: 1
+  lr: 1.0e-3
+  weight_decay: 1.0e-4
+  grad_clip: 1.0
+  amp: none                     # none | bf16
+  early_stopping_patience: 10
+  monitor: val_loss
+  num_workers: 0
+  class_weighting: balanced     # balanced | none (all particle classifiers incl. wearpg)
+  label_smoothing: 0.05         # all deep particle classifiers incl. wearpg
+  particle_batch_size: 128
+  particle_epochs: 40
+
+eval:
+  split_level: specimen         # specimen | run | condition (unit of inference; run groups merge shared specimens)
+  n_splits: 5
+  val_fraction: 0.2
+  stratify: regime
+  seeds: [0, 1, 2]
+  secondary_seeds: null         # seeds of the wearpg ablations and particle baselines (null = eval.seeds)
+  n_bootstrap: 2000
+  ci: 0.95
+  ece_bins: 15
+  transition_threshold: 0.5
+  multiplicity: holm            # holm | bh
+  primary_metric: run.mae       # primary endpoint: run MAE of log10 k (summary.json key <level>.<metric>)
+  claim_metrics:
+    runs: {metric: mae, better: min}      # MAE of log10 specific wear rate (primary)
+    particles: {metric: macro_f1, better: max}   # secondary claim metric
+  group_metrics_by: [material_id, magnification]
+  external_by: material_id      # material_id | load_N | condition_id
+  shift_variants: [full, no_fractal]
+  shift_baselines: [particle_gnn, contour_cnn, fourier_fractal_svm]
+  transfer:
+    - {by: magnification, train: [200], test: [500]}
+    - {by: focus_level, train: [[0.0, 0.5]], test: [[0.5, .inf]]}
+
+gates:
+  min_runs_per_condition: 3
+  feature_regime_alpha: 0.05
+  min_abs_spearman: 0.3
+  detection_min_area_px: 30
+  frac_large_um: 15
+  graph_gate_mode: ci           # ci (lower CI bound > 0) | point
+  graph_gate_proposed: [particle_gnn, default]
+  graph_gate_baselines: [contour_cnn, fourier_fractal_svm]
+  min_kappa: 0.6
+  min_double_rated: 100
+  reference_raters: [SEMREF]
+  min_validity_kappa: 0.6
+  min_sem_eds_fraction: 0.1
+  max_repeat_sd_log10: 0.2
+  require_external: true
+  wear_rate_proposed: [wearpg, full]   # wear-rate gate (main claim C1 / C1b)
+  wear_rate_baselines: [conditions_only, physics_only]
+  min_volume_ccc: 0.8
+
+baselines:
+  particle: [fourier_fractal_svm, fourier_fractal_cart, multiview_svm, particle_gnn, contour_cnn, pointnet, fecnn, resnet18, convnext_tiny, vit_ensemble]
+  run: [physics_only, conditions_only, physics_conditions, descriptor_agg_rf, descriptor_agg_ridge]
+  pretrained: false             # true for real-data runs with offline-cached timm weights
+  grids:
+    svm: {C: [0.1, 1, 10, 100], gamma: [scale, 0.01, 0.1]}
+    cart: {max_depth: [3, 5, 8, null], min_samples_leaf: [1, 5, 20]}
+    rf: {max_depth: [null, 8], min_samples_leaf: [1, 5]}
+
+ablations: [no_graph, edges_ring, edges_none, no_interior, no_fractal, no_texture, no_multiview, no_composition, no_run_aggregation, no_physics, no_consistency, no_mechanism_link, with_conditions]
+
+profiling:
+  node_counts: [64, 128, 256, 512, 1024, 2048]
+  graphs_per_batch: [64, 256, 1024]
+  vram_budget_fraction: 0.8

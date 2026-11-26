@@ -1,0 +1,366 @@
+{
+  "synthetic": true,
+  "decision_valid": false,
+  "passed": false,
+  "banner": "SYNTHETIC DATA - PIPELINE VERIFICATION ONLY - NOT EVIDENCE FOR ANY SCIENTIFIC CLAIM",
+  "notice": "VERIFICATION ONLY - NO GO/NO-GO DECISION",
+  "gates": [
+    {
+      "name": "pilot",
+      "passed": false,
+      "message": "(a) 4/4 conditions have >= 3 runs; (b) 0/4 run aggregates with p_adj < 0.05 and abs(rho) >= 0.3 (best frac_large: rho=0.77, p_adj=0.0528)",
+      "criteria": {
+        "min_runs_per_condition": 3,
+        "feature_regime_alpha": 0.05,
+        "min_abs_spearman": 0.3,
+        "detection_min_area_px": 30,
+        "frac_large_um": 15,
+        "strata": "material_id",
+        "multiplicity": "holm",
+        "target": "log10 wear_rate_mm3_Nm"
+      },
+      "evidence": {
+        "runs_per_condition": {
+          "AISI52100_F120_v0.4": 3,
+          "AISI52100_F20_v0.4": 3,
+          "CuSn12_F120_v0.4": 3,
+          "CuSn12_F20_v0.4": 3
+        },
+        "conditions_below_min": [],
+        "ecd_floor_um": 3.0901936161855166,
+        "n_particles_used": 563,
+        "features": {
+          "median_log_ecd": {
+            "rho": 0.5296408977028497,
+            "p_value": 0.11177764447110577,
+            "n": 12,
+            "p_adj": 0.22355528894221155,
+            "passes": false,
+            "pooled_rho": 0.5986063929233988
+          },
+          "mean_fractal_D": {
+            "rho": -0.5002164033860247,
+            "p_value": 0.1269746050789842,
+            "n": 12,
+            "p_adj": 0.22355528894221155,
+            "passes": false,
+            "pooled_rho": -0.6619882462917587
+          },
+          "mean_aspect": {
+            "rho": 0.6767633692869746,
+            "p_value": 0.03179364127174565,
+            "n": 12,
+            "p_adj": 0.09538092381523695,
+            "passes": false,
+            "pooled_rho": 0.6760731025958386
+          },
+          "frac_large": {
+            "rho": 0.7650368522374495,
+            "p_value": 0.013197360527894421,
+            "n": 12,
+            "p_adj": 0.052789442111577684,
+            "passes": false,
+            "pooled_rho": 0.7464973841162386
+          }
+        }
+      }
+    },
+    {
+      "name": "graph_value",
+      "passed": false,
+      "message": "particle_gnn macro-F1 beats 0/2 baselines (lower CI bound > 0)",
+      "criteria": {
+        "proposed": [
+          "particle_gnn",
+          "default"
+        ],
+        "baselines": [
+          "contour_cnn",
+          "fourier_fractal_svm"
+        ],
+        "mode": "ci",
+        "metric": "macro_f1",
+        "protocol": "cv",
+        "cluster": "specimen",
+        "n_bootstrap": 300,
+        "ci": 0.95
+      },
+      "evidence": {
+        "contour_cnn": {
+          "available": true,
+          "proposed": 0.6601034411192147,
+          "baseline": 0.7691904734617443,
+          "diff": -0.10908703234252959,
+          "lo": -0.1479042368443827,
+          "hi": -0.06453922356673365,
+          "p_value": 0.006644518272425249,
+          "rel_diff": -0.1418205712449649,
+          "n_clusters": 12,
+          "n_particles": 590,
+          "passes": false
+        },
+        "fourier_fractal_svm": {
+          "available": true,
+          "proposed": 0.6601034411192147,
+          "baseline": 0.8140443383047329,
+          "diff": -0.15394089718551818,
+          "lo": -0.19559363250723127,
+          "hi": -0.12040559682921124,
+          "p_value": 0.006644518272425249,
+          "rel_diff": -0.18910628075382704,
+          "n_clusters": 12,
+          "n_particles": 590,
+          "passes": false
+        }
+      }
+    },
+    {
+      "name": "mechanism",
+      "passed": true,
+      "message": "agreement PASS (kappa=0.634 [cohen], 2 raters, 590 multi-rated items); validity PASS (kappa=0.920, n=252); SEM/EDS coverage PASS (0.427 of 590 labelled particles)",
+      "criteria": {
+        "min_kappa": 0.6,
+        "min_double_rated": 100,
+        "min_validity_kappa": 0.6,
+        "min_sem_eds_fraction": 0.1,
+        "reference_raters": [
+          "SEMREF"
+        ]
+      },
+      "evidence": {
+        "agreement": {
+          "n_items": 590,
+          "n_multi_rated": 590,
+          "raters": [
+            "A",
+            "B"
+          ],
+          "pairwise_kappa": {
+            "A|B": 0.6342888722102111
+          },
+          "kappa": 0.6342888722102111,
+          "kappa_method": "cohen",
+          "n_kappa_items": 590,
+          "krippendorff_alpha": 0.634456842097399,
+          "per_class_agreement": {
+            "rubbing": 0.8235294117647058,
+            "cutting": 0.8067226890756303,
+            "spherical": 0.6857142857142857,
+            "fatigue_chunk": 0.6597938144329897,
+            "laminar": 0.5536723163841808,
+            "severe_sliding": 0.6440677966101694,
+            "oxide": 0.620253164556962
+          },
+          "rater_confusion": [
+            [
+              196,
+              0,
+              0,
+              0,
+              29,
+              0,
+              20
+            ],
+            [
+              0,
+              48,
+              0,
+              0,
+              4,
+              8,
+              0
+            ],
+            [
+              2,
+              0,
+              12,
+              0,
+              0,
+              0,
+              6
+            ],
+            [
+              0,
+              0,
+              0,
+              32,
+              4,
+              7,
+              4
+            ],
+            [
+              16,
+              4,
+              0,
+              5,
+              49,
+              6,
+              2
+            ],
+            [
+              0,
+              7,
+              0,
+              9,
+              5,
+              38,
+              0
+            ],
+            [
+              17,
+              0,
+              3,
+              4,
+              4,
+              0,
+              49
+            ]
+          ]
+        },
+        "agreement_passes": true,
+        "validity": {
+          "kappa": 0.9198014130227229,
+          "accuracy": 0.9404761904761905,
+          "n": 252
+        },
+        "validity_passes": true,
+        "sem_eds_coverage": 0.4271186440677966,
+        "n_labelled": 590,
+        "coverage_passes": true
+      }
+    },
+    {
+      "name": "wear",
+      "passed": null,
+      "message": "repeatability PASS (median SD log10 k = 0.160 over 4 regime-homogeneous conditions, 0 runs in regime-mixed conditions); external NOT EVALUABLE (no external run predictions)",
+      "criteria": {
+        "max_repeat_sd_log10": 0.2,
+        "require_external": true,
+        "external_metric": "mae of log10 k",
+        "external_rule": "proposed <= best run baseline in >= 1 group"
+      },
+      "evidence": {
+        "repeatability": {
+          "median_sd_log10": 0.15975539326970148,
+          "sd_log10": {
+            "AISI52100_F120_v0.4": 0.32785318202597197,
+            "AISI52100_F20_v0.4": 0.0,
+            "CuSn12_F120_v0.4": 0.19947747452568199,
+            "CuSn12_F20_v0.4": 0.12003331201372099
+          },
+          "n_conditions": 4,
+          "median_cv": 0.3359943408291266,
+          "icc": {
+            "icc": 0.9609082279282889,
+            "lo": 0.8101314893419884,
+            "hi": 0.997244539800725,
+            "k": 3.0,
+            "F": 74.74249185983983,
+            "p_value": 3.417715477981899e-06,
+            "n_groups": 4,
+            "n": 12
+          },
+          "regime_mixed_conditions": [],
+          "p_transition": {
+            "AISI52100_F120_v0.4": 1.0,
+            "AISI52100_F20_v0.4": 0.0,
+            "CuSn12_F120_v0.4": 1.0,
+            "CuSn12_F20_v0.4": 0.0
+          },
+          "passes": true
+        }
+      }
+    },
+    {
+      "name": "portfolio",
+      "passed": false,
+      "message": "particles macro_f1 FAIL (wearpg 0.7287 vs best baseline fourier_fractal_cart 0.8173); runs mae FAIL (wearpg 0.2898 vs best baseline conditions_only 0.2085)",
+      "criteria": {
+        "protocol": "cv",
+        "claim_metrics": {
+          "particles": {
+            "metric": "macro_f1",
+            "better": "max"
+          },
+          "runs": {
+            "metric": "mae",
+            "better": "min"
+          }
+        },
+        "proposed": [
+          "wearpg",
+          "full"
+        ],
+        "estimate": "point (seed mean)"
+      },
+      "evidence": {
+        "particles": {
+          "available": true,
+          "metric": "macro_f1",
+          "comparisons": {
+            "contour_cnn": {
+              "proposed": 0.7286595973935681,
+              "baseline": 0.7691904734617443,
+              "n": 590
+            },
+            "fecnn": {
+              "proposed": 0.7286595973935681,
+              "baseline": 0.7219460110643451,
+              "n": 590
+            },
+            "fourier_fractal_cart": {
+              "proposed": 0.7286595973935681,
+              "baseline": 0.8172716068585719,
+              "n": 590
+            },
+            "fourier_fractal_svm": {
+              "proposed": 0.7286595973935681,
+              "baseline": 0.8140443383047329,
+              "n": 590
+            },
+            "multiview_svm": {
+              "proposed": 0.7286595973935681,
+              "baseline": 0.7876890128277606,
+              "n": 590
+            },
+            "particle_gnn": {
+              "proposed": 0.7286595973935681,
+              "baseline": 0.6601034411192147,
+              "n": 590
+            },
+            "resnet18": {
+              "proposed": 0.7286595973935681,
+              "baseline": 0.6703153037079416,
+              "n": 590
+            }
+          },
+          "best_baseline": "fourier_fractal_cart",
+          "passes": false
+        },
+        "runs": {
+          "available": true,
+          "metric": "mae",
+          "comparisons": {
+            "conditions_only": {
+              "proposed": 0.2897590455080888,
+              "baseline": 0.20845301122237758,
+              "n": 12
+            },
+            "descriptor_agg_rf": {
+              "proposed": 0.2897590455080888,
+              "baseline": 0.6882065925609749,
+              "n": 12
+            },
+            "physics_only": {
+              "proposed": 0.2897590455080888,
+              "baseline": 0.2695338855227817,
+              "n": 12
+            }
+          },
+          "best_baseline": "conditions_only",
+          "passes": false
+        }
+      }
+    }
+  ]
+}

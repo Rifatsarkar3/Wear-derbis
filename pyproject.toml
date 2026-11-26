@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "wearpg"
+version = "0.1.0"
+description = "Mechanism-linked multi-view particle graph learning for wear-debris classification and wear-rate estimation"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "numpy>=1.26",
+  "scipy>=1.11",
+  "pandas>=2.1",
+  "pyarrow>=14",
+  "scikit-learn>=1.4",
+  "scikit-image>=0.22",
+  "matplotlib>=3.8",
+  "pyyaml>=6",
+  "tqdm>=4.66",
+  "torch>=2.3",
+  "torchvision>=0.18",
+  "torch-geometric>=2.5",
+  "timm>=0.9",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+
+[project.scripts]
+wearpg = "wearpg.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+markers = ["slow: long-running or GPU tests (deselect with -m 'not slow')"]
+filterwarnings = [
+  "ignore::DeprecationWarning",
+  "ignore::FutureWarning",
+  "ignore::UserWarning:torch_geometric.*",
+]

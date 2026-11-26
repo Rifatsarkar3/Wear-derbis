@@ -1,0 +1,7 @@
+rule,unit_id,working_hours,column,value,reference
+within_unit_drop,T08,40.0,Fe,7.0,16.5
+ratio_to_phase_hour_median,T13,20.0,Cr,107.0,0.9
+within_unit_drop,T13,40.0,Cr,1.0,107.0
+within_unit_drop,T12,80.0,Pb,1.1,1.9
+within_unit_drop,T01,40.0,Mn,0.3,1.0
+within_unit_drop,T07,40.0,Mn,0.3,1.0

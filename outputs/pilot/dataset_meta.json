@@ -1,0 +1,305 @@
+{
+  "schema_version": "1.0",
+  "is_synthetic": true,
+  "name": "synthetic_pilot_v2",
+  "generator": "wearpg.synthetic",
+  "seed": 0,
+  "generator_config": {
+    "name": "synthetic_pilot_v2",
+    "seed": 0,
+    "rig": "pin_on_disc",
+    "lubricant_id": "PAO8",
+    "temperature_C": 40,
+    "duration_s": 3600,
+    "reservoir_volume_ml": 500,
+    "samples_per_run": 5,
+    "sampled_oil_ml": [
+      2.0,
+      5.0
+    ],
+    "repeats": 3,
+    "loads_N": [
+      20,
+      60,
+      120
+    ],
+    "speeds_m_s": [
+      0.2,
+      0.6
+    ],
+    "materials": [
+      {
+        "material_id": "AISI52100",
+        "counterface_id": "AISI52100",
+        "hardness_MPa": 7500,
+        "density_g_cm3": 7.81,
+        "ferromagnetic": true,
+        "composition": {
+          "Fe": 0.965,
+          "Cr": 0.015,
+          "C": 0.01,
+          "Si": 0.003,
+          "Mo": 0.002,
+          "Ni": 0.005
+        },
+        "color_rgb": [
+          120,
+          120,
+          128
+        ]
+      },
+      {
+        "material_id": "CuSn12",
+        "counterface_id": "AISI52100",
+        "hardness_MPa": 1000,
+        "density_g_cm3": 8.7,
+        "ferromagnetic": false,
+        "composition": {
+          "Cu": 0.875,
+          "Sn": 0.12,
+          "Fe": 0.005
+        },
+        "color_rgb": [
+          170,
+          120,
+          60
+        ]
+      },
+      {
+        "material_id": "AA6061",
+        "counterface_id": "AISI52100",
+        "hardness_MPa": 1050,
+        "density_g_cm3": 2.7,
+        "ferromagnetic": false,
+        "composition": {
+          "Al": 0.975,
+          "Si": 0.006,
+          "Fe": 0.007,
+          "Cu": 0.003,
+          "Cr": 0.002,
+          "Zn": 0.002,
+          "Ni": 0.005
+        },
+        "color_rgb": [
+          175,
+          175,
+          182
+        ]
+      }
+    ],
+    "capture": {
+      "ferrous": 0.6,
+      "nonferrous": 0.2,
+      "material_sigma": 0.2
+    },
+    "wear": {
+      "k_mild_ref": 2e-06,
+      "k_severe_ref": 0.00015,
+      "hardness_ref_MPa": 2000,
+      "run_sigma": 0.25,
+      "interval_sigma": 0.15,
+      "run_in_factor": 1.5,
+      "severity_ref": {
+        "load_N": 50,
+        "speed_m_s": 0.35,
+        "hardness_MPa": 2000
+      },
+      "hardness_exponent": 0.25,
+      "transition_time_scale": 1.2,
+      "mass_noise_rel": 0.02,
+      "mass_resolution_mg": 0.01
+    },
+    "debris": {
+      "sampling": "interval",
+      "imaged_fraction_range": [
+        0.05,
+        0.5
+      ],
+      "budget_sigma": 0.3,
+      "max_stored_per_sample": 60,
+      "metal_fraction": {
+        "oxide": 0.47
+      },
+      "expose_interval_volume": false,
+      "counterface_wear_ratio": 0.0
+    },
+    "imaging": {
+      "image_size_px": 512,
+      "magnifications": [
+        {
+          "magnification": 200,
+          "um_per_px": 0.5
+        },
+        {
+          "magnification": 500,
+          "um_per_px": 0.2
+        }
+      ],
+      "focus_sigmas_px": [
+        0.0,
+        0.8,
+        1.6
+      ],
+      "min_area_px": 30,
+      "min_contrast": 0.05,
+      "max_luminance_ratio": 0.85,
+      "touching_fraction": 0.05,
+      "gaussian_noise": 0.02,
+      "background_rgb": [
+        215,
+        220,
+        226
+      ],
+      "renderer": "v2"
+    },
+    "multiview": {
+      "fraction": 0.3,
+      "n_views": 3,
+      "frame_size_px": 160
+    },
+    "annotation": {
+      "eds_fraction": 0.3,
+      "sem_fraction": 0.15,
+      "confocal_fraction": 0.2,
+      "label_fraction": 1.0,
+      "double_label_fraction": 1.0,
+      "rater_accuracy": [
+        0.88,
+        0.82
+      ],
+      "adjudicator_accuracy": 0.95,
+      "reference_accuracy": 0.97
+    }
+  },
+  "stats": {
+    "expected_severe_fraction": {
+      "AISI52100": 0.4387828348225446,
+      "CuSn12": 0.6247119073797794,
+      "AA6061": 0.620668487949549
+    },
+    "severe_fraction": {
+      "AA6061": 0.7777777777777778,
+      "AISI52100": 0.3333333333333333,
+      "CuSn12": 0.5555555555555556
+    },
+    "median_n_total": {
+      "AA6061|mild": 27.0,
+      "AA6061|severe": 303.0,
+      "AA6061|transition": 110.0,
+      "AISI52100|mild": 15.0,
+      "AISI52100|severe": 93.0,
+      "AISI52100|transition": 153.0,
+      "CuSn12|mild": 25.0,
+      "CuSn12|severe": 313.0,
+      "CuSn12|transition": 250.5
+    },
+    "empty_sample_fraction": 0.0,
+    "mean_ht_factor": 2.852469135802469,
+    "cramers_v_magnification_severity": 0.010135172913978863,
+    "cramers_v_magnification_material": 0.010476805798727546,
+    "eta_material": {
+      "AISI52100": 0.6087286315863467,
+      "CuSn12": 0.16936045317981163,
+      "AA6061": 0.21489581930525872
+    },
+    "n_drawn": 41101,
+    "n_detected": 40076,
+    "n_stored": 10065,
+    "n_fov_dropped": 1,
+    "n_fov_images": 614,
+    "n_multiview_frames": 6038,
+    "fractal": {
+      "achieved_D_mean_by_class": {
+        "cutting": 1.0457605623991464,
+        "fatigue_chunk": 1.1325451296398523,
+        "laminar": 1.0685882294877975,
+        "oxide": 1.1749872890816173,
+        "rubbing": 1.0281115112426689,
+        "severe_sliding": 1.063890575051401,
+        "spherical": 1.0118321682411198
+      },
+      "target_D_mean_by_class": {
+        "cutting": 1.0448118132093385,
+        "fatigue_chunk": 1.1486728533529686,
+        "laminar": 1.0750660159472982,
+        "oxide": 1.198669583618852,
+        "rubbing": 1.0349343771402284,
+        "severe_sliding": 1.0850677612771285,
+        "spherical": 1.010128253501769
+      },
+      "spearman_mag200": 0.8625192713298315,
+      "n_mag200": 2731,
+      "spearman_mag500": 0.951726968666113,
+      "n_mag500": 3523
+    }
+  },
+  "warning": "SYNTHETIC DATA - PIPELINE VERIFICATION ONLY - NOT EVIDENCE FOR ANY SCIENTIFIC CLAIM",
+  "describe": {
+    "is_synthetic": true,
+    "n_specimens": 54,
+    "n_runs": 54,
+    "n_samples": 270,
+    "n_images": 6652,
+    "n_particles": 10065,
+    "n_views": 16103,
+    "n_labels": 24321,
+    "n_labels_adjudicated": 10065,
+    "n_materials": 3,
+    "n_conditions": 18,
+    "n_labelled_particles": 10065
+  },
+  "feature_cache": {
+    "dataset_key": "synthetic_pilot_v2_9f3594d4d974",
+    "base_dir": "cache/synthetic_pilot_v2_9f3594d4d974/base_e68bd407505e",
+    "graph_path": "cache/synthetic_pilot_v2_9f3594d4d974/graphs_eaefc8b4cd7c.pt",
+    "base_inputs": {
+      "crop_size": 64,
+      "crop_pad": 1.25,
+      "efd_order": 10,
+      "max_views": 3,
+      "min_contour_points": 8,
+      "n_nodes": 128,
+      "curvature_scales": [
+        1,
+        2,
+        4,
+        8
+      ],
+      "roughness_window": 9,
+      "feature_version": 1
+    },
+    "graph_inputs": {
+      "n_nodes": 128,
+      "ring_hops": [
+        1,
+        2,
+        4,
+        8,
+        16
+      ],
+      "curvature_scales": [
+        1,
+        2,
+        4,
+        8
+      ],
+      "roughness_window": 9,
+      "texture_depths_frac": [
+        0.05,
+        0.15,
+        0.3
+      ],
+      "tex_out_frac": 0.1,
+      "interior_nodes": 16,
+      "interior_knn": 4,
+      "feature_version": 1
+    },
+    "rebuilt": {
+      "base": false,
+      "graphs": false
+    },
+    "n_particles": 10065,
+    "n_views": 16103,
+    "seconds": 0.81
+  }
+}

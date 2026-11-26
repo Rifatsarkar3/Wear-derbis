@@ -1,0 +1,22 @@
+{
+  "device": "cuda",
+  "device_name": "NVIDIA GeForce RTX 5070",
+  "total_vram_mb": 12199.75,
+  "vram_budget_fraction": 0.8,
+  "vram_budget_mb": 9759.800000000001,
+  "graph_n_nodes": 128,
+  "model": {
+    "hidden": 64,
+    "gnn_layers": 3,
+    "conv": "gine"
+  },
+  "recommended_max_nodes": {
+    "64": 256,
+    "256": 256
+  },
+  "files": {
+    "gnn": "outputs/smoke/profiling/gnn.csv",
+    "contour_cnn": "outputs/smoke/profiling/contour_cnn.csv",
+    "summary": "outputs/smoke/profiling/summary.json"
+  }
+}

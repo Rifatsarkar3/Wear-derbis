@@ -1,0 +1,7 @@
+test,p,p_holm
+A_debris_vs_best_intercept,0.00014483928680419922,0.0005793571472167969
+F_D14_spearman,0.05653,0.11306
+G2_S3_spearman,7e-05,0.00034999999999999994
+G3_first_observation_spearman,5e-06,3.0000000000000004e-05
+H1_exact_conditional_logistic,0.9560863891338428,0.9560863891338428
+H2_after_vs_before,0.03125,0.09375

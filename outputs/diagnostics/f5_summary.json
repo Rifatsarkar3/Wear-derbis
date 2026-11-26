@@ -1,0 +1,79 @@
+{
+  "note": "NEW analysis (DIAG); frozen pre-specified verdicts unchanged; rules: outputs/agent_logs/DIAG.md",
+  "status": "secondary analysis (frozen C3 verdict against_us unchanged)",
+  "n_graph_geom_features": 16,
+  "n_efd_features": 37,
+  "primary_family": [
+    {
+      "transform": "rot45",
+      "S_graph_geom": 0.9835400393337703,
+      "S_efd": 0.8772399693329926,
+      "diff": 0.10630007000077768,
+      "lo": 0.07722961713494941,
+      "hi": 0.136203202333959,
+      "p_holm": 0.0069965017491254375,
+      "graph_more_invariant": true
+    },
+    {
+      "transform": "rot90",
+      "S_graph_geom": 1.0,
+      "S_efd": 1.0,
+      "diff": 0.0,
+      "lo": 0.0,
+      "hi": 0.0,
+      "p_holm": 1.0,
+      "graph_more_invariant": false
+    },
+    {
+      "transform": "rot_random",
+      "S_graph_geom": 0.978211091234347,
+      "S_efd": 0.8336794853276147,
+      "diff": 0.1445316059067323,
+      "lo": 0.0993425080897169,
+      "hi": 0.1773498180264857,
+      "p_holm": 0.0069965017491254375,
+      "graph_more_invariant": true
+    },
+    {
+      "transform": "scale0.5",
+      "S_graph_geom": 0.9463858723026046,
+      "S_efd": 0.6913612498572106,
+      "diff": 0.25502462244539403,
+      "lo": 0.1959543221861127,
+      "hi": 0.3002331070500356,
+      "p_holm": 0.0069965017491254375,
+      "graph_more_invariant": true
+    },
+    {
+      "transform": "scale0.25",
+      "S_graph_geom": 0.9021237945128631,
+      "S_efd": 0.654315710736516,
+      "diff": 0.2478080837763471,
+      "lo": 0.1702709725747746,
+      "hi": 0.319795877015286,
+      "p_holm": 0.0069965017491254375,
+      "graph_more_invariant": true
+    },
+    {
+      "transform": "blur1",
+      "S_graph_geom": 0.9938417093523262,
+      "S_efd": 0.9460527339192658,
+      "diff": 0.04778897543306038,
+      "lo": 0.02771626324606358,
+      "hi": 0.08305882303832551,
+      "p_holm": 0.0069965017491254375,
+      "graph_more_invariant": true
+    },
+    {
+      "transform": "blur2",
+      "S_graph_geom": 0.9634678163090701,
+      "S_efd": 0.822961588462094,
+      "diff": 0.14050622784697608,
+      "lo": 0.09683016521946475,
+      "hi": 0.19595523720485694,
+      "p_holm": 0.0069965017491254375,
+      "graph_more_invariant": true
+    }
+  ],
+  "statement_graph_more_invariant_than_fourier": true
+}

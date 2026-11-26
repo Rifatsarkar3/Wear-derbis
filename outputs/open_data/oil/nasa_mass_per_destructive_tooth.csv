@@ -1,0 +1,15 @@
+exp,rdg_end,mass_end_mg,n_de_end,n_pitted_end,stage_end,desc_end,rdg_first,mass_first_mg,desc_first,source,mg_per_destructive_tooth
+1,15136.0,36.108,6,31,2,"Dr: de 3t, ip allt / Dn: de3t",14369.0,15.475,Dr: de 1t / Dn: de 1t,TM-2003-211307 Table 3.9 p. 49,6.018
+2,2444.0,26.268,5,31,2,"Dr: de 2t, ip allt / Dn de 3t, ip 3t",2199.0,8.934,Dr: / Dn: de 1t,TM-2003-211307 Table 3.9 p. 49,5.2536000000000005
+3,3029.0,14.148,6,31,2,"Dr: de 3t, ip allt / Dn: de 3t, ip3t",2669.0,8.69,Dr: de 2t / Dn: de 2t,TM-2003-211307 Table 3.9 p. 49,2.358
+4,4863.0,26.227,10,56,2,"Dr: de 7t, ip allt / Dn de 3t, ip allt",2065.0,12.132,Dr: de 3t / Dn:,TM-2003-211307 Table 3.9 p. 49,2.6227
+5,4425.0,10.811,21,56,2,"Dr: de 11t, ip allt / Dn de 10t, ip allt",2566.0,7.413,Dr: ip 2t / Dn:,TM-2003-211307 Table 3.9 p. 49,0.5148095238095238
+6,12368.0,22.851,3,56,2,"Dr: de 1t, ip allt / Dn de 2t, ip allt",12061.0,14.365,Dr: / Dn: de 1t,TM-2003-211307 Table 3.9 p. 49,7.617
+8,5314.0,19.101,12,15,2,"Dr: de 6t, ip8t / Dn de6t, ip7t",5181.0,6.012,Dr: ip 2t / Dn: ip 3t,TM-2003-211307 Table 3.9 p. 49,1.59175
+18,888.0,22.541,10,56,2,"Dr: de 6t, ip allt / Dn de 4t, ip allt",,,,TM-2003-211307 Table 3.9 p. 49,2.2541
+19,199.0,11.23,4,56,2,"Dr: de 3t, ip allt / Dn de 1t, ip allt",,,,TM-2003-211307 Table 3.9 p. 49,2.8075
+20,1593.0,5.346,1,56,2,"Dr: de 1t, ip allt / Dn  ip allt",,,,TM-2003-211307 Table 3.9 p. 49,5.346
+21,514.0,17.912,4,56,2,"Dr: de 2t, ip allt / Dn: de 2t, ip allt",317.0,4.04,Dr: de 1t / Dn: de 1t,TM-2003-211307 Table 3.9 p. 49,4.478
+22,838.0,7.224,3,33,2,"Dr: ip 5t / Dn: de 3t, ip allt",,,,TM-2003-211307 Table 3.9 p. 49,2.408
+23,10688.0,6.399,3,56,2,"Dr: de 2t,  ip allt / Dn: de 1t, ip allt",,,,TM-2003-211307 Table 3.9 p. 49,2.133
+24,7224.0,9.681,1,56,2,"Dr: de 1t, ip allt / Dn: ip allt",7170.0,6.186,Dr: de 1t / Dn:,TM-2003-211307 Table 3.9 p. 49,9.681

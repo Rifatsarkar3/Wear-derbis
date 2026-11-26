@@ -1,0 +1,66 @@
+# Synthetic wear-test + ferrograph generator: PIPELINE VERIFICATION ONLY, never evidence for the paper.
+name: synthetic_pilot
+seed: 0
+rig: pin_on_disc
+lubricant_id: PAO8
+temperature_C: 40
+duration_s: 3600
+reservoir_volume_ml: 500
+samples_per_run: 5
+sampled_oil_ml: [2.0, 5.0]          # uniform range per sample
+repeats: 3                          # pilot gate needs >= 3 runs per condition
+loads_N: [20, 60, 120]
+speeds_m_s: [0.2, 0.6]
+materials:
+  - {material_id: AISI52100, counterface_id: AISI52100, hardness_MPa: 7500, density_g_cm3: 7.81, ferromagnetic: true,
+     composition: {Fe: 0.965, Cr: 0.015, C: 0.010, Si: 0.003, Mo: 0.002, Ni: 0.005}, color_rgb: [120, 120, 128]}
+  - {material_id: CuSn12, counterface_id: AISI52100, hardness_MPa: 1000, density_g_cm3: 8.70, ferromagnetic: false,
+     composition: {Cu: 0.875, Sn: 0.120, Fe: 0.005}, color_rgb: [170, 120, 60]}
+  - {material_id: AA6061, counterface_id: AISI52100, hardness_MPa: 1050, density_g_cm3: 2.70, ferromagnetic: false,
+     composition: {Al: 0.975, Si: 0.006, Fe: 0.007, Cu: 0.003, Cr: 0.002, Zn: 0.002, Ni: 0.005}, color_rgb: [175, 175, 182]}
+capture: {ferrous: 0.6, nonferrous: 0.2, material_sigma: 0.2}   # magnetic capture efficiency by class
+wear:
+  k_mild_ref: 2.0e-6        # specific wear rate at H = hardness_ref_MPa [mm^3/(N m)]; k = k_ref * H_ref / H
+  k_severe_ref: 1.5e-4
+  hardness_ref_MPa: 2000
+  run_sigma: 0.25           # lognormal sd, run random effect
+  interval_sigma: 0.15
+  run_in_factor: 1.5
+  severity_ref: {load_N: 50, speed_m_s: 0.35, hardness_MPa: 2000}
+  hardness_exponent: 0.25
+  transition_time_scale: 1.2    # t_tr = scale * T * sqrt(Exp(1)) / S; transition iff t_tr < T
+  mass_noise_rel: 0.02
+  mass_resolution_mg: 0.01
+debris:
+  sampling: interval            # interval | cumulative
+  imaged_fraction_range: [0.05, 0.5]   # LogUniform, independent of wear (synthetic convenience)
+  budget_sigma: 0.3             # lognormal sd of per-sample capture (0 = oracle mode for tests)
+  max_stored_per_sample: 60     # storage cap; n_particles_total counts all detected
+  metal_fraction: {oxide: 0.47}
+  expose_interval_volume: false # realistic: only end-of-run gravimetry
+  counterface_wear_ratio: 0.0
+imaging:
+  image_size_px: 512
+  magnifications: [{magnification: 200, um_per_px: 0.5}, {magnification: 500, um_per_px: 0.2}]
+  focus_sigmas_px: [0.0, 0.8, 1.6]
+  min_area_px: 30
+  min_contrast: 0.05
+  max_luminance_ratio: 0.85
+  touching_fraction: 0.05
+  gaussian_noise: 0.02
+  background_rgb: [215, 220, 226]
+  # renderer: v1 (default, this file) or v2 (bichromatic light + ferrographic chains, rendering only; v1 physics):
+  # configs/synthetic_pilot_v2.yaml, docs/renderer_realism.md
+multiview:
+  fraction: 0.3
+  n_views: 3
+  frame_size_px: 160
+annotation:
+  eds_fraction: 0.3
+  sem_fraction: 0.15
+  confocal_fraction: 0.2
+  label_fraction: 1.0
+  double_label_fraction: 1.0
+  rater_accuracy: [0.88, 0.82]
+  adjudicator_accuracy: 0.95
+  reference_accuracy: 0.97

@@ -1,0 +1,779 @@
+{
+  "status": "post hoc, added after the re-review of 2026-11-25",
+  "identity": {
+    "per_set": {
+      "feup_martins2008/fzg": {
+        "n": 14,
+        "sd_log_wear": 0.5051544343917712,
+        "sd_log_ratio": 0.24726571455069085,
+        "sd_ratio": 2.042961901570918,
+        "mad_ratio": 1.822283494226154,
+        "slope": 0.8717155355565752,
+        "debris_better_than_constant_on_unit_means": true,
+        "slope_above_0.5": true,
+        "gsd_wear": 3.2000328337193253,
+        "gsd_factor": 1.7671186668613321,
+        "gsd_factor_ci": [
+          1.51097142630136,
+          2.5023932245206044
+        ],
+        "max_over_min_factor": 6.421256228644488,
+        "ratio_if_common_scatter_median": 1.9662386206052014
+      },
+      "feup_martins2008/fourball": {
+        "n": 6,
+        "sd_log_wear": 0.18976918261403777,
+        "sd_log_ratio": 0.2556936945068584,
+        "sd_ratio": 0.7421738849682413,
+        "mad_ratio": 0.8012723426548249,
+        "slope": 0.24990604753345355,
+        "debris_better_than_constant_on_unit_means": false,
+        "slope_above_0.5": false,
+        "gsd_wear": 1.5479936777165322,
+        "gsd_factor": 1.801746530772727,
+        "gsd_factor_ci": [
+          1.444129202712302,
+          4.237580212003731
+        ],
+        "max_over_min_factor": 4.954969664778774,
+        "ratio_if_common_scatter_median": 0.7386483626649133
+      },
+      "jsme_higashi2003/plate_intervals": {
+        "n": 8,
+        "sd_log_wear": 0.13600627274268326,
+        "sd_log_ratio": 0.2569141044723689,
+        "sd_ratio": 0.5293842197648231,
+        "mad_ratio": 0.4590133530042307,
+        "slope": 0.2931567354240768,
+        "debris_better_than_constant_on_unit_means": false,
+        "slope_above_0.5": false,
+        "gsd_wear": 1.3677485805623515,
+        "gsd_factor": 1.8068167352728366,
+        "gsd_factor_ci": [
+          1.4786485588895217,
+          3.3334205355209208
+        ],
+        "max_over_min_factor": 4.60463277068669,
+        "ratio_if_common_scatter_median": 0.5293842197648231
+      },
+      "phm_bolander2009/rig_tests": {
+        "n": 7,
+        "sd_log_wear": 0.5552202363587246,
+        "sd_log_ratio": 0.17260629623786145,
+        "sd_ratio": 3.2166858826146125,
+        "mad_ratio": 4.100649432079148,
+        "slope": 1.138921241336184,
+        "debris_better_than_constant_on_unit_means": true,
+        "slope_above_0.5": true,
+        "gsd_wear": 3.5910399476706996,
+        "gsd_factor": 1.4880115294604777,
+        "gsd_factor_ci": [
+          1.2918924479158302,
+          2.3993327157185136
+        ],
+        "max_over_min_factor": 3.350510628928988,
+        "ratio_if_common_scatter_median": 2.161112320006699
+      },
+      "phm_raadnui2015/dry_fourball": {
+        "n": 5,
+        "sd_log_wear": 0.8411055315787074,
+        "sd_log_ratio": 0.39398249284352727,
+        "sd_ratio": 2.1348804752924844,
+        "mad_ratio": 2.2212413340616393,
+        "slope": 1.6910426369388958,
+        "debris_better_than_constant_on_unit_means": true,
+        "slope_above_0.5": true,
+        "gsd_wear": 6.9359432579933005,
+        "gsd_factor": 2.4773221905080542,
+        "gsd_factor_ci": [
+          1.7220587653803814,
+          13.555970405355685
+        ],
+        "max_over_min_factor": 9.711515328806481,
+        "ratio_if_common_scatter_median": 3.273878377779637
+      },
+      "soton_craig2010/bearings": {
+        "n": 6,
+        "sd_log_wear": 0.3280582586066079,
+        "sd_log_ratio": 0.36022629648597293,
+        "sd_ratio": 0.9107004730271888,
+        "mad_ratio": 0.977305251788849,
+        "slope": 0.39332853870356765,
+        "debris_better_than_constant_on_unit_means": false,
+        "slope_above_0.5": false,
+        "gsd_wear": 2.1284245451931803,
+        "gsd_factor": 2.2920616591603267,
+        "gsd_factor_ci": [
+          1.6782479945527662,
+          7.647087399187239
+        ],
+        "max_over_min_factor": 12.078694582701788,
+        "ratio_if_common_scatter_median": 1.276918055084401
+      },
+      "uct_jordan1995/grease": {
+        "n": 7,
+        "sd_log_wear": 0.5347098582720665,
+        "sd_log_ratio": 0.5429865510527335,
+        "sd_ratio": 0.9847570943246747,
+        "mad_ratio": 1.1429392509995366,
+        "slope": 0.48354477794979245,
+        "debris_better_than_constant_on_unit_means": true,
+        "slope_above_0.5": false,
+        "gsd_wear": 3.42538868084636,
+        "gsd_factor": 3.491295036972184,
+        "gsd_factor_ci": [
+          2.2381900158145056,
+          15.69250529238739
+        ],
+        "max_over_min_factor": 39.61320669221694,
+        "ratio_if_common_scatter_median": 2.0812787190886772
+      }
+    },
+    "median_sd_log_ratio": 0.2569141044723689,
+    "gsd_median": 1.8068167352728366,
+    "gsd_of_fzg_scatter": 1.7671186668613321
+  },
+  "trend": {
+    "phm_raadnui2015/dry_fourball": {
+      "n": 5,
+      "ratio_min_median_max": [
+        3.9251476681492474,
+        9.64279646495337,
+        38.119131747060436
+      ],
+      "spearman": -0.8999999999999998,
+      "p_perm": 0.08333333333333333,
+      "gsd": 2.4773221905080542,
+      "gsd_about_trend": 1.4773229699674406,
+      "order_variable": "log10 duration"
+    },
+    "jsme_higashi2003/plate_intervals": {
+      "n": 8,
+      "ratio_min_median_max": [
+        0.3097369375118386,
+        0.6853075240501862,
+        1.4262248527591477
+      ],
+      "spearman": 0.9285714285714287,
+      "p_perm": 0.002232142857142857,
+      "gsd": 1.8068167352728366,
+      "gsd_about_trend": 1.2259208436760782,
+      "order_variable": "distance (start of interval)"
+    }
+  },
+  "bearing_rig_zero_shift": {
+    "unit": "axis divisions added to the debris reading; 0 = the axis crossing assumed in the paper",
+    "shifts": {
+      "-0.30": {
+        "n": 6,
+        "slope": 1.2336792032395347,
+        "gsd": 1.3280825703294223,
+        "sd_ratio_wear_over_factor": 3.4663236627716354
+      },
+      "-0.15": {
+        "n": 7,
+        "slope": 0.6469652126839113,
+        "gsd": 2.306109956809208,
+        "sd_ratio_wear_over_factor": 1.5300378754537565
+      },
+      "-0.10": {
+        "n": 7,
+        "slope": 0.8758453821457479,
+        "gsd": 1.6182157088770432,
+        "sd_ratio_wear_over_factor": 2.656093039094156
+      },
+      "+0.00": {
+        "n": 7,
+        "slope": 1.1389206729077852,
+        "gsd": 1.488011339756075,
+        "sd_ratio_wear_over_factor": 3.2166864773383117
+      },
+      "+0.10": {
+        "n": 7,
+        "slope": 1.3316920813564055,
+        "gsd": 1.5708284567963584,
+        "sd_ratio_wear_over_factor": 2.830896193831954
+      },
+      "+0.15": {
+        "n": 7,
+        "slope": 1.4161729412470727,
+        "gsd": 1.6228032294748198,
+        "sd_ratio_wear_over_factor": 2.6405625344252535
+      },
+      "+0.30": {
+        "n": 7,
+        "slope": 1.6432706333561293,
+        "gsd": 1.7726891791616206,
+        "sd_ratio_wear_over_factor": 2.2330948355249194
+      }
+    },
+    "gsd_range": [
+      1.3280825703294223,
+      2.306109956809208
+    ],
+    "slope_range": [
+      0.6469652126839113,
+      1.6432706333561293
+    ]
+  },
+  "repeatability": {
+    "debris": {
+      "pair_ratios": {
+        "E1": 3.9047658819551954,
+        "E2": 2.206896673250169,
+        "M0": 1.2881368370642474
+      },
+      "replicate_gsd": 1.9183153291384265,
+      "df": 3,
+      "gsd_ci": [
+        1.446342743293952,
+        11.346987722290297
+      ]
+    },
+    "wear": {
+      "pair_ratios": {
+        "E1": 1.1923671428379634,
+        "E2": 1.6675543591256758,
+        "M0": 1.380193570642044
+      },
+      "replicate_gsd": 1.2930351994751912,
+      "df": 3,
+      "gsd_ci": [
+        1.1567142748625738,
+        2.60702056698056
+      ]
+    },
+    "ratio": {
+      "pair_ratios": {
+        "E1": 3.2748016459606784,
+        "E2": 1.3234331229881335,
+        "M0": 1.7778781806232542
+      },
+      "replicate_gsd": 1.7337371402365482,
+      "df": 3,
+      "gsd_ci": [
+        1.36578240810265,
+        7.781446862119898
+      ]
+    }
+  },
+  "nasa_yield": {
+    "n": 14,
+    "gsd_mass_per_tooth": 2.1197859911618955,
+    "gsd_ci": [
+      1.7240373912061595,
+      3.354828179783982
+    ],
+    "sd_log_teeth": 0.3775364572110547,
+    "sd_log_mass_per_tooth": 0.32629201774527944,
+    "sd_ratio": 1.1570508522392948,
+    "max_over_min": 18.80501341226528,
+    "slope_log_teeth_on_log_mass": 0.7747279785471464
+  },
+  "verdict_counts": {
+    "five_sets:pre_specified": {
+      "V1": {
+        "for_us": 2,
+        "inconclusive": 3
+      },
+      "V2": {
+        "for_us": 2,
+        "against_us": 2,
+        "inconclusive": 1
+      }
+    },
+    "five_sets:converged": {
+      "V1": {
+        "for_us": 2,
+        "inconclusive": 3
+      },
+      "V2": {
+        "inconclusive": 2,
+        "against_us": 2,
+        "for_us": 1
+      }
+    },
+    "without_dry:pre_specified": {
+      "V1": {
+        "for_us": 1,
+        "inconclusive": 3
+      },
+      "V2": {
+        "for_us": 1,
+        "against_us": 2,
+        "inconclusive": 1
+      }
+    },
+    "without_dry:converged": {
+      "V1": {
+        "for_us": 1,
+        "inconclusive": 3
+      },
+      "V2": {
+        "inconclusive": 2,
+        "against_us": 2
+      }
+    },
+    "lubricated_only:pre_specified": {
+      "V1": {
+        "for_us": 1,
+        "inconclusive": 3
+      },
+      "V2": {
+        "for_us": 1,
+        "against_us": 2,
+        "inconclusive": 1
+      }
+    },
+    "lubricated_only:converged": {
+      "V1": {
+        "for_us": 1,
+        "inconclusive": 3
+      },
+      "V2": {
+        "inconclusive": 2,
+        "against_us": 2
+      }
+    }
+  },
+  "pooled_slope": {
+    "five_sets": {
+      "k": 5,
+      "n_units": 38,
+      "slope_random_effects": 0.80995093489892,
+      "normal_ci": [
+        0.3100404603393914,
+        1.3098614094584486
+      ],
+      "hartung_knapp_ci": [
+        0.07630972692280302,
+        1.543592142875037
+      ],
+      "Q": 15.09173392067312,
+      "df": 4,
+      "p_Q": 0.004514688030598105,
+      "tau2": 0.22032241857530485
+    },
+    "four_lubricated": {
+      "k": 4,
+      "n_units": 33,
+      "slope_random_effects": 0.6774883407341951,
+      "normal_ci": [
+        0.37158457217374197,
+        0.9833921092946482
+      ],
+      "hartung_knapp_ci": [
+        0.21177687717554688,
+        1.1431998042928433
+      ],
+      "Q": 3.64077353543866,
+      "df": 3,
+      "p_Q": 0.3029579614574699,
+      "tau2": 0.021450079489728605
+    }
+  },
+  "fzg_ordinary_pairs": {
+    "n": 11,
+    "slope": 0.420410873331807,
+    "perm_ci": [
+      0.015486490664785031,
+      0.8493923432715351
+    ],
+    "t_ci": [
+      0.01609345116327049,
+      0.8247282955003434
+    ],
+    "p_slope_1": 0.017075,
+    "p_slope_0": 0.042925,
+    "spearman": 0.7909090909090909,
+    "spearman_p": 0.00573,
+    "wear_range_mg": [
+      37.091978553252915,
+      149.99956513820388
+    ]
+  },
+  "fold_table": {
+    "feup_martins2008/fzg": {
+      "n": 14,
+      "median": 1.5587370355649084,
+      "mean": 1.6183530992236401,
+      "worst": 3.971980794237659,
+      "within_2": 12
+    },
+    "feup_martins2008/fourball": {
+      "n": 6,
+      "median": 1.4850258162390588,
+      "mean": 1.6398528965448653,
+      "worst": 3.7641275155792773,
+      "within_2": 5
+    },
+    "phm_bolander2009/rig_tests": {
+      "n": 7,
+      "median": 1.2110256790719613,
+      "mean": 1.3403252986681717,
+      "worst": 2.710657933379609,
+      "within_2": 6
+    },
+    "phm_raadnui2015/dry_fourball": {
+      "n": 5,
+      "median": 2.2774621767832395,
+      "mean": 2.401198760800213,
+      "worst": 4.9355999600122304,
+      "within_2": 2
+    },
+    "soton_craig2010/bearings": {
+      "n": 6,
+      "median": 1.4797820214546247,
+      "mean": 1.9782448401617134,
+      "worst": 5.62301955969845,
+      "within_2": 4
+    },
+    "uct_jordan1995/grease": {
+      "n": 7,
+      "median": 2.328129395893215,
+      "mean": 2.7972498252831093,
+      "worst": 15.723602304245482,
+      "within_2": 3
+    }
+  },
+  "gain_share_of_three_extremes": {
+    "constant": 0.8817028608002794,
+    "conditions": 0.9524960077888375,
+    "archard": 0.6013229160896889
+  },
+  "later_checks": {
+    "holzhauer_printed_slopes": {
+      "slopes": [
+        1.63,
+        1.41,
+        1.12,
+        2.45
+      ],
+      "gsd": 1.389576666332066,
+      "gsd_ci": [
+        1.2048734925647642,
+        3.409920109453156
+      ],
+      "max_over_min": 2.1875
+    },
+    "holzhauer": {
+      "end_ratio_start_subtracted": {
+        "A": 1.651,
+        "B": 1.463,
+        "C": 1.308,
+        "D": 2.232
+      },
+      "lot_ratio_AD_over_BC": 1.3900889775306078
+    },
+    "krasmik_per_pairing": {
+      "CuZn37/100Cr6": {
+        "increments": 14,
+        "spearman": -0.1956043956043956,
+        "wear_volume_end_mm3": 2.6921,
+        "n_tests": 1
+      },
+      "SF-Cu/100Cr6": {
+        "increments": 14,
+        "spearman": 0.4901098901098901,
+        "wear_volume_end_mm3": 0.0704,
+        "n_tests": 1
+      },
+      "St-37/100Cr6": {
+        "increments": 14,
+        "spearman": 0.3538461538461538,
+        "wear_volume_end_mm3": 0.458,
+        "n_tests": 1
+      }
+    },
+    "nield": {
+      "mae_log10": {
+        "constant": 0.12629343315401917,
+        "humidity": 0.12365199384705362,
+        "material": 0.11723387190044628,
+        "material_plus_humidity": 0.04659746075269327,
+        "humidity_levels": 0.13193620878105966,
+        "humidity_levels_plus_material": 0.022845584226297844,
+        "ratio": 0.0238538536909526
+      },
+      "n": 9,
+      "ratio_min_max": [
+        0.728,
+        2.138
+      ],
+      "ratio_minus_constant": {
+        "diff": -0.10243957946306656,
+        "lo": -0.15982771608347793,
+        "hi": -0.04940490475137335,
+        "p": 0.00390625,
+        "n_units": 9
+      },
+      "ratio_minus_humidity": {
+        "diff": -0.09979814015610101,
+        "lo": -0.14608983404220796,
+        "hi": -0.05101182193805221,
+        "p": 0.01171875,
+        "n_units": 9
+      },
+      "ratio_minus_material": {
+        "diff": -0.09338001820949365,
+        "lo": -0.1335757564301709,
+        "hi": -0.05672470224770225,
+        "p": 0.00390625,
+        "n_units": 9
+      },
+      "ratio_minus_material_plus_humidity": {
+        "diff": -0.02274360706174067,
+        "lo": -0.044018110606702875,
+        "hi": 0.001123966532151852,
+        "p": 0.09765625,
+        "n_units": 9
+      },
+      "ratio_minus_humidity_levels": {
+        "diff": -0.10808235509010707,
+        "lo": -0.16333633036770034,
+        "hi": -0.04662677089910295,
+        "p": 0.01953125,
+        "n_units": 9
+      },
+      "ratio_minus_humidity_levels_plus_material": {
+        "diff": 0.0010082694646547524,
+        "lo": -0.013702738726669435,
+        "hi": 0.017540979749327865,
+        "p": 0.95703125,
+        "n_units": 9
+      }
+    }
+  },
+  "factors": {
+    "per_set": {
+      "feup_martins2008/fzg": {
+        "n": 14,
+        "factor_wear_per_debris": 0.09939409218180303,
+        "ci95_mean": [
+          0.07154735749569997,
+          0.13807897183677964
+        ],
+        "debris_unit": "index",
+        "wear_unit": "mg",
+        "gsd_factor": 1.7671186668613321,
+        "gsd_ci": [
+          1.51097142630136,
+          2.5023932245206044
+        ],
+        "pi95_factor": 3.5721863716710773
+      },
+      "feup_martins2008/fourball": {
+        "n": 6,
+        "factor_wear_per_debris": 5.758006710348132e-05,
+        "ci95_mean": [
+          3.1041170606472475e-05,
+          0.00010680860492258923
+        ],
+        "debris_unit": "index",
+        "wear_unit": "mm3",
+        "gsd_factor": 1.801746530772727,
+        "gsd_ci": [
+          1.444129202712302,
+          4.237580212003731
+        ],
+        "pi95_factor": 5.127967135113585
+      },
+      "jsme_higashi2003/plate_intervals": {
+        "n": 8,
+        "factor_wear_per_debris": 1.5020162284367118,
+        "ci95_mean": [
+          0.9159864696430584,
+          2.462976064882687
+        ],
+        "debris_unit": "mm3",
+        "wear_unit": "mm3",
+        "gsd_factor": 1.8068167352728366,
+        "gsd_ci": [
+          1.4786485588895217,
+          3.3334205355209208
+        ],
+        "pi95_factor": 4.4091685318561105
+      },
+      "phm_bolander2009/rig_tests": {
+        "n": 7,
+        "factor_wear_per_debris": 27.919238676208387,
+        "ci95_mean": [
+          19.331669968186787,
+          40.32160126579079
+        ],
+        "debris_unit": "divisions",
+        "wear_unit": "%",
+        "gsd_factor": 1.4880115294604777,
+        "gsd_ci": [
+          1.2918924479158302,
+          2.3993327157185136
+        ],
+        "pi95_factor": 2.828223321119959
+      },
+      "phm_raadnui2015/dry_fourball": {
+        "n": 5,
+        "factor_wear_per_debris": 0.09408604220145148,
+        "ci95_mean": [
+          0.03050221112064463,
+          0.2902144799313233
+        ],
+        "debris_unit": "mg",
+        "wear_unit": "mm3",
+        "gsd_factor": 2.4773221905080542,
+        "gsd_ci": [
+          1.7220587653803814,
+          13.555970405355685
+        ],
+        "pi95_factor": 15.786119448375114
+      },
+      "soton_craig2010/bearings": {
+        "n": 6,
+        "factor_wear_per_debris": 0.00020453140420489027,
+        "ci95_mean": [
+          8.56496684282501e-05,
+          0.0004884209836850491
+        ],
+        "debris_unit": "count h",
+        "wear_unit": "mg",
+        "gsd_factor": 2.2920616591603267,
+        "gsd_ci": [
+          1.6782479945527662,
+          7.647087399187239
+        ],
+        "pi95_factor": 10.004255663167502
+      },
+      "uct_jordan1995/grease": {
+        "n": 7,
+        "factor_wear_per_debris": 0.00016457662156148315,
+        "ci95_mean": [
+          5.1783254262447904e-05,
+          0.0005230545038231294
+        ],
+        "debris_unit": "index",
+        "wear_unit": "mg/h",
+        "gsd_factor": 3.491295036972184,
+        "gsd_ci": [
+          2.2381900158145056,
+          15.69250529238739
+        ],
+        "pi95_factor": 26.325470890196495
+      }
+    },
+    "coverage_of_95_range": {
+      "feup_martins2008/fzg": {
+        "n": 14,
+        "outside_95_range": 1,
+        "within_2": 12
+      },
+      "feup_martins2008/fourball": {
+        "n": 6,
+        "outside_95_range": 0,
+        "within_2": 5
+      },
+      "jsme_higashi2003/plate_intervals": {
+        "n": 1,
+        "outside_95_range": 0,
+        "within_2": 1
+      },
+      "phm_bolander2009/rig_tests": {
+        "n": 7,
+        "outside_95_range": 0,
+        "within_2": 6
+      },
+      "phm_raadnui2015/dry_fourball": {
+        "n": 5,
+        "outside_95_range": 0,
+        "within_2": 2
+      },
+      "soton_craig2010/bearings": {
+        "n": 6,
+        "outside_95_range": 0,
+        "within_2": 4
+      },
+      "uct_jordan1995/grease": {
+        "n": 7,
+        "outside_95_range": 0,
+        "within_2": 3
+      }
+    }
+  },
+  "fzg_group_ratios": {
+    "ADI": {
+      "n": [
+        4,
+        10
+      ],
+      "ratio": 0.7550491100266826,
+      "pooled_ci": [
+        0.3591159558042438,
+        1.5875071807247956
+      ],
+      "df": 12
+    },
+    "micropitting": {
+      "n": [
+        4,
+        10
+      ],
+      "ratio": 1.3670194696141753,
+      "pooled_ci": [
+        0.6534525362855848,
+        2.8597979601191823
+      ],
+      "df": 12
+    },
+    "ester": {
+      "n": [
+        8,
+        6
+      ],
+      "ratio": 0.6978107677648637,
+      "pooled_ci": [
+        0.36082250769859914,
+        1.3495274192133746
+      ],
+      "df": 12
+    },
+    "coated": {
+      "n": [
+        2,
+        12
+      ],
+      "ratio": 1.8136848836158503,
+      "pooled_ci": [
+        0.7283909997341657,
+        4.516053683059185
+      ],
+      "df": 12
+    }
+  },
+  "gsd_sensitivity": {
+    "feup_martins2008/fzg/primary": 1.76712,
+    "feup_martins2008/fzg/without_scuffed": 1.81518,
+    "feup_martins2008/fzg/rows_not_units": 1.69242,
+    "feup_martins2008/fzg/interval_rows_only": 1.27399,
+    "feup_martins2008/fzg/cumulative_rows_only": 1.9084,
+    "feup_martins2008/fzg/last_sample_no_q": 1.77586,
+    "feup_martins2008/fzg/isuc": 4.30307,
+    "feup_martins2008/fzg/wear_second_reading": 1.76906,
+    "feup_martins2008/fzg/debris_second_reading": 1.76286,
+    "feup_martins2008/fourball/primary": 1.80175,
+    "feup_martins2008/fourball/no_elastic_correction": 1.71326,
+    "jsme_higashi2003/plate_intervals/primary": 1.80682,
+    "phm_bolander2009/rig_tests/primary": 1.48801,
+    "phm_raadnui2015/dry_fourball/primary": 2.47733,
+    "phm_raadnui2015/dry_fourball/three_ball_caps": 2.37431,
+    "phm_raadnui2015/dry_fourball/debris_fig10": 2.51823,
+    "soton_craig2010/bearings/primary": 2.29206,
+    "soton_craig2010/bearings/with_test_2": 3.02418,
+    "soton_craig2010/bearings/author_numbers": 2.65956,
+    "soton_craig2010/bearings/failed_element_mass": 2.62158,
+    "soton_craig2010/bearings/severity_index_integral": 1.8443,
+    "soton_craig2010/bearings/total_count_integral": 2.26396,
+    "soton_craig2010/bearings/printed_differences": 2.32987,
+    "uct_jordan1995/grease/primary": 3.4913,
+    "uct_jordan1995/grease/without_floor_readings": 2.33334,
+    "uct_jordan1995/grease/wear_second_reading": 3.52056,
+    "uct_jordan1995/grease/iron_ppm": 4.13091
+  }
+}

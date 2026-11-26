@@ -1,0 +1,229 @@
+{
+  "selected_by": "mean per-image pixel iou on 120 random trainO images (seed 0)",
+  "tune_image_ids": [
+    "trainO_116",
+    "trainO_348",
+    "trainO_167",
+    "trainO_347",
+    "trainO_8",
+    "trainO_342",
+    "trainO_230",
+    "trainO_69",
+    "trainO_268",
+    "trainO_43",
+    "trainO_79",
+    "trainO_415",
+    "trainO_214",
+    "trainO_127",
+    "trainO_19",
+    "trainO_241",
+    "trainO_326",
+    "trainO_213",
+    "trainO_369",
+    "trainO_32",
+    "trainO_416",
+    "trainO_142",
+    "trainO_320",
+    "trainO_260",
+    "trainO_67",
+    "trainO_73",
+    "trainO_270",
+    "trainO_178",
+    "trainO_284",
+    "trainO_301",
+    "trainO_25",
+    "trainO_93",
+    "trainO_65",
+    "trainO_209",
+    "trainO_245",
+    "trainO_9",
+    "trainO_340",
+    "trainO_242",
+    "trainO_387",
+    "trainO_158",
+    "trainO_77",
+    "trainO_70",
+    "trainO_373",
+    "trainO_219",
+    "trainO_184",
+    "trainO_95",
+    "trainO_405",
+    "trainO_351",
+    "trainO_223",
+    "trainO_207",
+    "trainO_125",
+    "trainO_78",
+    "trainO_84",
+    "trainO_160",
+    "trainO_368",
+    "trainO_74",
+    "trainO_312",
+    "trainO_179",
+    "trainO_153",
+    "trainO_323",
+    "trainO_148",
+    "trainO_26",
+    "trainO_155",
+    "trainO_299",
+    "trainO_175",
+    "trainO_60",
+    "trainO_180",
+    "trainO_263",
+    "trainO_98",
+    "trainO_295",
+    "trainO_28",
+    "trainO_240",
+    "trainO_173",
+    "trainO_81",
+    "trainO_247",
+    "trainO_16",
+    "trainO_352",
+    "trainO_171",
+    "trainO_22",
+    "trainO_318",
+    "trainO_128",
+    "trainO_338",
+    "trainO_375",
+    "trainO_111",
+    "trainO_303",
+    "trainO_217",
+    "trainO_332",
+    "trainO_126",
+    "trainO_257",
+    "trainO_189",
+    "trainO_102",
+    "trainO_3",
+    "trainO_428",
+    "trainO_10",
+    "trainO_300",
+    "trainO_272",
+    "trainO_168",
+    "trainO_382",
+    "trainO_359",
+    "trainO_390",
+    "trainO_314",
+    "trainO_298",
+    "trainO_7",
+    "trainO_39",
+    "trainO_402",
+    "trainO_132",
+    "trainO_40",
+    "trainO_290",
+    "trainO_122",
+    "trainO_106",
+    "trainO_381",
+    "trainO_417",
+    "trainO_202",
+    "trainO_55",
+    "trainO_169",
+    "trainO_281",
+    "trainO_361",
+    "trainO_212",
+    "trainO_297",
+    "trainO_134"
+  ],
+  "grids": {
+    "ours": [
+      {
+        "polarity": [
+          "both",
+          "dark"
+        ],
+        "smooth_sigma": [
+          0.5,
+          1.0,
+          2.0
+        ],
+        "noise_k": [
+          2.0,
+          3.0,
+          6.0
+        ],
+        "exclude_border": [
+          true,
+          false
+        ]
+      },
+      {
+        "polarity": [
+          "both"
+        ],
+        "smooth_sigma": [
+          3.0,
+          4.0
+        ],
+        "noise_k": [
+          2.0,
+          3.0,
+          6.0
+        ],
+        "exclude_border": [
+          false
+        ]
+      }
+    ],
+    "local": [
+      {
+        "block_size": [
+          25,
+          51,
+          101,
+          201
+        ],
+        "offset": [
+          0.0,
+          0.02,
+          0.05
+        ]
+      },
+      {
+        "block_size": [
+          401
+        ],
+        "offset": [
+          0.0,
+          0.02,
+          0.05,
+          0.08
+        ]
+      },
+      {
+        "block_size": [
+          25,
+          51,
+          101,
+          201
+        ],
+        "offset": [
+          0.08
+        ]
+      }
+    ]
+  },
+  "ours_defaults": {
+    "polarity": "both",
+    "smooth_sigma": 1.0,
+    "noise_k": 3.0,
+    "min_area_px": 30,
+    "split_ratio": 0.5,
+    "exclude_border": true
+  },
+  "local_defaults": {
+    "block_size": 51,
+    "offset": 0.02
+  },
+  "best": {
+    "ours": {
+      "polarity": "both",
+      "smooth_sigma": 2.0,
+      "noise_k": 2.0,
+      "exclude_border": false,
+      "train_iou": 0.5906797680128428
+    },
+    "local": {
+      "block_size": 201.0,
+      "offset": 0.05,
+      "train_iou": 0.5589700474953693
+    }
+  }
+}

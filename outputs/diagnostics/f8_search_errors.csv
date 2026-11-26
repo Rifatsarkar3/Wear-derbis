@@ -1,0 +1,20 @@
+topic,query,source,error
+oil_time_series,oil debris run-to-failure,datacite,<HTTPError 500: 'Internal Server Error'>
+labelled_particles,wear particle classification,openalex,<HTTPError 429: 'Too Many Requests'>
+labelled_particles,wear debris image,openalex,<HTTPError 429: 'Too Many Requests'>
+labelled_particles,ferrography,openalex,<HTTPError 429: 'Too Many Requests'>
+labelled_particles,ferrograph image,openalex,<HTTPError 429: 'Too Many Requests'>
+labelled_particles,wear particle recognition,openalex,<HTTPError 429: 'Too Many Requests'>
+labelled_particles,wear particle images dataset,openalex,<HTTPError 429: 'Too Many Requests'>
+labelled_particles,wear debris classification,openalex,<HTTPError 429: 'Too Many Requests'>
+labelled_particles,ferrogram,openalex,<HTTPError 429: 'Too Many Requests'>
+oil_time_series,oil debris run-to-failure,openalex,<HTTPError 429: 'Too Many Requests'>
+oil_time_series,oil debris monitoring gearbox,openalex,<HTTPError 429: 'Too Many Requests'>
+oil_time_series,wear debris sensor bearing,openalex,<HTTPError 429: 'Too Many Requests'>
+oil_time_series,lubricating oil analysis failure,openalex,<HTTPError 429: 'Too Many Requests'>
+oil_time_series,oil analysis engine failure,openalex,<HTTPError 429: 'Too Many Requests'>
+oil_time_series,inductive debris sensor,openalex,<HTTPError 429: 'Too Many Requests'>
+oil_time_series,oil particle counter gearbox,openalex,<HTTPError 429: 'Too Many Requests'>
+oil_time_series,oil condition monitoring,openalex,<HTTPError 429: 'Too Many Requests'>
+oil_time_series,spectrometric oil analysis,openalex,<HTTPError 429: 'Too Many Requests'>
+oil_time_series,gearbox run-to-failure oil,openalex,<HTTPError 429: 'Too Many Requests'>

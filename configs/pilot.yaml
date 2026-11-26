@@ -1,0 +1,39 @@
+# SIMULATION pilot of the physics chain image -> mechanism -> volume -> wear rate (synthetic data: software and design
+# verification, never evidence about real wear; the renderer is not calibrated to real ferrograms).
+# Frozen 2026-11-19 before any pilot result was seen (DESIGN sec. 15 [CORE]); config_hash is written to
+# outputs/pilot/config.yaml by run_cv. Budget: about 2.5-3 h on the shared RTX 5070, chosen from fold-0 timings only
+# (wall time and validation-loss epochs, no test metric looked at):
+#   - wearpg epochs are bound by CPU-side bag collation (~9-12 s/epoch whatever the model size), so the budget is set
+#     by epochs and seeds. GPU memory is not: the default size (hidden 128, 4 GINE layers on full contour graphs) peaks
+#     at 7.1 GiB allocated after 3 epochs and grew to ~11.5 GiB reserved in a longer fit, spilling into shared memory on
+#     this shared 12 GB card (0 % utilisation, 2x slower). hidden 64 / 3 layers (the smoke size) peaks at 3.6 GiB, so
+#     the pilot uses it for wearpg and, through the same keys, for the particle_gnn baseline (equal encoders).
+#   - epochs 30 (cosine schedule over 30) with patience 6: the 60-epoch timing run reached its best validation loss at
+#     epoch 37 of a 60-epoch cosine schedule; a 30-epoch schedule anneals twice as fast -> ~4-5 min per fit.
+#   - n_splits 5; seeds [0, 1, 2] for wearpg/full and the run baselines (the primary endpoint gets seed variance),
+#     secondary_seeds [0] for the wearpg ablations and the particle baselines: 15 + 15 wearpg fits + 15 deep particle fits.
+#   - particle_epochs 20 (same patience): ~35 s per 4 epochs at pilot scale; 128-particle batches give ~55 optimizer
+#     steps per epoch, so the BatchNorm problem of resnet18 at smoke scale (~3 steps/epoch) does not arise.
+#   - cv only: transfer / external protocols are not part of this pilot.
+base: default.yaml
+name: pilot
+model:
+  hidden: 64
+  gnn_layers: 3
+paths:
+  data_root: data/synthetic_pilot_v2   # renderer-upgraded pilot data (outputs/agent_logs/RENDER_DONE.md)
+  synthetic_config: ""                 # never generate here: a missing dataset is an error
+  output_dir: outputs/pilot
+train:
+  epochs: 30
+  early_stopping_patience: 6
+  particle_epochs: 20
+eval:
+  n_splits: 5
+  seeds: [0, 1, 2]
+  secondary_seeds: [0]
+  transfer: []
+baselines:
+  particle: [fourier_fractal_svm, multiview_svm, particle_gnn, contour_cnn, resnet18]
+  run: [physics_only, conditions_only, physics_conditions, descriptor_agg_rf]
+ablations: [no_physics, no_mechanism_link, with_conditions]

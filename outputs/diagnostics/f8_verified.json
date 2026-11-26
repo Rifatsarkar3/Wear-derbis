@@ -1,0 +1,33 @@
+{
+  "note": "F8 scouting (DIAG), 2026-11-19. Raw API hits: f8_search_hits.csv (DataCite, Zenodo, figshare; 18 fixed queries, 612 hits, 471 unique DOIs); errors: f8_search_errors.csv. A hit is VERIFIED only after its repository record was read.",
+  "openalex": "not queried: anonymous requests from this IP returned HTTP 429 'Insufficient budget' (daily free budget exhausted); OpenAlex now issues free API keys only against a user email - not requested (no personal data sent, no bypass). DataCite, which OpenAlex indexes for dataset records, was queried directly. Rerun: scripts/diag_scout.py --sources openalex once a key is configured.",
+  "a_sciencedb_39878": {
+    "doi": "10.57760/sciencedb.39878",
+    "access": "public, no login: the landing page's own download link https://china.scidb.cn/download?fileId=5934a34234781192afce97ccab5f05a0 (username is appended only when logged in); robots.txt of www.scidb.cn does not disallow it; 'canBot' only toggles the site's AI-chat button",
+    "licence": "CC-BY-NC-ND-4.0 (research use; no redistribution of derivatives) - kept under data/real/ (gitignored), never redistributed",
+    "file": "one zip, 128,022,019 B, md5 9741baf961875b2c90da38c65f29756b = repository md5",
+    "content": "enhanced-publication package of a Tribology (Mocaxue Xuebao) article: 18 figure images (Fig. 1 three example sequence frames, flow charts, network diagrams, result overlays; Fig. 11 is 10206 x 13113 px) + 1 docx with 3 result tables (WearIS vs 6 instance-segmentation baselines; per-class AP50 for block 86.5 / chain 77.3 / cutting 74.7 / sphere 90.6 / oxide 84.4 (bbox))",
+    "labels_masks_sequences": "NONE: no raw image set, no masks, no per-image class labels, no sequence stacks",
+    "supports_real_mechanism_classification": false,
+    "local_copy": "data/real/scidb_sequences/{raw,extracted,manifest.csv,provenance.json}"
+  },
+  "b_labelled_particle_sets": {
+    "verified_hits": [
+      {"doi": "10.5281/zenodo.22997504", "what": "Ferrographic Image Dataset, 429 ferrograms + foreground masks, NO class labels", "licence": "CC-BY-4.0", "status": "already used (ODI)"},
+      {"doi": "10.57760/sciencedb.39878", "what": "figures + tables only (see a)", "licence": "CC-BY-NC-ND-4.0", "status": "not a labelled dataset"}
+    ],
+    "conclusion": "no open labelled wear-particle (mechanism) classification image set found in DataCite / Zenodo / figshare"
+  },
+  "b_oil_time_series_with_failure": {
+    "verified_non_hits": [
+      {"doi": "10.5281/zenodo.23913602", "what": "inductive oil-debris sensor baseline calibration (temperature / frequency), raw records + code", "licence": "CC-BY-4.0", "why_not": "sensor calibration; no wear progression or failure events"},
+      {"doi": "10.5281/zenodo.18837971", "what": "ICP-AES wear metals (Fe Cu Al Ni Na Si V) vs oil hours, auxiliary diesel generators of 2 bulk carriers, 2021-2023", "licence": "CC-BY-4.0", "why_not": "record holds only README + CITATION (data file not deposited); no failure events"},
+      {"doi": "10.5281/zenodo.11162448", "what": "Lenze gearmotor run-to-failure (3 runs, 4.2 GB)", "licence": "CC-BY-NC-4.0", "why_not": "record states no oil-debris channel (channels only in the archive's notebook; not downloaded)"},
+      {"doi": "10.5281/zenodo.10868257", "what": "17 ball-bearing run-to-failure experiments, time-varying load/speed", "licence": "CC-BY-4.0", "why_not": "vibration; no oil debris"},
+      {"doi": "10.5281/zenodo.20742913", "what": "oscillating needle-bearing run-to-failure (8 tests)", "licence": "CC-BY-4.0", "why_not": "acceleration, movement, torque, temperature, load; no debris"},
+      {"doi": "10.25984/1844194", "what": "NREL wind-turbine gearbox condition-monitoring vibration benchmarking", "licence": "see OEDI", "why_not": "vibration only"},
+      {"doi": "10.7910/DVN/SO9SXL", "what": "Lubricating Oil Parameters (online sensors)", "licence": "CC0", "why_not": "already used (ODA): no unit id, time stamp or failure label"}
+    ],
+    "conclusion": "no open oil-analysis / debris time series with within-unit failure or onset events found; the NASA spur-gear reports (already used) remain the only in-time onset source"
+  }
+}

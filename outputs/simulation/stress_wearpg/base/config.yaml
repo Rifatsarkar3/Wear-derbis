@@ -1,0 +1,207 @@
+name: pilot
+seed: 0
+device: auto
+paths:
+  data_root: data\synthetic_pilot
+  synthetic_config: ''
+  cache_dir: cache
+  output_dir: outputs\simulation\stress_wearpg\base
+data:
+  label_source: adjudicated
+  crop_size: 64
+  crop_pad: 1.25
+  max_particles_per_sample: 32
+  max_views: 3
+  min_contour_points: 8
+  efd_order: 10
+  augment:
+    crop_rot90_flip: true
+    point_rotation: true
+graph:
+  n_nodes: 128
+  ring_hops:
+  - 1
+  - 2
+  - 4
+  - 8
+  - 16
+  curvature_scales:
+  - 1
+  - 2
+  - 4
+  - 8
+  roughness_window: 9
+  texture_depths_frac:
+  - 0.05
+  - 0.15
+  - 0.3
+  tex_out_frac: 0.1
+  interior_nodes: 16
+  interior_knn: 4
+model:
+  hidden: 64
+  gnn_layers: 3
+  conv: gine
+  dropout: 0.1
+  pooling:
+  - mean
+  - max
+  - attention
+  gnn_chunk_graphs: 1024
+  use_graph: true
+  edges: full
+  use_interior_nodes: true
+  use_texture_branch: true
+  use_multiview: true
+  use_composition: true
+  use_fractal_features: true
+  use_run_aggregation: true
+  aggregator: gated_attention
+  use_operating_conditions: false
+  physics_head: true
+  mechanism_link: true
+  image_backbone: small_cnn
+  image_pretrained: false
+  per_material_eta: true
+  init_log_eta: 0.0
+physics:
+  metal_fraction:
+    oxide: 0.47
+  min_run_coverage: 0.5
+loss:
+  mechanism: 1.0
+  severity: 1.0
+  rate_run: 1.0
+  rate_sample: 0.5
+  volume: 0.5
+  consistency: 0.5
+  monotone: 0.1
+  monotone_margin: 0.0
+  eta_offset_l2: 0.1
+train:
+  epochs: 30
+  batch_runs: 4
+  eval_batch_runs: 1
+  lr: 0.001
+  weight_decay: 0.0001
+  grad_clip: 1.0
+  amp: none
+  early_stopping_patience: 6
+  monitor: val_loss
+  num_workers: 0
+  class_weighting: balanced
+  label_smoothing: 0.05
+  particle_batch_size: 128
+  particle_epochs: 20
+eval:
+  split_level: specimen
+  n_splits: 5
+  val_fraction: 0.2
+  stratify: regime
+  seeds:
+  - 0
+  secondary_seeds: null
+  n_bootstrap: 1000
+  ci: 0.95
+  ece_bins: 15
+  transition_threshold: 0.5
+  multiplicity: holm
+  primary_metric: run.mae
+  claim_metrics:
+    runs:
+      metric: mae
+      better: min
+    particles:
+      metric: macro_f1
+      better: max
+  group_metrics_by:
+  - material_id
+  - magnification
+  external_by: material_id
+  shift_variants:
+  - full
+  - no_fractal
+  shift_baselines:
+  - particle_gnn
+  - contour_cnn
+  - fourier_fractal_svm
+  transfer: []
+gates:
+  min_runs_per_condition: 3
+  feature_regime_alpha: 0.05
+  min_abs_spearman: 0.3
+  detection_min_area_px: 30
+  frac_large_um: 15
+  graph_gate_mode: ci
+  graph_gate_proposed:
+  - particle_gnn
+  - default
+  graph_gate_baselines:
+  - contour_cnn
+  - fourier_fractal_svm
+  min_kappa: 0.6
+  min_double_rated: 100
+  reference_raters:
+  - SEMREF
+  min_validity_kappa: 0.6
+  min_sem_eds_fraction: 0.1
+  max_repeat_sd_log10: 0.2
+  require_external: true
+  wear_rate_proposed:
+  - wearpg
+  - full
+  wear_rate_baselines:
+  - conditions_only
+  - physics_only
+  min_volume_ccc: 0.8
+baselines:
+  particle: []
+  run:
+  - physics_only
+  - conditions_only
+  - physics_conditions
+  - descriptor_agg_rf
+  pretrained: false
+  grids:
+    svm:
+      C:
+      - 0.1
+      - 1
+      - 10
+      - 100
+      gamma:
+      - scale
+      - 0.01
+      - 0.1
+    cart:
+      max_depth:
+      - 3
+      - 5
+      - 8
+      - null
+      min_samples_leaf:
+      - 1
+      - 5
+      - 20
+    rf:
+      max_depth:
+      - null
+      - 8
+      min_samples_leaf:
+      - 1
+      - 5
+ablations: []
+profiling:
+  node_counts:
+  - 64
+  - 128
+  - 256
+  - 512
+  - 1024
+  - 2048
+  graphs_per_batch:
+  - 64
+  - 256
+  - 1024
+  vram_budget_fraction: 0.8
+config_hash: '438745165029'

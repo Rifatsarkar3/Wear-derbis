@@ -1,0 +1,28 @@
+# Smallest decisive pilot (doc sec. 12 "portfolio discipline") on tiny synthetic data:
+# verifies the pipeline end to end; on synthetic data it never yields a GO/NO-GO decision.
+base: default.yaml
+name: smoke
+paths:
+  data_root: data/synthetic_smoke
+  synthetic_config: configs/synthetic_smoke.yaml
+  output_dir: outputs/smoke
+model:
+  hidden: 64
+  gnn_layers: 3
+train:                          # ~2 run batches per epoch on smoke data: fewer epochs leave severity all 'mild'
+  epochs: 30
+  early_stopping_patience: 8
+  particle_epochs: 6
+  particle_batch_size: 32       # ~10 steps/epoch; with 128 BatchNorm statistics (resnet18) never settle
+eval:
+  n_splits: 3
+  seeds: [0]
+  n_bootstrap: 300
+  transfer: []
+baselines:
+  particle: [fourier_fractal_svm, fourier_fractal_cart, multiview_svm, particle_gnn, contour_cnn, fecnn, resnet18]
+  run: [physics_only, conditions_only, descriptor_agg_rf]
+ablations: [no_physics]
+profiling:
+  node_counts: [64, 128, 256]
+  graphs_per_batch: [64, 256]

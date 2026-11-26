@@ -1,0 +1,95 @@
+[
+  {
+    "name": "specimen_k3_f0",
+    "protocol": "cv",
+    "train_runs": [
+      "R000_AISI52100_F20_v0.4_r0",
+      "R002_AISI52100_F20_v0.4_r2",
+      "R004_AISI52100_F120_v0.4_r1",
+      "R007_CuSn12_F20_v0.4_r1",
+      "R009_CuSn12_F120_v0.4_r0",
+      "R011_CuSn12_F120_v0.4_r2"
+    ],
+    "val_runs": [
+      "R005_AISI52100_F120_v0.4_r2",
+      "R008_CuSn12_F20_v0.4_r2"
+    ],
+    "test_runs": [
+      "R001_AISI52100_F20_v0.4_r1",
+      "R003_AISI52100_F120_v0.4_r0",
+      "R006_CuSn12_F20_v0.4_r0",
+      "R010_CuSn12_F120_v0.4_r1"
+    ],
+    "meta": {
+      "level": "specimen",
+      "fold": 0,
+      "n_splits": 3,
+      "seed": 0,
+      "stratify": "regime",
+      "stratified": true,
+      "val_fraction": 0.2
+    }
+  },
+  {
+    "name": "specimen_k3_f1",
+    "protocol": "cv",
+    "train_runs": [
+      "R000_AISI52100_F20_v0.4_r0",
+      "R001_AISI52100_F20_v0.4_r1",
+      "R004_AISI52100_F120_v0.4_r1",
+      "R006_CuSn12_F20_v0.4_r0",
+      "R009_CuSn12_F120_v0.4_r0",
+      "R010_CuSn12_F120_v0.4_r1"
+    ],
+    "val_runs": [
+      "R003_AISI52100_F120_v0.4_r0",
+      "R008_CuSn12_F20_v0.4_r2"
+    ],
+    "test_runs": [
+      "R002_AISI52100_F20_v0.4_r2",
+      "R005_AISI52100_F120_v0.4_r2",
+      "R007_CuSn12_F20_v0.4_r1",
+      "R011_CuSn12_F120_v0.4_r2"
+    ],
+    "meta": {
+      "level": "specimen",
+      "fold": 1,
+      "n_splits": 3,
+      "seed": 0,
+      "stratify": "regime",
+      "stratified": true,
+      "val_fraction": 0.2
+    }
+  },
+  {
+    "name": "specimen_k3_f2",
+    "protocol": "cv",
+    "train_runs": [
+      "R002_AISI52100_F20_v0.4_r2",
+      "R003_AISI52100_F120_v0.4_r0",
+      "R006_CuSn12_F20_v0.4_r0",
+      "R007_CuSn12_F20_v0.4_r1",
+      "R010_CuSn12_F120_v0.4_r1",
+      "R011_CuSn12_F120_v0.4_r2"
+    ],
+    "val_runs": [
+      "R001_AISI52100_F20_v0.4_r1",
+      "R005_AISI52100_F120_v0.4_r2"
+    ],
+    "test_runs": [
+      "R000_AISI52100_F20_v0.4_r0",
+      "R004_AISI52100_F120_v0.4_r1",
+      "R008_CuSn12_F20_v0.4_r2",
+      "R009_CuSn12_F120_v0.4_r0"
+    ],
+    "meta": {
+      "level": "specimen",
+      "fold": 2,
+      "n_splits": 3,
+      "seed": 0,
+      "stratify": "regime",
+      "stratified": true,
+      "val_fraction": 0.2
+    }
+  }
+]

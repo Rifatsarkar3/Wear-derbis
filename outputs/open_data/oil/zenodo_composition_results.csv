@@ -1,0 +1,17 @@
+subset,task,features,n_units,pre_specified,balanced_accuracy,ba_lo,ba_hi,macro_f1,f1_lo,f1_hi,perm_p_balanced_accuracy,n_perm,confusion,note
+all_units,3class,composition,27,True,1.0,1.0,1.0,1.0,1.0,1.0,0.001,999.0,"[[9, 0, 0], [0, 9, 0], [0, 0, 9]]",
+all_units,3class,fe_only,27,True,0.8148148148148149,0.7037037037037037,0.9333333333333332,0.7993311036789298,0.6229960317460318,0.94541910331384,0.001,999.0,"[[4, 5, 0], [0, 9, 0], [0, 0, 9]]",
+all_units,3class,composition_plus_fe,27,False,1.0,1.0,1.0,1.0,1.0,1.0,,0.0,"[[9, 0, 0], [0, 9, 0], [0, 0, 9]]",
+all_units,3class,composition_minus_fe_only,27,True,0.18518518518518512,0.06666666666666676,0.2962962962962963,,,,0.0079960019990005,,,paired unit bootstrap; p two-sided
+all_units,infant_vs_useful,composition,18,True,1.0,1.0,1.0,1.0,1.0,1.0,0.001,999.0,"[[9, 0], [0, 9]]",
+all_units,infant_vs_useful,fe_only,18,True,0.9444444444444444,0.8180397727272729,1.0,0.9442724458204335,0.8036363636363637,1.0,0.001,999.0,"[[8, 1], [0, 9]]",
+all_units,infant_vs_useful,composition_plus_fe,18,False,1.0,1.0,1.0,1.0,1.0,1.0,,0.0,"[[9, 0], [0, 9]]",
+all_units,infant_vs_useful,composition_minus_fe_only,18,True,0.05555555555555558,0.0,0.18196022727272657,,,,0.7166416791604198,,,paired unit bootstrap; p two-sided
+excl_flagged,3class,composition,25,False,1.0,1.0,1.0,1.0,1.0,1.0,,0.0,"[[8, 0, 0], [0, 8, 0], [0, 0, 9]]",
+excl_flagged,3class,fe_only,25,False,0.8333333333333334,0.7142857142857143,0.9523809523809524,0.8222222222222223,0.6344086021505376,0.9568151147098516,,0.0,"[[4, 4, 0], [0, 8, 0], [0, 0, 9]]",
+excl_flagged,3class,composition_plus_fe,25,False,1.0,1.0,1.0,1.0,1.0,1.0,,0.0,"[[8, 0, 0], [0, 8, 0], [0, 0, 9]]",
+excl_flagged,3class,composition_minus_fe_only,25,False,0.16666666666666663,0.04761904761904756,0.2857142857142857,,,,0.020989505247376312,,,paired unit bootstrap; p two-sided
+excl_flagged,infant_vs_useful,composition,16,False,1.0,1.0,1.0,1.0,1.0,1.0,,0.0,"[[8, 0], [0, 8]]",
+excl_flagged,infant_vs_useful,fe_only,16,False,0.9375,0.7915178571428575,1.0,0.9372549019607843,0.75,1.0,,0.0,"[[7, 1], [0, 8]]",
+excl_flagged,infant_vs_useful,composition_plus_fe,16,False,1.0,1.0,1.0,1.0,1.0,1.0,,0.0,"[[8, 0], [0, 8]]",
+excl_flagged,infant_vs_useful,composition_minus_fe_only,16,False,0.0625,0.0,0.20848214285714198,,,,0.7116441779110445,,,paired unit bootstrap; p two-sided

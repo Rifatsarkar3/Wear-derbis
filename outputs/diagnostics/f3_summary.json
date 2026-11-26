@@ -1,0 +1,76 @@
+{
+  "note": "NEW analysis (DIAG); frozen pre-specified verdicts unchanged; rules: outputs/agent_logs/DIAG.md",
+  "status": "post_hoc_diagnostic",
+  "testO": "SECOND LOOK at testO (frozen benchmark scored it once); level 'none' reproduces the frozen objects",
+  "levels": [
+    "none",
+    "0",
+    "1",
+    "2",
+    "3",
+    "4",
+    "6",
+    "8",
+    "12",
+    "16"
+  ],
+  "reproduction_level_none": {
+    "n_rows": 1287,
+    "n_pred_equal": 1287,
+    "n_matched_equal": 1287,
+    "max_abs_f1_diff": 0.0
+  },
+  "chosen_level_trainO": {
+    "ours_tuned": "6",
+    "otsu": "6",
+    "local_tuned": "6"
+  },
+  "type_counts_testO": {
+    "chain_like": 2042,
+    "single_like": 185,
+    "intermediate": 165
+  },
+  "recall_single_minus_chain_ours_none": {
+    "point": 0.44710802869470845,
+    "lo": 0.3378988118078301,
+    "hi": 0.5492813437704487,
+    "se": 0.054898919186066736
+  },
+  "recall_single_minus_chain_ours_merged": {
+    "point": 0.19695317256531752,
+    "lo": 0.078980358801233,
+    "hi": 0.30358908707024873,
+    "se": 0.05724800041699109
+  },
+  "rules": {
+    "D_count": true,
+    "D_F1": true,
+    "D_type": true
+  },
+  "diagnosis": "deficit definitional",
+  "after_merge_vs_baselines": [
+    {
+      "a": "ours_tuned@6",
+      "b": "otsu@6",
+      "metric": "f1",
+      "diff": 0.030706293256831663,
+      "lo": -0.0005465453121965822,
+      "hi": 0.06365622082225272,
+      "p_value": 0.05697151424287856,
+      "rel_diff": 0.10006231247047549,
+      "p_holm": 0.11394302848575712
+    },
+    {
+      "a": "ours_tuned@6",
+      "b": "local_tuned@6",
+      "metric": "f1",
+      "diff": 0.04061250291918417,
+      "lo": -0.006898081705206782,
+      "hi": 0.09237523891057976,
+      "p_value": 0.09195402298850575,
+      "rel_diff": 0.13675831849924777,
+      "p_holm": 0.11394302848575712
+    }
+  ],
+  "object_level_verdict": "against_us (frozen, unchanged); after merging ours is not below the baselines"
+}

@@ -1,0 +1,273 @@
+{
+  "schema_version": "1.0",
+  "is_synthetic": true,
+  "name": "synthetic_smoke",
+  "generator": "wearpg.synthetic",
+  "seed": 0,
+  "generator_config": {
+    "name": "synthetic_smoke",
+    "seed": 0,
+    "rig": "pin_on_disc",
+    "lubricant_id": "PAO8",
+    "temperature_C": 40,
+    "duration_s": 1800,
+    "reservoir_volume_ml": 500,
+    "samples_per_run": 3,
+    "sampled_oil_ml": [
+      2.0,
+      5.0
+    ],
+    "repeats": 3,
+    "loads_N": [
+      20,
+      120
+    ],
+    "speeds_m_s": [
+      0.4
+    ],
+    "materials": [
+      {
+        "material_id": "AISI52100",
+        "counterface_id": "AISI52100",
+        "hardness_MPa": 7500,
+        "density_g_cm3": 7.81,
+        "ferromagnetic": true,
+        "composition": {
+          "Fe": 0.965,
+          "Cr": 0.015,
+          "C": 0.01,
+          "Si": 0.003,
+          "Mo": 0.002,
+          "Ni": 0.005
+        },
+        "color_rgb": [
+          120,
+          120,
+          128
+        ]
+      },
+      {
+        "material_id": "CuSn12",
+        "counterface_id": "AISI52100",
+        "hardness_MPa": 1000,
+        "density_g_cm3": 8.7,
+        "ferromagnetic": false,
+        "composition": {
+          "Cu": 0.875,
+          "Sn": 0.12,
+          "Fe": 0.005
+        },
+        "color_rgb": [
+          170,
+          120,
+          60
+        ]
+      }
+    ],
+    "capture": {
+      "ferrous": 0.6,
+      "nonferrous": 0.2,
+      "material_sigma": 0.2
+    },
+    "wear": {
+      "k_mild_ref": 2e-06,
+      "k_severe_ref": 0.00015,
+      "hardness_ref_MPa": 2000,
+      "run_sigma": 0.25,
+      "interval_sigma": 0.15,
+      "run_in_factor": 1.5,
+      "severity_ref": {
+        "load_N": 50,
+        "speed_m_s": 0.35,
+        "hardness_MPa": 2000
+      },
+      "hardness_exponent": 0.25,
+      "transition_time_scale": 1.2,
+      "mass_noise_rel": 0.02,
+      "mass_resolution_mg": 0.01
+    },
+    "debris": {
+      "sampling": "interval",
+      "imaged_fraction_range": [
+        0.05,
+        0.5
+      ],
+      "budget_sigma": 0.3,
+      "max_stored_per_sample": 20,
+      "metal_fraction": {
+        "oxide": 0.47
+      },
+      "expose_interval_volume": true,
+      "counterface_wear_ratio": 0.0
+    },
+    "imaging": {
+      "image_size_px": 384,
+      "magnifications": [
+        {
+          "magnification": 200,
+          "um_per_px": 0.5
+        },
+        {
+          "magnification": 500,
+          "um_per_px": 0.2
+        }
+      ],
+      "focus_sigmas_px": [
+        0.0,
+        1.0
+      ],
+      "min_area_px": 30,
+      "min_contrast": 0.05,
+      "max_luminance_ratio": 0.85,
+      "touching_fraction": 0.05,
+      "gaussian_noise": 0.02,
+      "background_rgb": [
+        215,
+        220,
+        226
+      ]
+    },
+    "multiview": {
+      "fraction": 0.3,
+      "n_views": 3,
+      "frame_size_px": 128
+    },
+    "annotation": {
+      "eds_fraction": 0.3,
+      "sem_fraction": 0.15,
+      "confocal_fraction": 0.2,
+      "label_fraction": 1.0,
+      "double_label_fraction": 1.0,
+      "rater_accuracy": [
+        0.88,
+        0.82
+      ],
+      "adjudicator_accuracy": 0.95,
+      "reference_accuracy": 0.97
+    }
+  },
+  "stats": {
+    "expected_severe_fraction": {
+      "AISI52100": 0.4845570509669201,
+      "CuSn12": 0.5814120540868349
+    },
+    "severe_fraction": {
+      "AISI52100": 0.5,
+      "CuSn12": 0.5
+    },
+    "median_n_total": {
+      "AISI52100|mild": 16.0,
+      "AISI52100|transition": 163.0,
+      "CuSn12|mild": 23.0,
+      "CuSn12|severe": 338.0,
+      "CuSn12|transition": 63.0
+    },
+    "empty_sample_fraction": 0.0,
+    "mean_ht_factor": 5.376388888888889,
+    "cramers_v_magnification_severity": 0.10284416890093027,
+    "cramers_v_magnification_material": 0.0,
+    "eta_material": {
+      "AISI52100": 0.6087286315863467,
+      "CuSn12": 0.16936045317981163
+    },
+    "n_drawn": 3927,
+    "n_detected": 3742,
+    "n_stored": 590,
+    "n_fov_dropped": 1,
+    "n_fov_images": 57,
+    "n_multiview_frames": 334,
+    "fractal": {
+      "achieved_D_mean_by_class": {
+        "cutting": 1.0487930964623173,
+        "fatigue_chunk": 1.1380449160327128,
+        "laminar": 1.0679712689862761,
+        "oxide": 1.1748692123070987,
+        "rubbing": 1.0295610219826543,
+        "severe_sliding": 1.0647825184936888,
+        "spherical": 1.0066776421475943
+      },
+      "target_D_mean_by_class": {
+        "cutting": 1.045259993111144,
+        "fatigue_chunk": 1.1512961777077844,
+        "laminar": 1.0747139061930568,
+        "oxide": 1.199570312390948,
+        "rubbing": 1.0362521162313367,
+        "severe_sliding": 1.0867957505393668,
+        "spherical": 1.009776369937223
+      },
+      "spearman_mag200": 0.8685777957110653,
+      "n_mag200": 148,
+      "spearman_mag500": 0.963350407618498,
+      "n_mag500": 167
+    }
+  },
+  "warning": "SYNTHETIC DATA - PIPELINE VERIFICATION ONLY - NOT EVIDENCE FOR ANY SCIENTIFIC CLAIM",
+  "describe": {
+    "is_synthetic": true,
+    "n_specimens": 12,
+    "n_runs": 12,
+    "n_samples": 36,
+    "n_images": 391,
+    "n_particles": 590,
+    "n_views": 924,
+    "n_labels": 1432,
+    "n_labels_adjudicated": 590,
+    "n_materials": 2,
+    "n_conditions": 4,
+    "n_labelled_particles": 590
+  },
+  "feature_cache": {
+    "dataset_key": "synthetic_smoke_17445481e26f",
+    "base_dir": "cache/synthetic_smoke_17445481e26f/base_e68bd407505e",
+    "graph_path": "cache/synthetic_smoke_17445481e26f/graphs_eaefc8b4cd7c.pt",
+    "base_inputs": {
+      "crop_size": 64,
+      "crop_pad": 1.25,
+      "efd_order": 10,
+      "max_views": 3,
+      "min_contour_points": 8,
+      "n_nodes": 128,
+      "curvature_scales": [
+        1,
+        2,
+        4,
+        8
+      ],
+      "roughness_window": 9,
+      "feature_version": 1
+    },
+    "graph_inputs": {
+      "n_nodes": 128,
+      "ring_hops": [
+        1,
+        2,
+        4,
+        8,
+        16
+      ],
+      "curvature_scales": [
+        1,
+        2,
+        4,
+        8
+      ],
+      "roughness_window": 9,
+      "texture_depths_frac": [
+        0.05,
+        0.15,
+        0.3
+      ],
+      "tex_out_frac": 0.1,
+      "interior_nodes": 16,
+      "interior_knn": 4,
+      "feature_version": 1
+    },
+    "rebuilt": {
+      "base": false,
+      "graphs": false
+    },
+    "n_particles": 590,
+    "n_views": 924,
+    "seconds": 0.11
+  }
+}

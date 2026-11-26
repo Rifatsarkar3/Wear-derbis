@@ -1,0 +1,21 @@
+unit,row,mode,material_pair,lubricant,cond_cycles_M,cond_hertz_MPa,debris,wear,pred_factor_error
+CM_mp,CM_mp:K3+K7,interval,20MnCr5 carburised gear pair,mineral gear oil,1.53,1180.0,277.0,27.0,0.932983072342008
+CM_mp,CM_mp:K9-1,interval,20MnCr5 carburised gear pair,mineral gear oil,1.44,1505.0,480.0,45.0,0.8973513360780131
+CM_mp,CM_mp:K9-2,interval,20MnCr5 carburised gear pair,mineral gear oil,1.44,1505.0,340.0,42.0,1.1823860314870471
+CE_mp,CE_mp:K3+K7,interval,20MnCr5 carburised gear pair,biodegradable ester gear oil,1.53,1180.0,396.0,31.0,0.7493965576531492
+CE_mp,CE_mp:K9-1,interval,20MnCr5 carburised gear pair,biodegradable ester gear oil,1.44,1505.0,419.0,58.0,1.3251284968322623
+CE_mp,CE_mp:K9-2,interval,20MnCr5 carburised gear pair,biodegradable ester gear oil,1.44,1505.0,364.0,38.0,0.9993637601766614
+AM_mp,AM_mp:K3+K5,interval,ADI gear pair,mineral gear oil,1.53,760.0,237.0,35.0,1.4968147161790464
+AM_mp,AM_mp:K7,interval,ADI gear pair,mineral gear oil,1.44,1046.0,756.0,155.0,2.0780772991831005
+AE_mp,AE_mp:K3+K5,interval,ADI gear pair,biodegradable ester gear oil,1.53,760.0,255.0,20.0,0.7671494811777011
+AE_mp,AE_mp:K7,interval,ADI gear pair,biodegradable ester gear oil,1.44,1046.0,649.0,132.0,1.989362518720335
+CM_pl,CM_pl:power loss F,cumulative,20MnCr5 carburised gear pair,mineral gear oil,4.9,1781.0,7691.24,923.0,1.1576884515264318
+CE_pl,CE_pl:power loss F,cumulative,20MnCr5 carburised gear pair,biodegradable ester gear oil,5.4,1781.0,625.037,105.0,1.6495265079676047
+MM_pl,MM_pl:power loss F,cumulative,"20MnCr5 carburised, MoS2/Ti coated",mineral gear oil,2.7,1781.0,699.343,106.0,1.4802867958932067
+ME_pl,ME_pl:power loss F,cumulative,"20MnCr5 carburised, MoS2/Ti coated",biodegradable ester gear oil,5.4,1781.0,735.359,133.0,1.7828370096680808
+AM_pl,AM_pl:power loss F,cumulative,ADI gear pair,mineral gear oil,3.6,1230.0,2123.22,150.0,0.6627828452022801
+AE_pl,AE_pl:power loss F,cumulative,ADI gear pair,biodegradable ester gear oil,3.6,1230.0,2591.73,73.0,0.2517635537036703
+M1_pI,M1_pI:power loss I,cumulative,20MnCr5 carburised gear pair,mineral gear oil,4.32,1500.0,386.782,55.0,1.3840847688880542
+E1_pI,E1_pI:power loss I,cumulative,20MnCr5 carburised gear pair,biodegradable ester gear oil,4.32,1500.0,8796.76,525.0,0.5549569611892822
+E2_pI,E2_pI:power loss I,cumulative,20MnCr5 carburised gear pair,biodegradable ester gear oil,4.32,1500.0,181.026,7.0,0.3514455430075259
+E3_pI,E3_pI:power loss I,cumulative,20MnCr5 carburised gear pair,biodegradable ester gear oil,4.32,1500.0,674.552,72.0,1.023346000176702

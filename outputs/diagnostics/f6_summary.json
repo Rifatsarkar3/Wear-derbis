@@ -1,0 +1,530 @@
+{
+  "note": "NEW analysis (DIAG); frozen pre-specified verdicts unchanged; rules: outputs/agent_logs/DIAG.md",
+  "status": "exploratory",
+  "primary": "pre-specified mass detector: detection 11/14 = 0.786 (< 0.80, against_us), false alarm 0/10 - unchanged and primary",
+  "bar": {
+    "detection": 0.8,
+    "false_alarm": 0.2
+  },
+  "t0_tabulated": {
+    "1": 60.0,
+    "2": 1573.0,
+    "3": 58.0,
+    "4": 64.0,
+    "5": 62.0,
+    "6": 60.0,
+    "18": 60.0,
+    "19": 62.0,
+    "20": 66.0,
+    "21": 62.0,
+    "22": 129.0,
+    "23": 62.0,
+    "24": 0.0
+  },
+  "t0_default_min": 60.0,
+  "table_3_9|runin_t0|mass": {
+    "detection": {
+      "k": 11,
+      "n": 14,
+      "rate": 0.7857142857142857,
+      "lo": 0.4920243229515283,
+      "hi": 0.9534207121102133
+    },
+    "false_alarm": {
+      "k": 0,
+      "n": 10,
+      "rate": 0.0,
+      "lo": 0.0,
+      "hi": 0.3084971078187629
+    },
+    "early_alarm_rate": 0.21428571428571427,
+    "reading_sensitivity": 0.78125,
+    "reading_specificity": 0.75,
+    "tau_min_median_max": {
+      "mass_mg": [
+        6.099,
+        9.5715,
+        9.635
+      ]
+    },
+    "missed_exps": [
+      20,
+      22,
+      23
+    ],
+    "false_alarm_exps": [],
+    "meets_bar": false
+  },
+  "table_3_9|runin_t0|rate": {
+    "detection": {
+      "k": 13,
+      "n": 14,
+      "rate": 0.9285714285714286,
+      "lo": 0.6613155100681788,
+      "hi": 0.9981932193408724
+    },
+    "false_alarm": {
+      "k": 0,
+      "n": 10,
+      "rate": 0.0,
+      "lo": 0.0,
+      "hi": 0.3084971078187629
+    },
+    "early_alarm_rate": 0.2857142857142857,
+    "reading_sensitivity": 0.8125,
+    "reading_specificity": 0.625,
+    "tau_min_median_max": {
+      "rate": [
+        0.0012080745853355584,
+        0.003232989018052668,
+        0.0033193668106619935
+      ]
+    },
+    "missed_exps": [
+      23
+    ],
+    "false_alarm_exps": [],
+    "meets_bar": true,
+    "mcnemar_vs_mass": {
+      "new_only": 2,
+      "mass_only": 0,
+      "p_exact": 0.5
+    }
+  },
+  "table_3_9|runin_t0|mass_or_rate": {
+    "detection": {
+      "k": 13,
+      "n": 14,
+      "rate": 0.9285714285714286,
+      "lo": 0.6613155100681788,
+      "hi": 0.9981932193408724
+    },
+    "false_alarm": {
+      "k": 0,
+      "n": 10,
+      "rate": 0.0,
+      "lo": 0.0,
+      "hi": 0.3084971078187629
+    },
+    "early_alarm_rate": 0.2857142857142857,
+    "reading_sensitivity": 0.9375,
+    "reading_specificity": 0.5416666666666667,
+    "tau_min_median_max": {
+      "mass_mg": [
+        6.099,
+        9.5715,
+        9.635
+      ],
+      "rate": [
+        0.0012080745853355584,
+        0.003232989018052668,
+        0.0033193668106619935
+      ]
+    },
+    "missed_exps": [
+      23
+    ],
+    "false_alarm_exps": [],
+    "meets_bar": true,
+    "mcnemar_vs_mass": {
+      "new_only": 2,
+      "mass_only": 0,
+      "p_exact": 0.5
+    }
+  },
+  "table_3_9|runin_t0|auc_rate": {
+    "point": 0.79296875,
+    "lo": 0.6340568823160535,
+    "hi": 0.9548919907189849,
+    "se": 0.08238037356803757
+  },
+  "table_3_9|runin_t0|auc_rate_minus_mass": {
+    "diff": -0.13151041666666674,
+    "lo": -0.29729729729729726,
+    "hi": 0.00220885093167671,
+    "p_value": 0.06096951524237881,
+    "rel_diff": -0.14225352112676062
+  },
+  "table_3_9|zero_t0|mass": {
+    "detection": {
+      "k": 11,
+      "n": 14,
+      "rate": 0.7857142857142857,
+      "lo": 0.4920243229515283,
+      "hi": 0.9534207121102133
+    },
+    "false_alarm": {
+      "k": 0,
+      "n": 10,
+      "rate": 0.0,
+      "lo": 0.0,
+      "hi": 0.3084971078187629
+    },
+    "early_alarm_rate": 0.21428571428571427,
+    "reading_sensitivity": 0.78125,
+    "reading_specificity": 0.75,
+    "tau_min_median_max": {
+      "mass_mg": [
+        6.099,
+        9.5715,
+        9.635
+      ]
+    },
+    "missed_exps": [
+      20,
+      22,
+      23
+    ],
+    "false_alarm_exps": [],
+    "meets_bar": false
+  },
+  "table_3_9|zero_t0|rate": {
+    "detection": {
+      "k": 12,
+      "n": 14,
+      "rate": 0.8571428571428571,
+      "lo": 0.5718708390903011,
+      "hi": 0.9822054845168084
+    },
+    "false_alarm": {
+      "k": 0,
+      "n": 10,
+      "rate": 0.0,
+      "lo": 0.0,
+      "hi": 0.3084971078187629
+    },
+    "early_alarm_rate": 0.2857142857142857,
+    "reading_sensitivity": 0.78125,
+    "reading_specificity": 0.625,
+    "tau_min_median_max": {
+      "rate": [
+        0.001201276730933795,
+        0.003127594671388514,
+        0.0031776102298087944
+      ]
+    },
+    "missed_exps": [
+      5,
+      23
+    ],
+    "false_alarm_exps": [],
+    "meets_bar": true,
+    "mcnemar_vs_mass": {
+      "new_only": 2,
+      "mass_only": 1,
+      "p_exact": 1.0
+    }
+  },
+  "table_3_9|zero_t0|mass_or_rate": {
+    "detection": {
+      "k": 13,
+      "n": 14,
+      "rate": 0.9285714285714286,
+      "lo": 0.6613155100681788,
+      "hi": 0.9981932193408724
+    },
+    "false_alarm": {
+      "k": 0,
+      "n": 10,
+      "rate": 0.0,
+      "lo": 0.0,
+      "hi": 0.3084971078187629
+    },
+    "early_alarm_rate": 0.2857142857142857,
+    "reading_sensitivity": 0.9375,
+    "reading_specificity": 0.5416666666666667,
+    "tau_min_median_max": {
+      "mass_mg": [
+        6.099,
+        9.5715,
+        9.635
+      ],
+      "rate": [
+        0.001201276730933795,
+        0.003127594671388514,
+        0.0031776102298087944
+      ]
+    },
+    "missed_exps": [
+      23
+    ],
+    "false_alarm_exps": [],
+    "meets_bar": true,
+    "mcnemar_vs_mass": {
+      "new_only": 2,
+      "mass_only": 0,
+      "p_exact": 0.5
+    }
+  },
+  "table_3_9|zero_t0|auc_rate": {
+    "point": 0.80859375,
+    "lo": 0.6538161057692309,
+    "hi": 0.9652536231884056,
+    "se": 0.07961747060801254
+  },
+  "table_3_9|zero_t0|auc_rate_minus_mass": {
+    "diff": -0.11588541666666674,
+    "lo": -0.2784741098694586,
+    "hi": 0.013157894736842039,
+    "p_value": 0.10394802598700649,
+    "rel_diff": -0.12535211267605642
+  },
+  "table_3_14|runin_t0|mass": {
+    "detection": {
+      "k": 11,
+      "n": 14,
+      "rate": 0.7857142857142857,
+      "lo": 0.4920243229515283,
+      "hi": 0.9534207121102133
+    },
+    "false_alarm": {
+      "k": 0,
+      "n": 10,
+      "rate": 0.0,
+      "lo": 0.0,
+      "hi": 0.3084971078187629
+    },
+    "early_alarm_rate": 0.21428571428571427,
+    "reading_sensitivity": 0.8181818181818182,
+    "reading_specificity": 0.7391304347826086,
+    "tau_min_median_max": {
+      "mass_mg": [
+        6.099,
+        6.3975,
+        9.5715
+      ]
+    },
+    "missed_exps": [
+      20,
+      22,
+      23
+    ],
+    "false_alarm_exps": [],
+    "meets_bar": false
+  },
+  "table_3_14|runin_t0|rate": {
+    "detection": {
+      "k": 13,
+      "n": 14,
+      "rate": 0.9285714285714286,
+      "lo": 0.6613155100681788,
+      "hi": 0.9981932193408724
+    },
+    "false_alarm": {
+      "k": 1,
+      "n": 10,
+      "rate": 0.1,
+      "lo": 0.002528578544462573,
+      "hi": 0.4450161170281953
+    },
+    "early_alarm_rate": 0.35714285714285715,
+    "reading_sensitivity": 0.8181818181818182,
+    "reading_specificity": 0.5652173913043479,
+    "tau_min_median_max": {
+      "rate": [
+        0.0005885673470614444,
+        0.0012080745853355584,
+        0.003232989018052668
+      ]
+    },
+    "missed_exps": [
+      23
+    ],
+    "false_alarm_exps": [
+      11
+    ],
+    "meets_bar": true,
+    "mcnemar_vs_mass": {
+      "new_only": 2,
+      "mass_only": 0,
+      "p_exact": 0.5
+    }
+  },
+  "table_3_14|runin_t0|mass_or_rate": {
+    "detection": {
+      "k": 13,
+      "n": 14,
+      "rate": 0.9285714285714286,
+      "lo": 0.6613155100681788,
+      "hi": 0.9981932193408724
+    },
+    "false_alarm": {
+      "k": 1,
+      "n": 10,
+      "rate": 0.1,
+      "lo": 0.002528578544462573,
+      "hi": 0.4450161170281953
+    },
+    "early_alarm_rate": 0.35714285714285715,
+    "reading_sensitivity": 0.9393939393939394,
+    "reading_specificity": 0.4782608695652174,
+    "tau_min_median_max": {
+      "mass_mg": [
+        6.099,
+        6.3975,
+        9.5715
+      ],
+      "rate": [
+        0.0005885673470614444,
+        0.0012080745853355584,
+        0.003232989018052668
+      ]
+    },
+    "missed_exps": [
+      23
+    ],
+    "false_alarm_exps": [
+      11
+    ],
+    "meets_bar": true,
+    "mcnemar_vs_mass": {
+      "new_only": 2,
+      "mass_only": 0,
+      "p_exact": 0.5
+    }
+  },
+  "table_3_14|runin_t0|auc_rate": {
+    "point": 0.7891963109354414,
+    "lo": 0.6282311438561439,
+    "hi": 0.9557019704433495,
+    "se": 0.08446012273694511
+  },
+  "table_3_14|runin_t0|auc_rate_minus_mass": {
+    "diff": -0.13438735177865602,
+    "lo": -0.2995588081273565,
+    "hi": -0.0033283699059561043,
+    "p_value": 0.04597701149425287,
+    "rel_diff": -0.14550641940085582
+  },
+  "table_3_14|zero_t0|mass": {
+    "detection": {
+      "k": 11,
+      "n": 14,
+      "rate": 0.7857142857142857,
+      "lo": 0.4920243229515283,
+      "hi": 0.9534207121102133
+    },
+    "false_alarm": {
+      "k": 0,
+      "n": 10,
+      "rate": 0.0,
+      "lo": 0.0,
+      "hi": 0.3084971078187629
+    },
+    "early_alarm_rate": 0.21428571428571427,
+    "reading_sensitivity": 0.8181818181818182,
+    "reading_specificity": 0.7391304347826086,
+    "tau_min_median_max": {
+      "mass_mg": [
+        6.099,
+        6.3975,
+        9.5715
+      ]
+    },
+    "missed_exps": [
+      20,
+      22,
+      23
+    ],
+    "false_alarm_exps": [],
+    "meets_bar": false
+  },
+  "table_3_14|zero_t0|rate": {
+    "detection": {
+      "k": 13,
+      "n": 14,
+      "rate": 0.9285714285714286,
+      "lo": 0.6613155100681788,
+      "hi": 0.9981932193408724
+    },
+    "false_alarm": {
+      "k": 1,
+      "n": 10,
+      "rate": 0.1,
+      "lo": 0.002528578544462573,
+      "hi": 0.4450161170281953
+    },
+    "early_alarm_rate": 0.35714285714285715,
+    "reading_sensitivity": 0.7878787878787878,
+    "reading_specificity": 0.5652173913043479,
+    "tau_min_median_max": {
+      "rate": [
+        0.0005868206903889058,
+        0.001201276730933795,
+        0.003127594671388514
+      ]
+    },
+    "missed_exps": [
+      23
+    ],
+    "false_alarm_exps": [
+      11
+    ],
+    "meets_bar": true,
+    "mcnemar_vs_mass": {
+      "new_only": 2,
+      "mass_only": 0,
+      "p_exact": 0.5
+    }
+  },
+  "table_3_14|zero_t0|mass_or_rate": {
+    "detection": {
+      "k": 13,
+      "n": 14,
+      "rate": 0.9285714285714286,
+      "lo": 0.6613155100681788,
+      "hi": 0.9981932193408724
+    },
+    "false_alarm": {
+      "k": 1,
+      "n": 10,
+      "rate": 0.1,
+      "lo": 0.002528578544462573,
+      "hi": 0.4450161170281953
+    },
+    "early_alarm_rate": 0.35714285714285715,
+    "reading_sensitivity": 0.9393939393939394,
+    "reading_specificity": 0.4782608695652174,
+    "tau_min_median_max": {
+      "mass_mg": [
+        6.099,
+        6.3975,
+        9.5715
+      ],
+      "rate": [
+        0.0005868206903889058,
+        0.001201276730933795,
+        0.003127594671388514
+      ]
+    },
+    "missed_exps": [
+      23
+    ],
+    "false_alarm_exps": [
+      11
+    ],
+    "meets_bar": true,
+    "mcnemar_vs_mass": {
+      "new_only": 2,
+      "mass_only": 0,
+      "p_exact": 0.5
+    }
+  },
+  "table_3_14|zero_t0|auc_rate": {
+    "point": 0.8063241106719368,
+    "lo": 0.6514953483668723,
+    "hi": 0.9667187499999997,
+    "se": 0.08180997056148631
+  },
+  "table_3_14|zero_t0|auc_rate_minus_mass": {
+    "diff": -0.11725955204216065,
+    "lo": -0.2777328518173346,
+    "hi": 0.006076501623376465,
+    "p_value": 0.07896051974012994,
+    "rel_diff": -0.1269614835948644
+  },
+  "reproduction_frozen_mass_alarms": {
+    "n": 56,
+    "equal": true
+  }
+}

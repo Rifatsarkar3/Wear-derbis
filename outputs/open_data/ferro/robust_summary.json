@@ -1,0 +1,174 @@
+{
+  "n_candidates": 6692,
+  "n_selected": 300,
+  "n_images": 172,
+  "min_selection_area_px": 120,
+  "seed": 0,
+  "seg_cfg": {
+    "polarity": "both",
+    "smooth_sigma": 2.0,
+    "noise_k": 2.0,
+    "exclude_border": false
+  },
+  "graph_cfg_n_nodes": 128,
+  "chord_hop": {
+    "mask": {
+      "n_particles": 300,
+      "median_of_median_hop": 33.0,
+      "fraction_median_hop_gt_n_over_8": 1.0,
+      "n_over_8": 16.0
+    },
+    "pipeline": {
+      "n_particles": 87,
+      "median_of_median_hop": 36.0,
+      "fraction_median_hop_gt_n_over_8": 1.0,
+      "n_over_8": 16.0
+    }
+  },
+  "group_median_spearman": [
+    {
+      "mode": "mask",
+      "transform": "blur1",
+      "efd": 0.9461,
+      "fractal": 0.9768,
+      "graph_geom": 0.9938,
+      "graph_tex": 0.9721,
+      "shape": 0.9999
+    },
+    {
+      "mode": "mask",
+      "transform": "blur2",
+      "efd": 0.823,
+      "fractal": 0.8817,
+      "graph_geom": 0.9635,
+      "graph_tex": 0.8704,
+      "shape": 0.9951
+    },
+    {
+      "mode": "mask",
+      "transform": "rot45",
+      "efd": 0.8772,
+      "fractal": 0.9043,
+      "graph_geom": 0.9835,
+      "graph_tex": 0.9941,
+      "shape": 0.9993
+    },
+    {
+      "mode": "mask",
+      "transform": "rot90",
+      "efd": 1.0,
+      "fractal": 1.0,
+      "graph_geom": 1.0,
+      "graph_tex": 1.0,
+      "shape": 1.0
+    },
+    {
+      "mode": "mask",
+      "transform": "rot_random",
+      "efd": 0.8337,
+      "fractal": 0.802,
+      "graph_geom": 0.9782,
+      "graph_tex": 0.9954,
+      "shape": 0.9997
+    },
+    {
+      "mode": "mask",
+      "transform": "scale0.25",
+      "efd": 0.6543,
+      "fractal": 0.7266,
+      "graph_geom": 0.9021,
+      "graph_tex": 0.834,
+      "shape": 0.9897
+    },
+    {
+      "mode": "mask",
+      "transform": "scale0.5",
+      "efd": 0.6914,
+      "fractal": 0.7166,
+      "graph_geom": 0.9464,
+      "graph_tex": 0.9467,
+      "shape": 0.997
+    },
+    {
+      "mode": "pipeline",
+      "transform": "blur1",
+      "efd": 0.79,
+      "fractal": 0.8683,
+      "graph_geom": 0.9302,
+      "graph_tex": 0.9356,
+      "shape": 0.9975
+    },
+    {
+      "mode": "pipeline",
+      "transform": "blur2",
+      "efd": 0.568,
+      "fractal": 0.7353,
+      "graph_geom": 0.8362,
+      "graph_tex": 0.7801,
+      "shape": 0.9848
+    },
+    {
+      "mode": "pipeline",
+      "transform": "noise0.02",
+      "efd": 0.7944,
+      "fractal": 0.8902,
+      "graph_geom": 0.977,
+      "graph_tex": 0.9882,
+      "shape": 0.9982
+    },
+    {
+      "mode": "pipeline",
+      "transform": "noise0.05",
+      "efd": 0.7585,
+      "fractal": 0.7944,
+      "graph_geom": 0.9393,
+      "graph_tex": 0.9748,
+      "shape": 0.996
+    },
+    {
+      "mode": "pipeline",
+      "transform": "rot45",
+      "efd": 0.6968,
+      "fractal": 0.8185,
+      "graph_geom": 0.8955,
+      "graph_tex": 0.9728,
+      "shape": 0.9893
+    },
+    {
+      "mode": "pipeline",
+      "transform": "rot90",
+      "efd": 0.9696,
+      "fractal": 0.969,
+      "graph_geom": 0.9914,
+      "graph_tex": 0.9985,
+      "shape": 0.9997
+    },
+    {
+      "mode": "pipeline",
+      "transform": "rot_random",
+      "efd": 0.6536,
+      "fractal": 0.799,
+      "graph_geom": 0.8879,
+      "graph_tex": 0.9681,
+      "shape": 0.982
+    },
+    {
+      "mode": "pipeline",
+      "transform": "scale0.25",
+      "efd": 0.3007,
+      "fractal": 0.5594,
+      "graph_geom": 0.4301,
+      "graph_tex": 0.7727,
+      "shape": 0.8836
+    },
+    {
+      "mode": "pipeline",
+      "transform": "scale0.5",
+      "efd": 0.2855,
+      "fractal": 0.6285,
+      "graph_geom": 0.7222,
+      "graph_tex": 0.8287,
+      "shape": 0.9465
+    }
+  ]
+}

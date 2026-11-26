@@ -1,0 +1,106 @@
+{
+  "source": {
+    "name": "zenodo_ferro",
+    "title": "Ferrographic Image Dataset",
+    "creator": "Li, Zhenlin (ORCID 0009-0007-9916-5399)",
+    "published": "2026-09-27",
+    "doi": "10.5281/zenodo.22997504",
+    "url": "https://zenodo.org/records/22997504",
+    "license": "CC-BY-4.0",
+    "citation": "Li, Z. (2026). Ferrographic Image Dataset [Data set]. Zenodo. https://doi.org/10.5281/zenodo.22997504"
+  },
+  "validate_errors": [],
+  "describe": {
+    "is_synthetic": false,
+    "n_specimens": 429,
+    "n_runs": 429,
+    "n_samples": 429,
+    "n_images": 429,
+    "n_particles": 11844,
+    "n_views": 11844,
+    "n_labels": 0,
+    "n_labels_adjudicated": 0,
+    "n_materials": 1,
+    "n_conditions": 429,
+    "n_labelled_particles": 0
+  },
+  "n_images": {
+    "trainO": 343,
+    "testO": 86
+  },
+  "n_particles": {
+    "trainO": 9452,
+    "testO": 2392
+  },
+  "n_particles_touching_border": 4760,
+  "particles_per_image_quantiles": {
+    "0.0": 1.0,
+    "0.25": 7.0,
+    "0.5": 22.0,
+    "0.75": 43.0,
+    "1.0": 267.0
+  },
+  "particle_area_px_quantiles": {
+    "0.0": 32.0,
+    "0.1": 166.0,
+    "0.25": 303.0,
+    "0.5": 649.5,
+    "0.75": 1552.25,
+    "0.9": 3170.0,
+    "1.0": 162047.0
+  },
+  "min_area_px": 30,
+  "orphan_testO_masks_skipped": [
+    "109",
+    "114",
+    "117",
+    "151",
+    "167",
+    "182",
+    "186",
+    "226",
+    "231",
+    "241",
+    "243",
+    "251",
+    "261",
+    "290",
+    "31",
+    "37",
+    "4",
+    "46",
+    "58",
+    "66",
+    "69",
+    "8",
+    "93"
+  ],
+  "meta": {
+    "schema_version": "1.0",
+    "is_synthetic": false,
+    "name": "zenodo_ferro",
+    "units": "px, uncalibrated",
+    "unit_of_inference": "source image",
+    "placeholders": {
+      "specimens.hardness_MPa": 1.0,
+      "specimens.density_g_cm3": 1.0,
+      "runs.load_N": 1.0,
+      "runs.speed_m_s": 1.0,
+      "runs.duration_s": 1.0,
+      "runs.sliding_distance_m": 1.0,
+      "runs.reservoir_volume_ml": 1.0,
+      "samples.t_end_s": 1.0,
+      "samples.time_s": 1.0,
+      "samples.sliding_distance_end_m": 1.0,
+      "samples.sampled_oil_ml": 1.0,
+      "samples.imaged_fraction": 1.0,
+      "samples.observation_fraction": 1.0,
+      "images.magnification": 1.0,
+      "images.um_per_px": 1.0,
+      "views.um_per_px": 1.0
+    },
+    "particles_from": "connected components (4-conn) of the GT foreground masks, >= 30 px; a component can be a chain or agglomerate of several particles",
+    "labels": "none",
+    "wear_fields": "none"
+  }
+}

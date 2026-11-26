@@ -1,0 +1,3678 @@
+{
+  "config_hash": "ec2c4200509e",
+  "cv": {
+    "contour_cnn|default": {
+      "particle.macro_f1": {
+        "point": 0.8713274530591185,
+        "lo": 0.8641808658811424,
+        "hi": 0.8781175930369574,
+        "seed_mean": 0.8713274530591185,
+        "seed_sd": NaN
+      },
+      "particle.balanced_accuracy": {
+        "point": 0.880719518132594,
+        "lo": 0.873809054770578,
+        "hi": 0.8873229932595239,
+        "seed_mean": 0.880719518132594,
+        "seed_sd": NaN
+      },
+      "particle.accuracy": {
+        "point": 0.8934923000496771,
+        "lo": 0.8858868108713746,
+        "hi": 0.9023296926603782,
+        "seed_mean": 0.8934923000496771,
+        "seed_sd": NaN
+      },
+      "particle.ece": {
+        "point": 0.07612238246086989,
+        "lo": 0.06754884747583914,
+        "hi": 0.08666049961121011,
+        "seed_mean": 0.07612238246086989,
+        "seed_sd": NaN
+      },
+      "particle.brier": {
+        "point": 0.17383692509959714,
+        "lo": 0.1633652905543864,
+        "hi": 0.18361420837608383,
+        "seed_mean": 0.17383692509959717,
+        "seed_sd": NaN
+      },
+      "particle.log_loss": {
+        "point": 0.39042738649528586,
+        "lo": 0.37332069675622204,
+        "hi": 0.406789259792254,
+        "seed_mean": 0.39042738649528586,
+        "seed_sd": NaN
+      },
+      "particle.rubbing|sensitivity": {
+        "point": 0.9710407239819004,
+        "lo": 0.9647244615276578,
+        "hi": 0.9772866262258125,
+        "seed_mean": 0.9710407239819004,
+        "seed_sd": NaN
+      },
+      "particle.rubbing|specificity": {
+        "point": 0.9868148148148148,
+        "lo": 0.9829817383089955,
+        "hi": 0.9897998908133027,
+        "seed_mean": 0.9868148148148148,
+        "seed_sd": NaN
+      },
+      "particle.rubbing|f1": {
+        "point": 0.9720670391061452,
+        "lo": 0.9684177235675776,
+        "hi": 0.9756180564481033,
+        "seed_mean": 0.9720670391061452,
+        "seed_sd": NaN
+      },
+      "particle.cutting|sensitivity": {
+        "point": 0.9888309754281459,
+        "lo": 0.9843740339035449,
+        "hi": 0.9930016911548794,
+        "seed_mean": 0.9888309754281459,
+        "seed_sd": NaN
+      },
+      "particle.cutting|specificity": {
+        "point": 0.9961018115111213,
+        "lo": 0.9946620236899197,
+        "hi": 0.9975546414727117,
+        "seed_mean": 0.9961018115111213,
+        "seed_sd": NaN
+      },
+      "particle.cutting|f1": {
+        "point": 0.9818853974121996,
+        "lo": 0.9773016273117342,
+        "hi": 0.9865434439449572,
+        "seed_mean": 0.9818853974121996,
+        "seed_sd": NaN
+      },
+      "particle.spherical|sensitivity": {
+        "point": 0.9712230215827338,
+        "lo": 0.954971576585661,
+        "hi": 0.9854014598540146,
+        "seed_mean": 0.9712230215827338,
+        "seed_sd": NaN
+      },
+      "particle.spherical|specificity": {
+        "point": 0.99212271973466,
+        "lo": 0.9897673601792321,
+        "hi": 0.9940718219024642,
+        "seed_mean": 0.99212271973466,
+        "seed_sd": NaN
+      },
+      "particle.spherical|f1": {
+        "point": 0.9020044543429844,
+        "lo": 0.879816256399467,
+        "hi": 0.9221682204010777,
+        "seed_mean": 0.9020044543429844,
+        "seed_sd": NaN
+      },
+      "particle.fatigue_chunk|sensitivity": {
+        "point": 0.7340696686491079,
+        "lo": 0.6934094042277126,
+        "hi": 0.7702577030812324,
+        "seed_mean": 0.7340696686491079,
+        "seed_sd": NaN
+      },
+      "particle.fatigue_chunk|specificity": {
+        "point": 0.9679342934293429,
+        "lo": 0.9638172664740562,
+        "hi": 0.9723331684798376,
+        "seed_mean": 0.9679342934293429,
+        "seed_sd": NaN
+      },
+      "particle.fatigue_chunk|f1": {
+        "point": 0.7429062768701634,
+        "lo": 0.7129054005063409,
+        "hi": 0.7658503761526709,
+        "seed_mean": 0.7429062768701634,
+        "seed_sd": NaN
+      },
+      "particle.laminar|sensitivity": {
+        "point": 0.8161350844277674,
+        "lo": 0.7825393433726767,
+        "hi": 0.8498558274606104,
+        "seed_mean": 0.8161350844277674,
+        "seed_sd": NaN
+      },
+      "particle.laminar|specificity": {
+        "point": 0.9728858762084676,
+        "lo": 0.9665080103457011,
+        "hi": 0.9795053470179018,
+        "seed_mean": 0.9728858762084676,
+        "seed_sd": NaN
+      },
+      "particle.laminar|f1": {
+        "point": 0.7981651376146789,
+        "lo": 0.7793067528735632,
+        "hi": 0.8201684324826453,
+        "seed_mean": 0.7981651376146789,
+        "seed_sd": NaN
+      },
+      "particle.severe_sliding|sensitivity": {
+        "point": 0.8306650246305419,
+        "lo": 0.8094005061522703,
+        "hi": 0.8509102489866821,
+        "seed_mean": 0.8306650246305419,
+        "seed_sd": NaN
+      },
+      "particle.severe_sliding|specificity": {
+        "point": 0.9877976543063618,
+        "lo": 0.98490598618549,
+        "hi": 0.9904480692937673,
+        "seed_mean": 0.9877976543063618,
+        "seed_sd": NaN
+      },
+      "particle.severe_sliding|f1": {
+        "point": 0.8771131339401821,
+        "lo": 0.8642239358330962,
+        "hi": 0.8883495982014413,
+        "seed_mean": 0.8771131339401821,
+        "seed_sd": NaN
+      },
+      "particle.oxide|sensitivity": {
+        "point": 0.8530721282279609,
+        "lo": 0.8298578849755114,
+        "hi": 0.875985984917237,
+        "seed_mean": 0.8530721282279609,
+        "seed_sd": NaN
+      },
+      "particle.oxide|specificity": {
+        "point": 0.973048535003355,
+        "lo": 0.9675715590974633,
+        "hi": 0.9781373118283359,
+        "seed_mean": 0.973048535003355,
+        "seed_sd": NaN
+      },
+      "particle.oxide|f1": {
+        "point": 0.8251507321274764,
+        "lo": 0.7971248094970723,
+        "hi": 0.8513296220864448,
+        "seed_mean": 0.8251507321274764,
+        "seed_sd": NaN
+      },
+      "particle.macro_f1_gt": {
+        "point": 0.8914691312123153,
+        "lo": 0.8854668609295443,
+        "hi": 0.8970222192246862,
+        "seed_mean": 0.8914691312123153,
+        "seed_sd": NaN
+      },
+      "particle.balanced_accuracy_gt": {
+        "point": 0.9040444565792652,
+        "lo": 0.8987195407049661,
+        "hi": 0.9089915412580863,
+        "seed_mean": 0.9040444565792652,
+        "seed_sd": NaN
+      },
+      "particle.accuracy_gt": {
+        "point": 0.912568306010929,
+        "lo": 0.9052767210007031,
+        "hi": 0.9207671497833086,
+        "seed_mean": 0.912568306010929,
+        "seed_sd": NaN
+      },
+      "particle.ece_gt": {
+        "point": 0.09559580521298115,
+        "lo": 0.0877030934297399,
+        "hi": 0.10525697649239929,
+        "seed_mean": 0.09559580521298115,
+        "seed_sd": NaN
+      },
+      "particle.brier_gt": {
+        "point": 0.1426629409066719,
+        "lo": 0.13377906175212187,
+        "hi": 0.15055609833025602,
+        "seed_mean": 0.14266294090667192,
+        "seed_sd": NaN
+      },
+      "particle.log_loss_gt": {
+        "point": 0.31967613125198013,
+        "lo": 0.3074060392693238,
+        "hi": 0.33140329863552453,
+        "seed_mean": 0.31967613125198013,
+        "seed_sd": NaN
+      }
+    },
+    "fourier_fractal_svm|default": {
+      "particle.macro_f1": {
+        "point": 0.8809343897172137,
+        "lo": 0.874868515588571,
+        "hi": 0.8866914324558344,
+        "seed_mean": 0.8809343897172137,
+        "seed_sd": NaN
+      },
+      "particle.balanced_accuracy": {
+        "point": 0.8815899189052592,
+        "lo": 0.8754802957705954,
+        "hi": 0.8872703119412766,
+        "seed_mean": 0.8815899189052592,
+        "seed_sd": NaN
+      },
+      "particle.accuracy": {
+        "point": 0.9006458022851466,
+        "lo": 0.8936715470486111,
+        "hi": 0.908732023396883,
+        "seed_mean": 0.9006458022851466,
+        "seed_sd": NaN
+      },
+      "particle.ece": {
+        "point": 0.019344604738406154,
+        "lo": 0.016794817404577115,
+        "hi": 0.026197505937649763,
+        "seed_mean": 0.01934460473840737,
+        "seed_sd": NaN
+      },
+      "particle.brier": {
+        "point": 0.15376372117040668,
+        "lo": 0.1433246106723861,
+        "hi": 0.1628961638497775,
+        "seed_mean": 0.15376372117040665,
+        "seed_sd": NaN
+      },
+      "particle.log_loss": {
+        "point": 0.31807405856459725,
+        "lo": 0.2976240173805748,
+        "hi": 0.33672848148592216,
+        "seed_mean": 0.31807405856459725,
+        "seed_sd": NaN
+      },
+      "particle.rubbing|sensitivity": {
+        "point": 0.9864253393665159,
+        "lo": 0.9819419137544128,
+        "hi": 0.9904565119012224,
+        "seed_mean": 0.9864253393665159,
+        "seed_sd": NaN
+      },
+      "particle.rubbing|specificity": {
+        "point": 0.9834074074074074,
+        "lo": 0.9789277895351383,
+        "hi": 0.9869704201413594,
+        "seed_mean": 0.9834074074074074,
+        "seed_sd": NaN
+      },
+      "particle.rubbing|f1": {
+        "point": 0.9765566671644019,
+        "lo": 0.972791082297499,
+        "hi": 0.9800643251986443,
+        "seed_mean": 0.9765566671644019,
+        "seed_sd": NaN
+      },
+      "particle.cutting|sensitivity": {
+        "point": 0.9895755770662695,
+        "lo": 0.9848484848484849,
+        "hi": 0.99381024530564,
+        "seed_mean": 0.9895755770662695,
+        "seed_sd": NaN
+      },
+      "particle.cutting|specificity": {
+        "point": 0.9962164641137354,
+        "lo": 0.9947933171941408,
+        "hi": 0.9976805367862288,
+        "seed_mean": 0.9962164641137354,
+        "seed_sd": NaN
+      },
+      "particle.cutting|f1": {
+        "point": 0.9826247689463956,
+        "lo": 0.9780078950243357,
+        "hi": 0.9874108484013416,
+        "seed_mean": 0.9826247689463956,
+        "seed_sd": NaN
+      },
+      "particle.spherical|sensitivity": {
+        "point": 0.9424460431654677,
+        "lo": 0.9159270130552878,
+        "hi": 0.967216203970673,
+        "seed_mean": 0.9424460431654677,
+        "seed_sd": NaN
+      },
+      "particle.spherical|specificity": {
+        "point": 0.99606135986733,
+        "lo": 0.9948080754008716,
+        "hi": 0.9971724415992765,
+        "seed_mean": 0.99606135986733,
+        "seed_sd": NaN
+      },
+      "particle.spherical|f1": {
+        "point": 0.9268867924528302,
+        "lo": 0.9074772498460515,
+        "hi": 0.9456521739130435,
+        "seed_mean": 0.9268867924528302,
+        "seed_sd": NaN
+      },
+      "particle.fatigue_chunk|sensitivity": {
+        "point": 0.7680543755310111,
+        "lo": 0.741078087869873,
+        "hi": 0.79207558941975,
+        "seed_mean": 0.7680543755310111,
+        "seed_sd": NaN
+      },
+      "particle.fatigue_chunk|specificity": {
+        "point": 0.9697344734473448,
+        "lo": 0.9659770689759027,
+        "hi": 0.9736637584559388,
+        "seed_mean": 0.9697344734473448,
+        "seed_sd": NaN
+      },
+      "particle.fatigue_chunk|f1": {
+        "point": 0.7693617021276595,
+        "lo": 0.744669764886335,
+        "hi": 0.7871810708277635,
+        "seed_mean": 0.7693617021276595,
+        "seed_sd": NaN
+      },
+      "particle.laminar|sensitivity": {
+        "point": 0.8076923076923077,
+        "lo": 0.7858674707316011,
+        "hi": 0.828786636455813,
+        "seed_mean": 0.8076923076923077,
+        "seed_sd": NaN
+      },
+      "particle.laminar|specificity": {
+        "point": 0.9782198022002445,
+        "lo": 0.9746674068470369,
+        "hi": 0.982342324910451,
+        "seed_mean": 0.9782198022002445,
+        "seed_sd": NaN
+      },
+      "particle.laminar|f1": {
+        "point": 0.8111163447951013,
+        "lo": 0.7940295627506462,
+        "hi": 0.8295725691831787,
+        "seed_mean": 0.8111163447951013,
+        "seed_sd": NaN
+      },
+      "particle.severe_sliding|sensitivity": {
+        "point": 0.8479064039408867,
+        "lo": 0.8279730255157137,
+        "hi": 0.8656738724853991,
+        "seed_mean": 0.8479064039408867,
+        "seed_sd": NaN
+      },
+      "particle.severe_sliding|specificity": {
+        "point": 0.9814003080203767,
+        "lo": 0.9780599021063986,
+        "hi": 0.9846231541680266,
+        "seed_mean": 0.9814003080203767,
+        "seed_sd": NaN
+      },
+      "particle.severe_sliding|f1": {
+        "point": 0.8720709309689677,
+        "lo": 0.8572443034023515,
+        "hi": 0.8834859488474898,
+        "seed_mean": 0.8720709309689677,
+        "seed_sd": NaN
+      },
+      "particle.oxide|sensitivity": {
+        "point": 0.8290293855743545,
+        "lo": 0.8071912319855646,
+        "hi": 0.8512185948577888,
+        "seed_mean": 0.8290293855743545,
+        "seed_sd": NaN
+      },
+      "particle.oxide|specificity": {
+        "point": 0.9781927980317602,
+        "lo": 0.9746014800627917,
+        "hi": 0.9817601351864648,
+        "seed_mean": 0.9781927980317602,
+        "seed_sd": NaN
+      },
+      "particle.oxide|f1": {
+        "point": 0.82792352156514,
+        "lo": 0.801953071301922,
+        "hi": 0.8534713734497015,
+        "seed_mean": 0.82792352156514,
+        "seed_sd": NaN
+      },
+      "particle.macro_f1_gt": {
+        "point": 0.9017983773852514,
+        "lo": 0.8966075616569581,
+        "hi": 0.906823245748883,
+        "seed_mean": 0.9017983773852514,
+        "seed_sd": NaN
+      },
+      "particle.balanced_accuracy_gt": {
+        "point": 0.905067859243314,
+        "lo": 0.8998370588269471,
+        "hi": 0.9101128929675908,
+        "seed_mean": 0.905067859243314,
+        "seed_sd": NaN
+      },
+      "particle.accuracy_gt": {
+        "point": 0.9201192250372578,
+        "lo": 0.9135638742267499,
+        "hi": 0.9277602884674996,
+        "seed_mean": 0.9201192250372578,
+        "seed_sd": NaN
+      },
+      "particle.ece_gt": {
+        "point": 0.038761163059850806,
+        "lo": 0.035289092167854,
+        "hi": 0.043626086855658865,
+        "seed_mean": 0.03876116305985205,
+        "seed_sd": NaN
+      },
+      "particle.brier_gt": {
+        "point": 0.11898940232974864,
+        "lo": 0.10959932012268121,
+        "hi": 0.12694054725128637,
+        "seed_mean": 0.11898940232974864,
+        "seed_sd": NaN
+      },
+      "particle.log_loss_gt": {
+        "point": 0.2256689033602598,
+        "lo": 0.21096709223311372,
+        "hi": 0.23803541521629762,
+        "seed_mean": 0.2256689033602598,
+        "seed_sd": NaN
+      }
+    },
+    "multiview_svm|default": {
+      "particle.macro_f1": {
+        "point": 0.880648591978752,
+        "lo": 0.8747605478159312,
+        "hi": 0.8865574399102064,
+        "seed_mean": 0.880648591978752,
+        "seed_sd": NaN
+      },
+      "particle.balanced_accuracy": {
+        "point": 0.8804837534074367,
+        "lo": 0.8742996922735382,
+        "hi": 0.8866288767748859,
+        "seed_mean": 0.8804837534074367,
+        "seed_sd": NaN
+      },
+      "particle.accuracy": {
+        "point": 0.8998509687034277,
+        "lo": 0.8928338062119425,
+        "hi": 0.9077089152694262,
+        "seed_mean": 0.8998509687034277,
+        "seed_sd": NaN
+      },
+      "particle.ece": {
+        "point": 0.05079650322758179,
+        "lo": 0.04673980780034572,
+        "hi": 0.056677515748064185,
+        "seed_mean": 0.05079650322758287,
+        "seed_sd": NaN
+      },
+      "particle.brier": {
+        "point": 0.16665368008055975,
+        "lo": 0.15564161539625446,
+        "hi": 0.17600824906087903,
+        "seed_mean": 0.16665368008055978,
+        "seed_sd": NaN
+      },
+      "particle.log_loss": {
+        "point": 0.3493246529205366,
+        "lo": 0.32748058995366164,
+        "hi": 0.3688267729955903,
+        "seed_mean": 0.3493246529205366,
+        "seed_sd": NaN
+      },
+      "particle.rubbing|sensitivity": {
+        "point": 0.9885369532428356,
+        "lo": 0.9843843881059731,
+        "hi": 0.9922062350119905,
+        "seed_mean": 0.9885369532428356,
+        "seed_sd": NaN
+      },
+      "particle.rubbing|specificity": {
+        "point": 0.9834074074074074,
+        "lo": 0.9785671225960818,
+        "hi": 0.9872084334406417,
+        "seed_mean": 0.9834074074074074,
+        "seed_sd": NaN
+      },
+      "particle.rubbing|f1": {
+        "point": 0.9776252983293556,
+        "lo": 0.9738817979289364,
+        "hi": 0.9810029837710814,
+        "seed_mean": 0.9776252983293556,
+        "seed_sd": NaN
+      },
+      "particle.cutting|sensitivity": {
+        "point": 0.9895755770662695,
+        "lo": 0.9848484848484849,
+        "hi": 0.99381024530564,
+        "seed_mean": 0.9895755770662695,
+        "seed_sd": NaN
+      },
+      "particle.cutting|specificity": {
+        "point": 0.9962164641137354,
+        "lo": 0.9947933171941408,
+        "hi": 0.9976805367862288,
+        "seed_mean": 0.9962164641137354,
+        "seed_sd": NaN
+      },
+      "particle.cutting|f1": {
+        "point": 0.9826247689463956,
+        "lo": 0.9780078950243357,
+        "hi": 0.9874108484013416,
+        "seed_mean": 0.9826247689463956,
+        "seed_sd": NaN
+      },
+      "particle.spherical|sensitivity": {
+        "point": 0.9520383693045563,
+        "lo": 0.927630204515467,
+        "hi": 0.9740971558184527,
+        "seed_mean": 0.9520383693045563,
+        "seed_sd": NaN
+      },
+      "particle.spherical|specificity": {
+        "point": 0.9967868988391376,
+        "lo": 0.9957896141407998,
+        "hi": 0.9976714894956575,
+        "seed_mean": 0.9967868988391376,
+        "seed_sd": NaN
+      },
+      "particle.spherical|f1": {
+        "point": 0.9396449704142011,
+        "lo": 0.9237950028189685,
+        "hi": 0.9555041080318644,
+        "seed_mean": 0.9396449704142011,
+        "seed_sd": NaN
+      },
+      "particle.fatigue_chunk|sensitivity": {
+        "point": 0.7638062871707731,
+        "lo": 0.7414248535918411,
+        "hi": 0.7844382823935877,
+        "seed_mean": 0.7638062871707731,
+        "seed_sd": NaN
+      },
+      "particle.fatigue_chunk|specificity": {
+        "point": 0.9697344734473448,
+        "lo": 0.9659341773049315,
+        "hi": 0.9736518530696432,
+        "seed_mean": 0.9697344734473448,
+        "seed_sd": NaN
+      },
+      "particle.fatigue_chunk|f1": {
+        "point": 0.7667377398720683,
+        "lo": 0.7420962347050385,
+        "hi": 0.7852481555949943,
+        "seed_mean": 0.7667377398720683,
+        "seed_sd": NaN
+      },
+      "particle.laminar|sensitivity": {
+        "point": 0.7917448405253283,
+        "lo": 0.7694481663633195,
+        "hi": 0.813258356446715,
+        "seed_mean": 0.7917448405253283,
+        "seed_sd": NaN
+      },
+      "particle.laminar|specificity": {
+        "point": 0.9795532836981887,
+        "lo": 0.9759884680826036,
+        "hi": 0.983602146976074,
+        "seed_mean": 0.9795532836981887,
+        "seed_sd": NaN
+      },
+      "particle.laminar|f1": {
+        "point": 0.8061127029608405,
+        "lo": 0.7889650572522219,
+        "hi": 0.8242030115350745,
+        "seed_mean": 0.8061127029608405,
+        "seed_sd": NaN
+      },
+      "particle.severe_sliding|sensitivity": {
+        "point": 0.8522167487684729,
+        "lo": 0.83124240509109,
+        "hi": 0.8708512389379491,
+        "seed_mean": 0.8522167487684729,
+        "seed_sd": NaN
+      },
+      "particle.severe_sliding|specificity": {
+        "point": 0.9797417367610473,
+        "lo": 0.976410859120081,
+        "hi": 0.9829190166038416,
+        "seed_mean": 0.9797417367610473,
+        "seed_sd": NaN
+      },
+      "particle.severe_sliding|f1": {
+        "point": 0.8707140610254797,
+        "lo": 0.8553812392075375,
+        "hi": 0.8829883142671885,
+        "seed_mean": 0.8707140610254797,
+        "seed_sd": NaN
+      },
+      "particle.oxide|sensitivity": {
+        "point": 0.8254674977738201,
+        "lo": 0.8017451521848358,
+        "hi": 0.8491057666044629,
+        "seed_mean": 0.8254674977738201,
+        "seed_sd": NaN
+      },
+      "particle.oxide|specificity": {
+        "point": 0.9767389845672109,
+        "lo": 0.973653299361603,
+        "hi": 0.9799848378794163,
+        "seed_mean": 0.9767389845672109,
+        "seed_sd": NaN
+      },
+      "particle.oxide|f1": {
+        "point": 0.8210806023029229,
+        "lo": 0.7940160242209422,
+        "hi": 0.847488132811194,
+        "seed_mean": 0.8210806023029229,
+        "seed_sd": NaN
+      },
+      "particle.macro_f1_gt": {
+        "point": 0.9010871486370701,
+        "lo": 0.8955284380197251,
+        "hi": 0.9064762354254546,
+        "seed_mean": 0.9010871486370701,
+        "seed_sd": NaN
+      },
+      "particle.balanced_accuracy_gt": {
+        "point": 0.903373300269266,
+        "lo": 0.8978005424345135,
+        "hi": 0.908770140235958,
+        "seed_mean": 0.903373300269266,
+        "seed_sd": NaN
+      },
+      "particle.accuracy_gt": {
+        "point": 0.9189269746646795,
+        "lo": 0.9121941494678454,
+        "hi": 0.9264172644885104,
+        "seed_mean": 0.9189269746646795,
+        "seed_sd": NaN
+      },
+      "particle.ece_gt": {
+        "point": 0.0698725091888337,
+        "lo": 0.06549704032837282,
+        "hi": 0.0744526993004282,
+        "seed_mean": 0.06987250918883478,
+        "seed_sd": NaN
+      },
+      "particle.brier_gt": {
+        "point": 0.13302232015411916,
+        "lo": 0.1231415046323143,
+        "hi": 0.14146864618396887,
+        "seed_mean": 0.13302232015411916,
+        "seed_sd": NaN
+      },
+      "particle.log_loss_gt": {
+        "point": 0.26266141193541886,
+        "lo": 0.24642582515529135,
+        "hi": 0.276757739720784,
+        "seed_mean": 0.26266141193541886,
+        "seed_sd": NaN
+      }
+    },
+    "particle_gnn|default": {
+      "particle.macro_f1": {
+        "point": 0.8745616397071532,
+        "lo": 0.8676803658056765,
+        "hi": 0.8806146130444017,
+        "seed_mean": 0.8745616397071532,
+        "seed_sd": NaN
+      },
+      "particle.balanced_accuracy": {
+        "point": 0.8853709955193564,
+        "lo": 0.878364304697747,
+        "hi": 0.8916357439172865,
+        "seed_mean": 0.8853709955193564,
+        "seed_sd": NaN
+      },
+      "particle.accuracy": {
+        "point": 0.8957774465971188,
+        "lo": 0.8897549581108866,
+        "hi": 0.9025591890599995,
+        "seed_mean": 0.8957774465971188,
+        "seed_sd": NaN
+      },
+      "particle.ece": {
+        "point": 0.0827332877692333,
+        "lo": 0.0759010212415593,
+        "hi": 0.09223691669484245,
+        "seed_mean": 0.0827332877692333,
+        "seed_sd": NaN
+      },
+      "particle.brier": {
+        "point": 0.17278598877941678,
+        "lo": 0.16435816137886824,
+        "hi": 0.1802515294506958,
+        "seed_mean": 0.17278598877941675,
+        "seed_sd": NaN
+      },
+      "particle.log_loss": {
+        "point": 0.38914684775271974,
+        "lo": 0.3744143892773284,
+        "hi": 0.40334287892150816,
+        "seed_mean": 0.38914684775271974,
+        "seed_sd": NaN
+      },
+      "particle.rubbing|sensitivity": {
+        "point": 0.9631975867269985,
+        "lo": 0.9545439768294125,
+        "hi": 0.971176925409339,
+        "seed_mean": 0.9631975867269985,
+        "seed_sd": NaN
+      },
+      "particle.rubbing|specificity": {
+        "point": 0.9871111111111112,
+        "lo": 0.9831610180596747,
+        "hi": 0.9900076972723534,
+        "seed_mean": 0.9871111111111112,
+        "seed_sd": NaN
+      },
+      "particle.rubbing|f1": {
+        "point": 0.9683093252463988,
+        "lo": 0.9636449994386632,
+        "hi": 0.9726597555745782,
+        "seed_mean": 0.9683093252463988,
+        "seed_sd": NaN
+      },
+      "particle.cutting|sensitivity": {
+        "point": 0.9895755770662695,
+        "lo": 0.9848484848484849,
+        "hi": 0.99381024530564,
+        "seed_mean": 0.9895755770662695,
+        "seed_sd": NaN
+      },
+      "particle.cutting|specificity": {
+        "point": 0.9962164641137354,
+        "lo": 0.9947933171941408,
+        "hi": 0.9976805367862288,
+        "seed_mean": 0.9962164641137354,
+        "seed_sd": NaN
+      },
+      "particle.cutting|f1": {
+        "point": 0.9826247689463956,
+        "lo": 0.9780078950243357,
+        "hi": 0.9874108484013416,
+        "seed_mean": 0.9826247689463956,
+        "seed_sd": NaN
+      },
+      "particle.spherical|sensitivity": {
+        "point": 0.9688249400479616,
+        "lo": 0.95,
+        "hi": 0.9847347569813508,
+        "seed_mean": 0.9688249400479616,
+        "seed_sd": NaN
+      },
+      "particle.spherical|specificity": {
+        "point": 0.9908789386401327,
+        "lo": 0.9884105894726529,
+        "hi": 0.9930718104171746,
+        "seed_mean": 0.9908789386401327,
+        "seed_sd": NaN
+      },
+      "particle.spherical|f1": {
+        "point": 0.8888888888888888,
+        "lo": 0.8654964204232554,
+        "hi": 0.9108316519629175,
+        "seed_mean": 0.8888888888888888,
+        "seed_sd": NaN
+      },
+      "particle.fatigue_chunk|sensitivity": {
+        "point": 0.7799490229396772,
+        "lo": 0.7418584343069159,
+        "hi": 0.8148165374677002,
+        "seed_mean": 0.7799490229396772,
+        "seed_sd": NaN
+      },
+      "particle.fatigue_chunk|specificity": {
+        "point": 0.9671467146714672,
+        "lo": 0.9629483408104235,
+        "hi": 0.9717965032071177,
+        "seed_mean": 0.9671467146714672,
+        "seed_sd": NaN
+      },
+      "particle.fatigue_chunk|f1": {
+        "point": 0.7691663175534144,
+        "lo": 0.7384263377467508,
+        "hi": 0.7935970912082659,
+        "seed_mean": 0.7691663175534144,
+        "seed_sd": NaN
+      },
+      "particle.laminar|sensitivity": {
+        "point": 0.8339587242026266,
+        "lo": 0.8039210903873745,
+        "hi": 0.8604863547819877,
+        "seed_mean": 0.8339587242026266,
+        "seed_sd": NaN
+      },
+      "particle.laminar|specificity": {
+        "point": 0.969552172463607,
+        "lo": 0.9637587513861307,
+        "hi": 0.9755312809886877,
+        "seed_mean": 0.969552172463607,
+        "seed_sd": NaN
+      },
+      "particle.laminar|f1": {
+        "point": 0.7976671152983401,
+        "lo": 0.7756674222630086,
+        "hi": 0.820404881489585,
+        "seed_mean": 0.7976671152983401,
+        "seed_sd": NaN
+      },
+      "particle.severe_sliding|sensitivity": {
+        "point": 0.8312807881773399,
+        "lo": 0.8106192733841568,
+        "hi": 0.8499150240519981,
+        "seed_mean": 0.8312807881773399,
+        "seed_sd": NaN
+      },
+      "particle.severe_sliding|specificity": {
+        "point": 0.9874422461793626,
+        "lo": 0.9845928535608786,
+        "hi": 0.9900828428988079,
+        "seed_mean": 0.9874422461793626,
+        "seed_sd": NaN
+      },
+      "particle.severe_sliding|f1": {
+        "point": 0.8766233766233766,
+        "lo": 0.8627715246513915,
+        "hi": 0.8876123903508772,
+        "seed_mean": 0.8766233766233766,
+        "seed_sd": NaN
+      },
+      "particle.oxide|sensitivity": {
+        "point": 0.8308103294746215,
+        "lo": 0.8083884233240664,
+        "hi": 0.8532886204211168,
+        "seed_mean": 0.8308103294746215,
+        "seed_sd": NaN
+      },
+      "particle.oxide|specificity": {
+        "point": 0.9811004249608589,
+        "lo": 0.9774902629033485,
+        "hi": 0.9843879515192671,
+        "seed_mean": 0.9811004249608589,
+        "seed_sd": NaN
+      },
+      "particle.oxide|f1": {
+        "point": 0.8386516853932584,
+        "lo": 0.8142279021573018,
+        "hi": 0.8619164835259822,
+        "seed_mean": 0.8386516853932584,
+        "seed_sd": NaN
+      },
+      "particle.macro_f1_gt": {
+        "point": 0.8950240391302692,
+        "lo": 0.8878410143681894,
+        "hi": 0.9011097816086663,
+        "seed_mean": 0.8950240391302692,
+        "seed_sd": NaN
+      },
+      "particle.balanced_accuracy_gt": {
+        "point": 0.9091153410095857,
+        "lo": 0.9025504329360529,
+        "hi": 0.9146830577196484,
+        "seed_mean": 0.9091153410095857,
+        "seed_sd": NaN
+      },
+      "particle.accuracy_gt": {
+        "point": 0.9152508693492301,
+        "lo": 0.9093206818884028,
+        "hi": 0.9217316900733588,
+        "seed_mean": 0.9152508693492301,
+        "seed_sd": NaN
+      },
+      "particle.ece_gt": {
+        "point": 0.10220671052134456,
+        "lo": 0.09510046536818027,
+        "hi": 0.11116262579551824,
+        "seed_mean": 0.10220671052134456,
+        "seed_sd": NaN
+      },
+      "particle.brier_gt": {
+        "point": 0.14180006621008712,
+        "lo": 0.13446770546069664,
+        "hi": 0.14832962197184624,
+        "seed_mean": 0.1418000662100871,
+        "seed_sd": NaN
+      },
+      "particle.log_loss_gt": {
+        "point": 0.31848300624730363,
+        "lo": 0.3081340057756489,
+        "hi": 0.3287273778447818,
+        "seed_mean": 0.31848300624730363,
+        "seed_sd": NaN
+      }
+    },
+    "resnet18|default": {
+      "particle.macro_f1": {
+        "point": 0.8590951401935445,
+        "lo": 0.8516823873916951,
+        "hi": 0.8665983492891274,
+        "seed_mean": 0.8590951401935445,
+        "seed_sd": NaN
+      },
+      "particle.balanced_accuracy": {
+        "point": 0.8709043765924768,
+        "lo": 0.8634663168828202,
+        "hi": 0.8784515478573085,
+        "seed_mean": 0.8709043765924768,
+        "seed_sd": NaN
+      },
+      "particle.accuracy": {
+        "point": 0.8822652757078987,
+        "lo": 0.8737253635909912,
+        "hi": 0.8922045087216537,
+        "seed_mean": 0.8822652757078987,
+        "seed_sd": NaN
+      },
+      "particle.ece": {
+        "point": 0.08539760167688741,
+        "lo": 0.07551349526702567,
+        "hi": 0.09715194557333937,
+        "seed_mean": 0.08539760167688741,
+        "seed_sd": NaN
+      },
+      "particle.brier": {
+        "point": 0.19216333627379786,
+        "lo": 0.18182807680061785,
+        "hi": 0.20116604174229297,
+        "seed_mean": 0.19216333627379786,
+        "seed_sd": NaN
+      },
+      "particle.log_loss": {
+        "point": 0.41956554891347403,
+        "lo": 0.40213790228748375,
+        "hi": 0.43538314147493745,
+        "seed_mean": 0.41956554891347403,
+        "seed_sd": NaN
+      },
+      "particle.rubbing|sensitivity": {
+        "point": 0.9496229260935143,
+        "lo": 0.9418602935119849,
+        "hi": 0.9567075973712353,
+        "seed_mean": 0.9496229260935143,
+        "seed_sd": NaN
+      },
+      "particle.rubbing|specificity": {
+        "point": 0.9854814814814815,
+        "lo": 0.9812252449271143,
+        "hi": 0.9887947381814328,
+        "seed_mean": 0.9854814814814815,
+        "seed_sd": NaN
+      },
+      "particle.rubbing|f1": {
+        "point": 0.9596098155768937,
+        "lo": 0.9544956344602459,
+        "hi": 0.9644495574023119,
+        "seed_mean": 0.9596098155768937,
+        "seed_sd": NaN
+      },
+      "particle.cutting|sensitivity": {
+        "point": 0.9858525688756515,
+        "lo": 0.9809669270178526,
+        "hi": 0.9907920380978206,
+        "seed_mean": 0.9858525688756515,
+        "seed_sd": NaN
+      },
+      "particle.cutting|specificity": {
+        "point": 0.9957578537032791,
+        "lo": 0.9942202454278405,
+        "hi": 0.9973385017964149,
+        "seed_mean": 0.9957578537032791,
+        "seed_sd": NaN
+      },
+      "particle.cutting|f1": {
+        "point": 0.9792899408284024,
+        "lo": 0.973748651386964,
+        "hi": 0.984867183946985,
+        "seed_mean": 0.9792899408284024,
+        "seed_sd": NaN
+      },
+      "particle.spherical|sensitivity": {
+        "point": 0.9376498800959233,
+        "lo": 0.9117629510037906,
+        "hi": 0.9620633626394404,
+        "seed_mean": 0.9376498800959233,
+        "seed_sd": NaN
+      },
+      "particle.spherical|specificity": {
+        "point": 0.9897388059701493,
+        "lo": 0.9876510827442413,
+        "hi": 0.9914716409137215,
+        "seed_mean": 0.9897388059701493,
+        "seed_sd": NaN
+      },
+      "particle.spherical|f1": {
+        "point": 0.8621830209481808,
+        "lo": 0.8400425589858467,
+        "hi": 0.8818146317879009,
+        "seed_mean": 0.8621830209481808,
+        "seed_sd": NaN
+      },
+      "particle.fatigue_chunk|sensitivity": {
+        "point": 0.7425658453695837,
+        "lo": 0.7151593094120777,
+        "hi": 0.7673857621661475,
+        "seed_mean": 0.7425658453695837,
+        "seed_sd": NaN
+      },
+      "particle.fatigue_chunk|specificity": {
+        "point": 0.9688343834383438,
+        "lo": 0.9647711946815896,
+        "hi": 0.9731644517157787,
+        "seed_mean": 0.9688343834383438,
+        "seed_sd": NaN
+      },
+      "particle.fatigue_chunk|f1": {
+        "point": 0.7508591065292096,
+        "lo": 0.7269263255055303,
+        "hi": 0.7702912312617475,
+        "seed_mean": 0.7508591065292096,
+        "seed_sd": NaN
+      },
+      "particle.laminar|sensitivity": {
+        "point": 0.8442776735459663,
+        "lo": 0.8159593726481024,
+        "hi": 0.871386098015134,
+        "seed_mean": 0.8442776735459663,
+        "seed_sd": NaN
+      },
+      "particle.laminar|specificity": {
+        "point": 0.9591065673963773,
+        "lo": 0.9520150766944451,
+        "hi": 0.9670128490042867,
+        "seed_mean": 0.9591065673963773,
+        "seed_sd": NaN
+      },
+      "particle.laminar|f1": {
+        "point": 0.7712082262210797,
+        "lo": 0.7484789443765066,
+        "hi": 0.7973501856593442,
+        "seed_mean": 0.7712082262210797,
+        "seed_sd": NaN
+      },
+      "particle.severe_sliding|sensitivity": {
+        "point": 0.8091133004926109,
+        "lo": 0.7881831425336218,
+        "hi": 0.8310397959164058,
+        "seed_mean": 0.8091133004926109,
+        "seed_sd": NaN
+      },
+      "particle.severe_sliding|specificity": {
+        "point": 0.9845989811633693,
+        "lo": 0.9816725294176192,
+        "hi": 0.9875504548372971,
+        "seed_mean": 0.9845989811633693,
+        "seed_sd": NaN
+      },
+      "particle.severe_sliding|f1": {
+        "point": 0.8565840938722294,
+        "lo": 0.841541463357555,
+        "hi": 0.8693268140635875,
+        "seed_mean": 0.8565840938722294,
+        "seed_sd": NaN
+      },
+      "particle.oxide|sensitivity": {
+        "point": 0.8272484416740873,
+        "lo": 0.8006658657728081,
+        "hi": 0.8527210145778069,
+        "seed_mean": 0.8272484416740873,
+        "seed_sd": NaN
+      },
+      "particle.oxide|specificity": {
+        "point": 0.9803176023261015,
+        "lo": 0.9764527504000384,
+        "hi": 0.9841817893984778,
+        "seed_mean": 0.9803176023261015,
+        "seed_sd": NaN
+      },
+      "particle.oxide|f1": {
+        "point": 0.8339317773788151,
+        "lo": 0.8095598520893017,
+        "hi": 0.8578106093134003,
+        "seed_mean": 0.8339317773788151,
+        "seed_sd": NaN
+      },
+      "particle.macro_f1_gt": {
+        "point": 0.8792327213669312,
+        "lo": 0.8723736070132275,
+        "hi": 0.8863180254161532,
+        "seed_mean": 0.8792327213669312,
+        "seed_sd": NaN
+      },
+      "particle.balanced_accuracy_gt": {
+        "point": 0.8946655961763728,
+        "lo": 0.8881612818903292,
+        "hi": 0.9015093251865477,
+        "seed_mean": 0.8946655961763728,
+        "seed_sd": NaN
+      },
+      "particle.accuracy_gt": {
+        "point": 0.9014406358668654,
+        "lo": 0.8931143759043915,
+        "hi": 0.9112312945798376,
+        "seed_mean": 0.9014406358668654,
+        "seed_sd": NaN
+      },
+      "particle.ece_gt": {
+        "point": 0.10437425344042442,
+        "lo": 0.09445193892527591,
+        "hi": 0.11596532044798061,
+        "seed_mean": 0.10437425344042442,
+        "seed_sd": NaN
+      },
+      "particle.brier_gt": {
+        "point": 0.16262545978105447,
+        "lo": 0.15292967763909687,
+        "hi": 0.17090034163327555,
+        "seed_mean": 0.16262545978105447,
+        "seed_sd": NaN
+      },
+      "particle.log_loss_gt": {
+        "point": 0.35088262022201383,
+        "lo": 0.3369481986451204,
+        "hi": 0.3632107140357869,
+        "seed_mean": 0.3508826202220139,
+        "seed_sd": NaN
+      }
+    },
+    "wearpg|full": {
+      "particle.macro_f1": {
+        "point": 0.8551735999163846,
+        "lo": 0.8464520387633669,
+        "hi": 0.8632552972932467,
+        "seed_mean": 0.8551735999163846,
+        "seed_sd": 0.005299439811289045
+      },
+      "particle.balanced_accuracy": {
+        "point": 0.8747494255399059,
+        "lo": 0.8674375666610274,
+        "hi": 0.8817974622964027,
+        "seed_mean": 0.8747494255399059,
+        "seed_sd": 0.0027123786423129516
+      },
+      "particle.accuracy": {
+        "point": 0.8798145388309324,
+        "lo": 0.8704241136031827,
+        "hi": 0.8898699832868389,
+        "seed_mean": 0.8798145388309324,
+        "seed_sd": 0.003470766986591519
+      },
+      "particle.ece": {
+        "point": 0.10787297525751727,
+        "lo": 0.09882175290970902,
+        "hi": 0.11744967949433262,
+        "seed_mean": 0.10787297525751727,
+        "seed_sd": 0.004475612866742929
+      },
+      "particle.brier": {
+        "point": 0.20215864971010455,
+        "lo": 0.19090032750221433,
+        "hi": 0.21205325507174852,
+        "seed_mean": 0.20215864971010455,
+        "seed_sd": 0.004307597035080652
+      },
+      "particle.log_loss": {
+        "point": 0.4400816886229148,
+        "lo": 0.42183670571464776,
+        "hi": 0.45713158500030204,
+        "seed_mean": 0.4400816886229148,
+        "seed_sd": 0.006279528091819246
+      },
+      "particle.rubbing|sensitivity": {
+        "point": 0.9443941679235796,
+        "lo": 0.9336139562327787,
+        "hi": 0.9549599369909382,
+        "seed_mean": 0.9443941679235796,
+        "seed_sd": 0.008899370255073123
+      },
+      "particle.rubbing|specificity": {
+        "point": 0.9845432098765432,
+        "lo": 0.980237326844753,
+        "hi": 0.9878805248812011,
+        "seed_mean": 0.9845432098765432,
+        "seed_sd": 0.0007307974610838747
+      },
+      "particle.rubbing|f1": {
+        "point": 0.9559151605394635,
+        "lo": 0.9491150987010065,
+        "hi": 0.9624284408525081,
+        "seed_mean": 0.9559151605394635,
+        "seed_sd": 0.005307684275247597
+      },
+      "particle.cutting|sensitivity": {
+        "point": 0.9831223628691982,
+        "lo": 0.9755036194593111,
+        "hi": 0.989791618307553,
+        "seed_mean": 0.9831223628691982,
+        "seed_sd": 0.003518850056777835
+      },
+      "particle.cutting|specificity": {
+        "point": 0.9946877627455478,
+        "lo": 0.9919899163292836,
+        "hi": 0.9969511512372158,
+        "seed_mean": 0.9946877627455478,
+        "seed_sd": 0.0019736683228121182
+      },
+      "particle.cutting|f1": {
+        "point": 0.9745600517307488,
+        "lo": 0.9648421289467763,
+        "hi": 0.9825483541105592,
+        "seed_mean": 0.9745600517307488,
+        "seed_sd": 0.007870956668714044
+      },
+      "particle.spherical|sensitivity": {
+        "point": 0.9712230215827337,
+        "lo": 0.9535425216443763,
+        "hi": 0.9868133997785161,
+        "seed_mean": 0.9712230215827337,
+        "seed_sd": 0.002398081534772223
+      },
+      "particle.spherical|specificity": {
+        "point": 0.9846600331674958,
+        "lo": 0.9796915015659351,
+        "hi": 0.9886841994310086,
+        "seed_mean": 0.9846600331674958,
+        "seed_sd": 0.0035362193427097813
+      },
+      "particle.spherical|f1": {
+        "point": 0.8357324666210347,
+        "lo": 0.7928130705619931,
+        "hi": 0.8709016436093023,
+        "seed_mean": 0.8357324666210347,
+        "seed_sd": 0.02935400304635611
+      },
+      "particle.fatigue_chunk|sensitivity": {
+        "point": 0.7190597564429341,
+        "lo": 0.6910987386945625,
+        "hi": 0.7434216517064058,
+        "seed_mean": 0.7190597564429341,
+        "seed_sd": 0.00565703323575137
+      },
+      "particle.fatigue_chunk|specificity": {
+        "point": 0.9776102610261027,
+        "lo": 0.9741911209418155,
+        "hi": 0.9809942867301834,
+        "seed_mean": 0.9776102610261027,
+        "seed_sd": 0.0006750675067506706
+      },
+      "particle.fatigue_chunk|f1": {
+        "point": 0.7616603271217334,
+        "lo": 0.7386333874209862,
+        "hi": 0.7803260919522953,
+        "seed_mean": 0.7616603271217334,
+        "seed_sd": 0.005528268907670185
+      },
+      "particle.laminar|sensitivity": {
+        "point": 0.859912445278299,
+        "lo": 0.831849763230881,
+        "hi": 0.884319640452582,
+        "seed_mean": 0.859912445278299,
+        "seed_sd": 0.015423842970779906
+      },
+      "particle.laminar|specificity": {
+        "point": 0.957217468607623,
+        "lo": 0.950227320619458,
+        "hi": 0.965110621456473,
+        "seed_mean": 0.957217468607623,
+        "seed_sd": 0.0006939657737969169
+      },
+      "particle.laminar|f1": {
+        "point": 0.7742802390814288,
+        "lo": 0.749798699793256,
+        "hi": 0.8001819338180541,
+        "seed_mean": 0.7742802390814288,
+        "seed_sd": 0.006987977156430318
+      },
+      "particle.severe_sliding|sensitivity": {
+        "point": 0.7752463054187192,
+        "lo": 0.7507144218308287,
+        "hi": 0.7987608315022763,
+        "seed_mean": 0.7752463054187192,
+        "seed_sd": 0.013504748891293904
+      },
+      "particle.severe_sliding|specificity": {
+        "point": 0.9879951032658058,
+        "lo": 0.9846135205606111,
+        "hi": 0.9910016566032754,
+        "seed_mean": 0.9879951032658058,
+        "seed_sd": 0.0016344194674070766
+      },
+      "particle.severe_sliding|f1": {
+        "point": 0.8437083489439301,
+        "lo": 0.8272648136508086,
+        "hi": 0.8599952962299786,
+        "seed_mean": 0.8437083489439301,
+        "seed_sd": 0.00871792433315574
+      },
+      "particle.oxide|sensitivity": {
+        "point": 0.8702879192638765,
+        "lo": 0.8468137418781944,
+        "hi": 0.8935731544901067,
+        "seed_mean": 0.8702879192638765,
+        "seed_sd": 0.0013602183719073676
+      },
+      "particle.oxide|specificity": {
+        "point": 0.9747632893461567,
+        "lo": 0.9713027093073521,
+        "hi": 0.9784581287857085,
+        "seed_mean": 0.9747632893461567,
+        "seed_sd": 0.0006359025612924265
+      },
+      "particle.oxide|f1": {
+        "point": 0.8403586053763524,
+        "lo": 0.8130496538919861,
+        "hi": 0.8674588377186978,
+        "seed_mean": 0.8403586053763524,
+        "seed_sd": 0.002554970511085258
+      },
+      "particle.macro_f1_gt": {
+        "point": 0.8749973974174129,
+        "lo": 0.8671441852316214,
+        "hi": 0.8819393238907528,
+        "seed_mean": 0.8749973974174129,
+        "seed_sd": 0.005070529462018301
+      },
+      "particle.balanced_accuracy_gt": {
+        "point": 0.8987333775804963,
+        "lo": 0.8926855246185128,
+        "hi": 0.9041297597967569,
+        "seed_mean": 0.8987333775804963,
+        "seed_sd": 0.0024135911677377773
+      },
+      "particle.accuracy_gt": {
+        "point": 0.8988905447921841,
+        "lo": 0.8901981170464902,
+        "hi": 0.907865180302916,
+        "seed_mean": 0.8988905447921841,
+        "seed_sd": 0.0032184217554578794
+      },
+      "particle.ece_gt": {
+        "point": 0.12693105810702013,
+        "lo": 0.11843314381359443,
+        "hi": 0.1359322885723602,
+        "seed_mean": 0.12693105810702013,
+        "seed_sd": 0.0042548016729882
+      },
+      "particle.brier_gt": {
+        "point": 0.1726986725015692,
+        "lo": 0.16326164831895285,
+        "hi": 0.1814836323955355,
+        "seed_mean": 0.17269867250156914,
+        "seed_sd": 0.004500551408437163
+      },
+      "particle.log_loss_gt": {
+        "point": 0.37193089527626966,
+        "lo": 0.3584720648257018,
+        "hi": 0.38452547010924476,
+        "seed_mean": 0.37193089527626966,
+        "seed_sd": 0.006905202683385236
+      },
+      "sample.macro_f1": {
+        "point": 0.6065922882325657,
+        "lo": 0.5938988875749112,
+        "hi": 0.6171613502408703,
+        "seed_mean": 0.6065922882325657,
+        "seed_sd": 0.0005963093905499434
+      },
+      "sample.balanced_accuracy": {
+        "point": 0.6647940074906367,
+        "lo": 0.6606425702811245,
+        "hi": 0.6666666666666666,
+        "seed_mean": 0.6647940074906367,
+        "seed_sd": 0.0
+      },
+      "sample.ordinal_mae": {
+        "point": 0.11851851851851852,
+        "lo": 0.0925925925925926,
+        "hi": 0.14814814814814814,
+        "seed_mean": 0.11851851851851852,
+        "seed_sd": 0.0
+      },
+      "sample.qwk": {
+        "point": 0.919716586855817,
+        "lo": 0.8952832406308155,
+        "hi": 0.9356811727629982,
+        "seed_mean": 0.919716586855817,
+        "seed_sd": 0.0001883443394814403
+      },
+      "sample.mae": {
+        "point": NaN,
+        "lo": NaN,
+        "hi": NaN,
+        "seed_mean": NaN,
+        "seed_sd": NaN
+      },
+      "sample.rmse": {
+        "point": NaN,
+        "lo": NaN,
+        "hi": NaN,
+        "seed_mean": NaN,
+        "seed_sd": NaN
+      },
+      "sample.r2": {
+        "point": NaN,
+        "lo": NaN,
+        "hi": NaN,
+        "seed_mean": NaN,
+        "seed_sd": NaN
+      },
+      "sample.bias": {
+        "point": NaN,
+        "lo": NaN,
+        "hi": NaN,
+        "seed_mean": NaN,
+        "seed_sd": NaN
+      },
+      "sample.spearman": {
+        "point": NaN,
+        "lo": NaN,
+        "hi": NaN,
+        "seed_mean": NaN,
+        "seed_sd": NaN
+      },
+      "sample.within_condition_spearman": {
+        "point": NaN,
+        "lo": NaN,
+        "hi": NaN,
+        "seed_mean": NaN,
+        "seed_sd": NaN
+      },
+      "sample.mae_gt": {
+        "point": 0.31727881359397914,
+        "lo": 0.28095552491217646,
+        "hi": 0.35754960198389074,
+        "seed_mean": 0.3172788135939791,
+        "seed_sd": 0.022754737063421758
+      },
+      "sample.rmse_gt": {
+        "point": 0.40213759405458965,
+        "lo": 0.35562494570290143,
+        "hi": 0.4522441944138556,
+        "seed_mean": 0.40213759405458965,
+        "seed_sd": 0.02935787646396789
+      },
+      "sample.r2_gt": {
+        "point": 0.8309383773931209,
+        "lo": 0.7739912759348383,
+        "hi": 0.8692709211249697,
+        "seed_mean": 0.8309383773931209,
+        "seed_sd": 0.024106773736406663
+      },
+      "sample.bias_gt": {
+        "point": 0.05948467484842771,
+        "lo": -0.09949958885531329,
+        "hi": 0.2243669571354424,
+        "seed_mean": 0.059484674848427725,
+        "seed_sd": 0.1643916034681387
+      },
+      "sample.spearman_gt": {
+        "point": 0.8770503888434175,
+        "lo": 0.8093412308414079,
+        "hi": 0.9140745294325991,
+        "seed_mean": 0.8770503888434175,
+        "seed_sd": 0.0048890552194612805
+      },
+      "sample.within_condition_spearman_gt": {
+        "point": 0.8569600863294876,
+        "lo": 0.7334687339716348,
+        "hi": 0.9049127787440662,
+        "seed_mean": 0.8569600863294876,
+        "seed_sd": 0.017867315191184584
+      },
+      "run.mae": {
+        "point": 0.2034590652655215,
+        "lo": 0.16026468839003355,
+        "hi": 0.24626677581408132,
+        "seed_mean": 0.20345906526552146,
+        "seed_sd": 0.00553439002624806
+      },
+      "run.rmse": {
+        "point": 0.2599559609281637,
+        "lo": 0.20877676188828764,
+        "hi": 0.3074127927965474,
+        "seed_mean": 0.25995596092816375,
+        "seed_sd": 0.007108153065296083
+      },
+      "run.r2": {
+        "point": 0.9270124973582278,
+        "lo": 0.8932363934278312,
+        "hi": 0.950878504455602,
+        "seed_mean": 0.9270124973582278,
+        "seed_sd": 0.003962033028739257
+      },
+      "run.bias": {
+        "point": 0.03145967309382208,
+        "lo": -0.03622463545529734,
+        "hi": 0.09548228886822013,
+        "seed_mean": 0.03145967309382208,
+        "seed_sd": 0.014024959293711186
+      },
+      "run.spearman": {
+        "point": 0.9593824497965647,
+        "lo": 0.9192639014718023,
+        "hi": 0.975070846191118,
+        "seed_mean": 0.9593824497965647,
+        "seed_sd": 0.0008659347559842763
+      },
+      "run.within_condition_spearman": {
+        "point": 0.9070879949807322,
+        "lo": 0.5174185756659483,
+        "hi": 0.9459608141477033,
+        "seed_mean": 0.9070879949807322,
+        "seed_sd": 0.009108466444962604
+      },
+      "run.mae_gt": {
+        "point": 0.20264845799848494,
+        "lo": 0.15950620205084085,
+        "hi": 0.24629982467365497,
+        "seed_mean": 0.20264845799848488,
+        "seed_sd": 0.005747748316942374
+      },
+      "run.rmse_gt": {
+        "point": 0.26010048031295346,
+        "lo": 0.20837196904565186,
+        "hi": 0.30784852876505164,
+        "seed_mean": 0.2601004803129536,
+        "seed_sd": 0.007060200783019969
+      },
+      "run.r2_gt": {
+        "point": 0.9268602183021808,
+        "lo": 0.8929240490491709,
+        "hi": 0.95098378036979,
+        "seed_mean": 0.9268602183021808,
+        "seed_sd": 0.003943480423646899
+      },
+      "run.bias_gt": {
+        "point": 0.031058804602549117,
+        "lo": -0.03601332117887383,
+        "hi": 0.09520359611856338,
+        "seed_mean": 0.031058804602549117,
+        "seed_sd": 0.014024959293711187
+      },
+      "run.spearman_gt": {
+        "point": 0.9611714630582554,
+        "lo": 0.9221570211630072,
+        "hi": 0.9755060391899532,
+        "seed_mean": 0.9611714630582554,
+        "seed_sd": 0.001617767007676517
+      },
+      "run.within_condition_spearman_gt": {
+        "point": 0.9061558986087287,
+        "lo": 0.5245076864978631,
+        "hi": 0.9482365618539349,
+        "seed_mean": 0.9061558986087287,
+        "seed_sd": 0.00920792321975874
+      }
+    },
+    "wearpg|no_mechanism_link": {
+      "particle.macro_f1": {
+        "point": 0.8690862405168618,
+        "lo": 0.8629050058976242,
+        "hi": 0.8750995384224552,
+        "seed_mean": 0.8690862405168618,
+        "seed_sd": NaN
+      },
+      "particle.balanced_accuracy": {
+        "point": 0.8830237096251663,
+        "lo": 0.8771165768426075,
+        "hi": 0.8890788416304476,
+        "seed_mean": 0.8830237096251663,
+        "seed_sd": NaN
+      },
+      "particle.accuracy": {
+        "point": 0.8893194237456532,
+        "lo": 0.8811473103061394,
+        "hi": 0.8989489146912123,
+        "seed_mean": 0.8893194237456532,
+        "seed_sd": NaN
+      },
+      "particle.ece": {
+        "point": 0.10231821142910608,
+        "lo": 0.09441659402312684,
+        "hi": 0.11183341691041328,
+        "seed_mean": 0.10231821142910608,
+        "seed_sd": NaN
+      },
+      "particle.brier": {
+        "point": 0.1871856719630826,
+        "lo": 0.1761796355367219,
+        "hi": 0.19661605297184617,
+        "seed_mean": 0.1871856719630826,
+        "seed_sd": NaN
+      },
+      "particle.log_loss": {
+        "point": 0.4166869297574669,
+        "lo": 0.3982389723386167,
+        "hi": 0.4331625820398066,
+        "seed_mean": 0.4166869297574669,
+        "seed_sd": NaN
+      },
+      "particle.rubbing|sensitivity": {
+        "point": 0.9592760180995475,
+        "lo": 0.9524510152646515,
+        "hi": 0.9659173949913981,
+        "seed_mean": 0.9592760180995475,
+        "seed_sd": NaN
+      },
+      "particle.rubbing|specificity": {
+        "point": 0.9866666666666667,
+        "lo": 0.9827040946806297,
+        "hi": 0.9896421031024265,
+        "seed_mean": 0.9866666666666667,
+        "seed_sd": NaN
+      },
+      "particle.rubbing|f1": {
+        "point": 0.9658314350797267,
+        "lo": 0.9619530425658589,
+        "hi": 0.9696368800371643,
+        "seed_mean": 0.9658314350797267,
+        "seed_sd": NaN
+      },
+      "particle.cutting|sensitivity": {
+        "point": 0.9836187639612807,
+        "lo": 0.9766352580162886,
+        "hi": 0.9897288150413366,
+        "seed_mean": 0.9836187639612807,
+        "seed_sd": NaN
+      },
+      "particle.cutting|specificity": {
+        "point": 0.9932354964457694,
+        "lo": 0.9911680054002594,
+        "hi": 0.9954457773606683,
+        "seed_mean": 0.9932354964457694,
+        "seed_sd": NaN
+      },
+      "particle.cutting|f1": {
+        "point": 0.9702533969886155,
+        "lo": 0.9637061840314488,
+        "hi": 0.9768022026938235,
+        "seed_mean": 0.9702533969886155,
+        "seed_sd": NaN
+      },
+      "particle.spherical|sensitivity": {
+        "point": 0.973621103117506,
+        "lo": 0.9573991031390134,
+        "hi": 0.988009592326139,
+        "seed_mean": 0.973621103117506,
+        "seed_sd": NaN
+      },
+      "particle.spherical|specificity": {
+        "point": 0.9909825870646766,
+        "lo": 0.9885395054621902,
+        "hi": 0.9929722473342375,
+        "seed_mean": 0.9909825870646766,
+        "seed_sd": NaN
+      },
+      "particle.spherical|f1": {
+        "point": 0.8923076923076924,
+        "lo": 0.8687332213984005,
+        "hi": 0.9118019888989757,
+        "seed_mean": 0.8923076923076924,
+        "seed_sd": NaN
+      },
+      "particle.fatigue_chunk|sensitivity": {
+        "point": 0.7476635514018691,
+        "lo": 0.723929058056872,
+        "hi": 0.7688055111872667,
+        "seed_mean": 0.7476635514018691,
+        "seed_sd": NaN
+      },
+      "particle.fatigue_chunk|specificity": {
+        "point": 0.9756975697569757,
+        "lo": 0.9723845864743127,
+        "hi": 0.9794234065883783,
+        "seed_mean": 0.9756975697569757,
+        "seed_sd": NaN
+      },
+      "particle.fatigue_chunk|f1": {
+        "point": 0.774307083150022,
+        "lo": 0.7536685724360876,
+        "hi": 0.7916296690916272,
+        "seed_mean": 0.774307083150022,
+        "seed_sd": NaN
+      },
+      "particle.laminar|sensitivity": {
+        "point": 0.8780487804878049,
+        "lo": 0.8529923791776952,
+        "hi": 0.9020454590355019,
+        "seed_mean": 0.8780487804878049,
+        "seed_sd": NaN
+      },
+      "particle.laminar|specificity": {
+        "point": 0.9606622958106457,
+        "lo": 0.955046882844121,
+        "hi": 0.9671711252641765,
+        "seed_mean": 0.9606622958106457,
+        "seed_sd": NaN
+      },
+      "particle.laminar|f1": {
+        "point": 0.7945670628183361,
+        "lo": 0.7715685581939833,
+        "hi": 0.8201733706862424,
+        "seed_mean": 0.7945670628183361,
+        "seed_sd": NaN
+      },
+      "particle.severe_sliding|sensitivity": {
+        "point": 0.7733990147783252,
+        "lo": 0.7526276513021288,
+        "hi": 0.7949401457924835,
+        "seed_mean": 0.7733990147783252,
+        "seed_sd": NaN
+      },
+      "particle.severe_sliding|specificity": {
+        "point": 0.9892192868143584,
+        "lo": 0.9866665049721077,
+        "hi": 0.9917840911177627,
+        "seed_mean": 0.9892192868143584,
+        "seed_sd": NaN
+      },
+      "particle.severe_sliding|f1": {
+        "point": 0.845506563446651,
+        "lo": 0.8312972302939532,
+        "hi": 0.8576240962138335,
+        "seed_mean": 0.845506563446651,
+        "seed_sd": NaN
+      },
+      "particle.oxide|sensitivity": {
+        "point": 0.8655387355298308,
+        "lo": 0.8445804988662131,
+        "hi": 0.886571053643595,
+        "seed_mean": 0.8655387355298308,
+        "seed_sd": NaN
+      },
+      "particle.oxide|specificity": {
+        "point": 0.975732498322523,
+        "lo": 0.9720950592116328,
+        "hi": 0.9794426320255082,
+        "seed_mean": 0.975732498322523,
+        "seed_sd": NaN
+      },
+      "particle.oxide|f1": {
+        "point": 0.8408304498269896,
+        "lo": 0.8145233547402986,
+        "hi": 0.867109746036701,
+        "seed_mean": 0.8408304498269896,
+        "seed_sd": NaN
+      },
+      "particle.macro_f1_gt": {
+        "point": 0.8891415547604542,
+        "lo": 0.8844692226222178,
+        "hi": 0.8940547593470434,
+        "seed_mean": 0.8891415547604542,
+        "seed_sd": NaN
+      },
+      "particle.balanced_accuracy_gt": {
+        "point": 0.9070868381241752,
+        "lo": 0.90259220985649,
+        "hi": 0.9114066240826424,
+        "seed_mean": 0.9070868381241752,
+        "seed_sd": NaN
+      },
+      "particle.accuracy_gt": {
+        "point": 0.90849478390462,
+        "lo": 0.9011516045211129,
+        "hi": 0.9171894354749417,
+        "seed_mean": 0.90849478390462,
+        "seed_sd": NaN
+      },
+      "particle.ece_gt": {
+        "point": 0.1214935715880728,
+        "lo": 0.11431783994706068,
+        "hi": 0.13086147080620683,
+        "seed_mean": 0.1214935715880728,
+        "seed_sd": NaN
+      },
+      "particle.brier_gt": {
+        "point": 0.15696658027841812,
+        "lo": 0.1477190876522327,
+        "hi": 0.16467362979826344,
+        "seed_mean": 0.15696658027841812,
+        "seed_sd": NaN
+      },
+      "particle.log_loss_gt": {
+        "point": 0.34704193435924907,
+        "lo": 0.33443892608783704,
+        "hi": 0.3577247045509582,
+        "seed_mean": 0.34704193435924907,
+        "seed_sd": NaN
+      },
+      "sample.macro_f1": {
+        "point": 0.6072808470068743,
+        "lo": 0.593721977716229,
+        "hi": 0.6177230959496137,
+        "seed_mean": 0.6072808470068743,
+        "seed_sd": NaN
+      },
+      "sample.balanced_accuracy": {
+        "point": 0.6647940074906367,
+        "lo": 0.6606060606060606,
+        "hi": 0.6666666666666666,
+        "seed_mean": 0.6647940074906367,
+        "seed_sd": NaN
+      },
+      "sample.ordinal_mae": {
+        "point": 0.11851851851851852,
+        "lo": 0.08888888888888889,
+        "hi": 0.14453703703703652,
+        "seed_mean": 0.11851851851851852,
+        "seed_sd": NaN
+      },
+      "sample.qwk": {
+        "point": 0.9194991055456172,
+        "lo": 0.8944872366432938,
+        "hi": 0.9358732163020881,
+        "seed_mean": 0.9194991055456172,
+        "seed_sd": NaN
+      },
+      "sample.mae": {
+        "point": NaN,
+        "lo": NaN,
+        "hi": NaN,
+        "seed_mean": NaN,
+        "seed_sd": NaN
+      },
+      "sample.rmse": {
+        "point": NaN,
+        "lo": NaN,
+        "hi": NaN,
+        "seed_mean": NaN,
+        "seed_sd": NaN
+      },
+      "sample.r2": {
+        "point": NaN,
+        "lo": NaN,
+        "hi": NaN,
+        "seed_mean": NaN,
+        "seed_sd": NaN
+      },
+      "sample.bias": {
+        "point": NaN,
+        "lo": NaN,
+        "hi": NaN,
+        "seed_mean": NaN,
+        "seed_sd": NaN
+      },
+      "sample.spearman": {
+        "point": NaN,
+        "lo": NaN,
+        "hi": NaN,
+        "seed_mean": NaN,
+        "seed_sd": NaN
+      },
+      "sample.within_condition_spearman": {
+        "point": NaN,
+        "lo": NaN,
+        "hi": NaN,
+        "seed_mean": NaN,
+        "seed_sd": NaN
+      },
+      "sample.mae_gt": {
+        "point": 0.26681807038729355,
+        "lo": 0.22877886057397956,
+        "hi": 0.3081151089825739,
+        "seed_mean": 0.26681807038729355,
+        "seed_sd": NaN
+      },
+      "sample.rmse_gt": {
+        "point": 0.3393237157240734,
+        "lo": 0.29313840443459294,
+        "hi": 0.3842456230128334,
+        "seed_mean": 0.3393237157240734,
+        "seed_sd": NaN
+      },
+      "sample.r2_gt": {
+        "point": 0.8800545579701483,
+        "lo": 0.8341279323003143,
+        "hi": 0.9095085015038038,
+        "seed_mean": 0.8800545579701483,
+        "seed_sd": NaN
+      },
+      "sample.bias_gt": {
+        "point": 0.13005183297054929,
+        "lo": 0.06822951739785,
+        "hi": 0.19256008891842455,
+        "seed_mean": 0.13005183297054926,
+        "seed_sd": NaN
+      },
+      "sample.spearman_gt": {
+        "point": 0.8992328808046444,
+        "lo": 0.8406300946119115,
+        "hi": 0.9299994470871613,
+        "seed_mean": 0.8992328808046444,
+        "seed_sd": NaN
+      },
+      "sample.within_condition_spearman_gt": {
+        "point": 0.8995054039759728,
+        "lo": 0.7874313672189142,
+        "hi": 0.937982950557489,
+        "seed_mean": 0.8995054039759728,
+        "seed_sd": NaN
+      },
+      "run.mae": {
+        "point": 0.2041855872033265,
+        "lo": 0.16422173252965855,
+        "hi": 0.24622759541308775,
+        "seed_mean": 0.2041855872033265,
+        "seed_sd": NaN
+      },
+      "run.rmse": {
+        "point": 0.2572877351104597,
+        "lo": 0.21428744130190763,
+        "hi": 0.2976620436838639,
+        "seed_mean": 0.25728773511045966,
+        "seed_sd": NaN
+      },
+      "run.r2": {
+        "point": 0.9285387365875778,
+        "lo": 0.9038204829816114,
+        "hi": 0.947711931883617,
+        "seed_mean": 0.9285387365875778,
+        "seed_sd": NaN
+      },
+      "run.bias": {
+        "point": 0.003641364157597037,
+        "lo": -0.06625665738245483,
+        "hi": 0.0745245743091757,
+        "seed_mean": 0.003641364157597037,
+        "seed_sd": NaN
+      },
+      "run.spearman": {
+        "point": 0.9523301291698568,
+        "lo": 0.9069098886868777,
+        "hi": 0.9706242655183034,
+        "seed_mean": 0.9523301291698568,
+        "seed_sd": NaN
+      },
+      "run.within_condition_spearman": {
+        "point": 0.9144828376510797,
+        "lo": 0.5826621854601655,
+        "hi": 0.955493428203288,
+        "seed_mean": 0.9144828376510797,
+        "seed_sd": NaN
+      },
+      "run.mae_gt": {
+        "point": 0.20459519172893306,
+        "lo": 0.1640941083117625,
+        "hi": 0.2466026778417708,
+        "seed_mean": 0.20459519172893306,
+        "seed_sd": NaN
+      },
+      "run.rmse_gt": {
+        "point": 0.2578856728719931,
+        "lo": 0.2143720774029849,
+        "hi": 0.299328620482818,
+        "seed_mean": 0.2578856728719931,
+        "seed_sd": NaN
+      },
+      "run.r2_gt": {
+        "point": 0.928135814545687,
+        "lo": 0.9031034204917315,
+        "hi": 0.9476313304454275,
+        "seed_mean": 0.9281358145456872,
+        "seed_sd": NaN
+      },
+      "run.bias_gt": {
+        "point": 0.0032404956663240757,
+        "lo": -0.0667818775943281,
+        "hi": 0.07438421344585942,
+        "seed_mean": 0.0032404956663240757,
+        "seed_sd": NaN
+      },
+      "run.spearman_gt": {
+        "point": 0.9534972365161043,
+        "lo": 0.9088245245449905,
+        "hi": 0.9719799465179902,
+        "seed_mean": 0.9534972365161043,
+        "seed_sd": NaN
+      },
+      "run.within_condition_spearman_gt": {
+        "point": 0.9099676005336381,
+        "lo": 0.5799996208125712,
+        "hi": 0.9578467341050823,
+        "seed_mean": 0.9099676005336381,
+        "seed_sd": NaN
+      }
+    },
+    "wearpg|no_physics": {
+      "particle.macro_f1": {
+        "point": 0.8616928570414103,
+        "lo": 0.8550684629600551,
+        "hi": 0.8683391732025153,
+        "seed_mean": 0.8616928570414103,
+        "seed_sd": NaN
+      },
+      "particle.balanced_accuracy": {
+        "point": 0.8773401374076405,
+        "lo": 0.8710531276044275,
+        "hi": 0.8834229367658304,
+        "seed_mean": 0.8773401374076405,
+        "seed_sd": NaN
+      },
+      "particle.accuracy": {
+        "point": 0.8823646299056135,
+        "lo": 0.8737237633607896,
+        "hi": 0.8927163999864808,
+        "seed_mean": 0.8823646299056135,
+        "seed_sd": NaN
+      },
+      "particle.ece": {
+        "point": 0.10453284901288748,
+        "lo": 0.0960614003735356,
+        "hi": 0.1146869864475393,
+        "seed_mean": 0.10453284901288748,
+        "seed_sd": NaN
+      },
+      "particle.brier": {
+        "point": 0.19738067612445595,
+        "lo": 0.1855670241193438,
+        "hi": 0.20778579160716035,
+        "seed_mean": 0.1973806761244559,
+        "seed_sd": NaN
+      },
+      "particle.log_loss": {
+        "point": 0.4303026296344792,
+        "lo": 0.41118858693162963,
+        "hi": 0.4484612550680102,
+        "seed_mean": 0.43030262963447924,
+        "seed_sd": NaN
+      },
+      "particle.rubbing|sensitivity": {
+        "point": 0.9529411764705882,
+        "lo": 0.9461015622008756,
+        "hi": 0.9595799616669728,
+        "seed_mean": 0.9529411764705882,
+        "seed_sd": NaN
+      },
+      "particle.rubbing|specificity": {
+        "point": 0.9862222222222222,
+        "lo": 0.9823306282758927,
+        "hi": 0.9892427584466662,
+        "seed_mean": 0.9862222222222222,
+        "seed_sd": NaN
+      },
+      "particle.rubbing|f1": {
+        "point": 0.9620831429876656,
+        "lo": 0.9577676597742523,
+        "hi": 0.9661324440253429,
+        "seed_mean": 0.9620831429876656,
+        "seed_sd": NaN
+      },
+      "particle.cutting|sensitivity": {
+        "point": 0.9769173492181683,
+        "lo": 0.9689348043574922,
+        "hi": 0.9847214327895475,
+        "seed_mean": 0.9769173492181683,
+        "seed_sd": NaN
+      },
+      "particle.cutting|specificity": {
+        "point": 0.9934648016509975,
+        "lo": 0.9911758198854763,
+        "hi": 0.995631414309415,
+        "seed_mean": 0.9934648016509975,
+        "seed_sd": NaN
+      },
+      "particle.cutting|f1": {
+        "point": 0.967551622418879,
+        "lo": 0.960375499625743,
+        "hi": 0.974455332573521,
+        "seed_mean": 0.967551622418879,
+        "seed_sd": NaN
+      },
+      "particle.spherical|sensitivity": {
+        "point": 0.973621103117506,
+        "lo": 0.9573991031390134,
+        "hi": 0.988009592326139,
+        "seed_mean": 0.973621103117506,
+        "seed_sd": NaN
+      },
+      "particle.spherical|specificity": {
+        "point": 0.990153399668325,
+        "lo": 0.9876285661571267,
+        "hi": 0.9923451096087912,
+        "seed_mean": 0.990153399668325,
+        "seed_sd": NaN
+      },
+      "particle.spherical|f1": {
+        "point": 0.8845315904139434,
+        "lo": 0.8592728905761001,
+        "hi": 0.9054218629128994,
+        "seed_mean": 0.8845315904139434,
+        "seed_sd": NaN
+      },
+      "particle.fatigue_chunk|sensitivity": {
+        "point": 0.7383177570093458,
+        "lo": 0.7136715797430083,
+        "hi": 0.7596780901556257,
+        "seed_mean": 0.7383177570093458,
+        "seed_sd": NaN
+      },
+      "particle.fatigue_chunk|specificity": {
+        "point": 0.975922592259226,
+        "lo": 0.9724676159048411,
+        "hi": 0.9797129240146406,
+        "seed_mean": 0.975922592259226,
+        "seed_sd": NaN
+      },
+      "particle.fatigue_chunk|f1": {
+        "point": 0.7690265486725664,
+        "lo": 0.7489978260869565,
+        "hi": 0.7848113873619446,
+        "seed_mean": 0.7690265486725664,
+        "seed_sd": NaN
+      },
+      "particle.laminar|sensitivity": {
+        "point": 0.8761726078799249,
+        "lo": 0.855096049735786,
+        "hi": 0.8960246499707477,
+        "seed_mean": 0.8761726078799249,
+        "seed_sd": NaN
+      },
+      "particle.laminar|specificity": {
+        "point": 0.9553283698188688,
+        "lo": 0.9487284471640949,
+        "hi": 0.9630443475746198,
+        "seed_mean": 0.9553283698188688,
+        "seed_sd": NaN
+      },
+      "particle.laminar|f1": {
+        "point": 0.7776852622814321,
+        "lo": 0.7513220832494156,
+        "hi": 0.8067884891378592,
+        "seed_mean": 0.7776852622814321,
+        "seed_sd": NaN
+      },
+      "particle.severe_sliding|sensitivity": {
+        "point": 0.7543103448275862,
+        "lo": 0.7321428571428571,
+        "hi": 0.7740171950124878,
+        "seed_mean": 0.7543103448275862,
+        "seed_sd": NaN
+      },
+      "particle.severe_sliding|specificity": {
+        "point": 0.9888638786873594,
+        "lo": 0.9864175984155273,
+        "hi": 0.9913479345277855,
+        "seed_mean": 0.9888638786873594,
+        "seed_sd": NaN
+      },
+      "particle.severe_sliding|f1": {
+        "point": 0.8324838600067958,
+        "lo": 0.8150347884636966,
+        "hi": 0.8464714326729831,
+        "seed_mean": 0.8324838600067958,
+        "seed_sd": NaN
+      },
+      "particle.oxide|sensitivity": {
+        "point": 0.8691006233303651,
+        "lo": 0.8419707533303334,
+        "hi": 0.8968430900255735,
+        "seed_mean": 0.8691006233303651,
+        "seed_sd": NaN
+      },
+      "particle.oxide|specificity": {
+        "point": 0.974390516662939,
+        "lo": 0.970371791581291,
+        "hi": 0.9784812589276431,
+        "seed_mean": 0.974390516662939,
+        "seed_sd": NaN
+      },
+      "particle.oxide|f1": {
+        "point": 0.8384879725085911,
+        "lo": 0.8113719263708465,
+        "hi": 0.8647207791853729,
+        "seed_mean": 0.8384879725085911,
+        "seed_sd": NaN
+      },
+      "particle.macro_f1_gt": {
+        "point": 0.8816947207302732,
+        "lo": 0.8764143231804534,
+        "hi": 0.8871416591771304,
+        "seed_mean": 0.8816947207302732,
+        "seed_sd": NaN
+      },
+      "particle.balanced_accuracy_gt": {
+        "point": 0.9014941767935561,
+        "lo": 0.8966305414307214,
+        "hi": 0.9062923591263226,
+        "seed_mean": 0.9014941767935561,
+        "seed_sd": NaN
+      },
+      "particle.accuracy_gt": {
+        "point": 0.9016393442622951,
+        "lo": 0.8937380726427576,
+        "hi": 0.9109875968092004,
+        "seed_mean": 0.9016393442622951,
+        "seed_sd": NaN
+      },
+      "particle.ece_gt": {
+        "point": 0.12380756336956905,
+        "lo": 0.11585188146351413,
+        "hi": 0.13355243662161567,
+        "seed_mean": 0.12380756336956905,
+        "seed_sd": NaN
+      },
+      "particle.brier_gt": {
+        "point": 0.16770197494251157,
+        "lo": 0.15749954986720763,
+        "hi": 0.17636884549429988,
+        "seed_mean": 0.16770197494251154,
+        "seed_sd": NaN
+      },
+      "particle.log_loss_gt": {
+        "point": 0.36221987663813204,
+        "lo": 0.347376000741265,
+        "hi": 0.3748402824464085,
+        "seed_mean": 0.362219876638132,
+        "seed_sd": NaN
+      },
+      "sample.macro_f1": {
+        "point": 0.6072808470068743,
+        "lo": 0.593721977716229,
+        "hi": 0.6177230959496137,
+        "seed_mean": 0.6072808470068743,
+        "seed_sd": NaN
+      },
+      "sample.balanced_accuracy": {
+        "point": 0.6647940074906367,
+        "lo": 0.6606060606060606,
+        "hi": 0.6666666666666666,
+        "seed_mean": 0.6647940074906367,
+        "seed_sd": NaN
+      },
+      "sample.ordinal_mae": {
+        "point": 0.11851851851851852,
+        "lo": 0.08888888888888889,
+        "hi": 0.14453703703703652,
+        "seed_mean": 0.11851851851851852,
+        "seed_sd": NaN
+      },
+      "sample.qwk": {
+        "point": 0.9194991055456172,
+        "lo": 0.8944872366432938,
+        "hi": 0.9358732163020881,
+        "seed_mean": 0.9194991055456172,
+        "seed_sd": NaN
+      },
+      "sample.mae": {
+        "point": NaN,
+        "lo": NaN,
+        "hi": NaN,
+        "seed_mean": NaN,
+        "seed_sd": NaN
+      },
+      "sample.rmse": {
+        "point": NaN,
+        "lo": NaN,
+        "hi": NaN,
+        "seed_mean": NaN,
+        "seed_sd": NaN
+      },
+      "sample.r2": {
+        "point": NaN,
+        "lo": NaN,
+        "hi": NaN,
+        "seed_mean": NaN,
+        "seed_sd": NaN
+      },
+      "sample.bias": {
+        "point": NaN,
+        "lo": NaN,
+        "hi": NaN,
+        "seed_mean": NaN,
+        "seed_sd": NaN
+      },
+      "sample.spearman": {
+        "point": NaN,
+        "lo": NaN,
+        "hi": NaN,
+        "seed_mean": NaN,
+        "seed_sd": NaN
+      },
+      "sample.within_condition_spearman": {
+        "point": NaN,
+        "lo": NaN,
+        "hi": NaN,
+        "seed_mean": NaN,
+        "seed_sd": NaN
+      },
+      "sample.mae_gt": {
+        "point": 0.8894790683301517,
+        "lo": 0.7967913434699294,
+        "hi": 0.979008306457054,
+        "seed_mean": 0.8894790683301517,
+        "seed_sd": NaN
+      },
+      "sample.rmse_gt": {
+        "point": 0.9960055627833985,
+        "lo": 0.9080253010795969,
+        "hi": 1.0753673442227527,
+        "seed_mean": 0.9960055627833985,
+        "seed_sd": NaN
+      },
+      "sample.r2_gt": {
+        "point": -0.03342472792237894,
+        "lo": -0.1890147239413018,
+        "hi": 0.017443628414140343,
+        "seed_mean": -0.03342472792237916,
+        "seed_sd": NaN
+      },
+      "sample.bias_gt": {
+        "point": 0.1890330555471145,
+        "lo": -0.03490187120035202,
+        "hi": 0.4143233960933637,
+        "seed_mean": 0.1890330555471145,
+        "seed_sd": NaN
+      },
+      "sample.spearman_gt": {
+        "point": 0.006974947072890802,
+        "lo": -0.20162339013177702,
+        "hi": 0.23942993544156457,
+        "seed_mean": 0.006974947072890802,
+        "seed_sd": NaN
+      },
+      "sample.within_condition_spearman_gt": {
+        "point": -0.04018375499740127,
+        "lo": -0.25607443972700955,
+        "hi": 0.2301425171698269,
+        "seed_mean": -0.04018375499740127,
+        "seed_sd": NaN
+      },
+      "run.mae": {
+        "point": 0.3791403110179943,
+        "lo": 0.3166335299483478,
+        "hi": 0.44113424362704967,
+        "seed_mean": 0.3791403110179942,
+        "seed_sd": NaN
+      },
+      "run.rmse": {
+        "point": 0.44732153356094045,
+        "lo": 0.3806362975725269,
+        "hi": 0.5080451463045405,
+        "seed_mean": 0.44732153356094045,
+        "seed_sd": NaN
+      },
+      "run.r2": {
+        "point": 0.7839908576624515,
+        "lo": 0.700491750575451,
+        "hi": 0.8411903584900216,
+        "seed_mean": 0.7839908576624515,
+        "seed_sd": NaN
+      },
+      "run.bias": {
+        "point": 0.024659613174817994,
+        "lo": -0.0898939820842289,
+        "hi": 0.14530723977077328,
+        "seed_mean": 0.024659613174817994,
+        "seed_sd": NaN
+      },
+      "run.spearman": {
+        "point": 0.8512722806217305,
+        "lo": 0.7557738628319755,
+        "hi": 0.9080023911100348,
+        "seed_mean": 0.8512722806217305,
+        "seed_sd": NaN
+      },
+      "run.within_condition_spearman": {
+        "point": 0.9028569252054301,
+        "lo": 0.6420456504966304,
+        "hi": 0.9500939799226289,
+        "seed_mean": 0.9028569252054301,
+        "seed_sd": NaN
+      },
+      "run.mae_gt": {
+        "point": 0.3790691796615424,
+        "lo": 0.3169340816691979,
+        "hi": 0.4416083474784779,
+        "seed_mean": 0.3790691796615423,
+        "seed_sd": NaN
+      },
+      "run.rmse_gt": {
+        "point": 0.4479305484718705,
+        "lo": 0.37996999565515166,
+        "hi": 0.5093764540375366,
+        "seed_mean": 0.4479305484718705,
+        "seed_sd": NaN
+      },
+      "run.r2_gt": {
+        "point": 0.7831899342408843,
+        "lo": 0.698990819366909,
+        "hi": 0.842156880015505,
+        "seed_mean": 0.7831899342408843,
+        "seed_sd": NaN
+      },
+      "run.bias_gt": {
+        "point": 0.024258744683545032,
+        "lo": -0.09015149772455278,
+        "hi": 0.14423590129581562,
+        "seed_mean": 0.024258744683545032,
+        "seed_sd": NaN
+      },
+      "run.spearman_gt": {
+        "point": 0.8547741566609489,
+        "lo": 0.7593021939026461,
+        "hi": 0.9095236086924133,
+        "seed_mean": 0.8547741566609489,
+        "seed_sd": NaN
+      },
+      "run.within_condition_spearman_gt": {
+        "point": 0.9015818562988374,
+        "lo": 0.6451371671023324,
+        "hi": 0.9507435253588842,
+        "seed_mean": 0.9015818562988374,
+        "seed_sd": NaN
+      }
+    },
+    "wearpg|with_conditions": {
+      "particle.macro_f1": {
+        "point": 0.8600993483124223,
+        "lo": 0.8534335012610459,
+        "hi": 0.8664807762697573,
+        "seed_mean": 0.8600993483124223,
+        "seed_sd": NaN
+      },
+      "particle.balanced_accuracy": {
+        "point": 0.8761645307186863,
+        "lo": 0.8701006221892086,
+        "hi": 0.8823454725003683,
+        "seed_mean": 0.8761645307186863,
+        "seed_sd": NaN
+      },
+      "particle.accuracy": {
+        "point": 0.8825633383010432,
+        "lo": 0.8739106524669854,
+        "hi": 0.8927564194604195,
+        "seed_mean": 0.8825633383010432,
+        "seed_sd": NaN
+      },
+      "particle.ece": {
+        "point": 0.1050443895349915,
+        "lo": 0.09737369718862296,
+        "hi": 0.11450353329585614,
+        "seed_mean": 0.1050443895349915,
+        "seed_sd": NaN
+      },
+      "particle.brier": {
+        "point": 0.19789905355258416,
+        "lo": 0.18686193819400929,
+        "hi": 0.20732792484161672,
+        "seed_mean": 0.19789905355258416,
+        "seed_sd": NaN
+      },
+      "particle.log_loss": {
+        "point": 0.4332295859885928,
+        "lo": 0.41509872617448057,
+        "hi": 0.4488148720132464,
+        "seed_mean": 0.4332295859885928,
+        "seed_sd": NaN
+      },
+      "particle.rubbing|sensitivity": {
+        "point": 0.9547511312217195,
+        "lo": 0.9475059228326148,
+        "hi": 0.9618369531615245,
+        "seed_mean": 0.9547511312217195,
+        "seed_sd": NaN
+      },
+      "particle.rubbing|specificity": {
+        "point": 0.9844444444444445,
+        "lo": 0.9802030812194443,
+        "hi": 0.9879422640799641,
+        "seed_mean": 0.9844444444444445,
+        "seed_sd": NaN
+      },
+      "particle.rubbing|f1": {
+        "point": 0.9612756264236902,
+        "lo": 0.9564631392935834,
+        "hi": 0.9658688798956382,
+        "seed_mean": 0.9612756264236902,
+        "seed_sd": NaN
+      },
+      "particle.cutting|sensitivity": {
+        "point": 0.9806403574087863,
+        "lo": 0.9735342332230623,
+        "hi": 0.9870967741935484,
+        "seed_mean": 0.9806403574087863,
+        "seed_sd": NaN
+      },
+      "particle.cutting|specificity": {
+        "point": 0.9936941068562256,
+        "lo": 0.9915563375763315,
+        "hi": 0.9958661468877488,
+        "seed_mean": 0.9936941068562256,
+        "seed_sd": NaN
+      },
+      "particle.cutting|f1": {
+        "point": 0.9701657458563536,
+        "lo": 0.9633599056263349,
+        "hi": 0.9771353734855407,
+        "seed_mean": 0.9701657458563536,
+        "seed_sd": NaN
+      },
+      "particle.spherical|sensitivity": {
+        "point": 0.9712230215827338,
+        "lo": 0.9535450970422139,
+        "hi": 0.9874226966557687,
+        "seed_mean": 0.9712230215827338,
+        "seed_sd": NaN
+      },
+      "particle.spherical|specificity": {
+        "point": 0.9884950248756219,
+        "lo": 0.985131797949765,
+        "hi": 0.9911628078227215,
+        "seed_mean": 0.9884950248756219,
+        "seed_sd": NaN
+      },
+      "particle.spherical|f1": {
+        "point": 0.8681672025723473,
+        "lo": 0.8372518254679047,
+        "hi": 0.8943495907176766,
+        "seed_mean": 0.8681672025723473,
+        "seed_sd": NaN
+      },
+      "particle.fatigue_chunk|sensitivity": {
+        "point": 0.7366185216652507,
+        "lo": 0.7130840135652037,
+        "hi": 0.7598936132124745,
+        "seed_mean": 0.7366185216652507,
+        "seed_sd": NaN
+      },
+      "particle.fatigue_chunk|specificity": {
+        "point": 0.9743474347434743,
+        "lo": 0.9708388464343644,
+        "hi": 0.9782618839903426,
+        "seed_mean": 0.9743474347434743,
+        "seed_sd": NaN
+      },
+      "particle.fatigue_chunk|f1": {
+        "point": 0.7632042253521126,
+        "lo": 0.7424940092224271,
+        "hi": 0.7806387284097744,
+        "seed_mean": 0.7632042253521126,
+        "seed_sd": NaN
+      },
+      "particle.laminar|sensitivity": {
+        "point": 0.8667917448405253,
+        "lo": 0.8432957549941246,
+        "hi": 0.8903434428101099,
+        "seed_mean": 0.8667917448405253,
+        "seed_sd": NaN
+      },
+      "particle.laminar|specificity": {
+        "point": 0.9584398266474052,
+        "lo": 0.9522248637480141,
+        "hi": 0.9656958867752092,
+        "seed_mean": 0.9584398266474052,
+        "seed_sd": NaN
+      },
+      "particle.laminar|f1": {
+        "point": 0.7817258883248731,
+        "lo": 0.7570827397550299,
+        "hi": 0.8096246700605716,
+        "seed_mean": 0.7817258883248731,
+        "seed_sd": NaN
+      },
+      "particle.severe_sliding|sensitivity": {
+        "point": 0.7629310344827587,
+        "lo": 0.7425133374191215,
+        "hi": 0.7803578647812802,
+        "seed_mean": 0.7629310344827587,
+        "seed_sd": NaN
+      },
+      "particle.severe_sliding|specificity": {
+        "point": 0.9894562255656912,
+        "lo": 0.9866193072142102,
+        "hi": 0.9921555610948832,
+        "seed_mean": 0.9894562255656912,
+        "seed_sd": NaN
+      },
+      "particle.severe_sliding|f1": {
+        "point": 0.8394308943089431,
+        "lo": 0.8255933952528379,
+        "hi": 0.8508629780986994,
+        "seed_mean": 0.8394308943089431,
+        "seed_sd": NaN
+      },
+      "particle.oxide|sensitivity": {
+        "point": 0.8601959038290294,
+        "lo": 0.8353230123570463,
+        "hi": 0.8849062409057581,
+        "seed_mean": 0.8601959038290294,
+        "seed_sd": NaN
+      },
+      "particle.oxide|specificity": {
+        "point": 0.9753970029076269,
+        "lo": 0.9717336990566402,
+        "hi": 0.9793358871504391,
+        "seed_mean": 0.9753970029076269,
+        "seed_sd": NaN
+      },
+      "particle.oxide|f1": {
+        "point": 0.8367258553486357,
+        "lo": 0.8091914935149974,
+        "hi": 0.8640005665722379,
+        "seed_mean": 0.8367258553486357,
+        "seed_sd": NaN
+      },
+      "particle.macro_f1_gt": {
+        "point": 0.8803807601119994,
+        "lo": 0.8749038156071127,
+        "hi": 0.8860253785623139,
+        "seed_mean": 0.8803807601119994,
+        "seed_sd": NaN
+      },
+      "particle.balanced_accuracy_gt": {
+        "point": 0.9004864851760622,
+        "lo": 0.8956947336053421,
+        "hi": 0.905625636804231,
+        "seed_mean": 0.9004864851760622,
+        "seed_sd": NaN
+      },
+      "particle.accuracy_gt": {
+        "point": 0.9020367610531544,
+        "lo": 0.8940381659441572,
+        "hi": 0.9117813894914002,
+        "seed_mean": 0.9020367610531544,
+        "seed_sd": NaN
+      },
+      "particle.ece_gt": {
+        "point": 0.12451781228710275,
+        "lo": 0.11742202482650589,
+        "hi": 0.13341134302619723,
+        "seed_mean": 0.12451781228710275,
+        "seed_sd": NaN
+      },
+      "particle.brier_gt": {
+        "point": 0.16823519252128155,
+        "lo": 0.15883949505787456,
+        "hi": 0.17615953790964878,
+        "seed_mean": 0.16823519252128155,
+        "seed_sd": NaN
+      },
+      "particle.log_loss_gt": {
+        "point": 0.3649460633350295,
+        "lo": 0.3514900216674128,
+        "hi": 0.37626543673788565,
+        "seed_mean": 0.3649460633350295,
+        "seed_sd": NaN
+      },
+      "sample.macro_f1": {
+        "point": 0.6062480088454114,
+        "lo": 0.592808870705668,
+        "hi": 0.6167658429405068,
+        "seed_mean": 0.6062480088454114,
+        "seed_sd": NaN
+      },
+      "sample.balanced_accuracy": {
+        "point": 0.6647940074906367,
+        "lo": 0.6606060606060606,
+        "hi": 0.6666666666666666,
+        "seed_mean": 0.6647940074906367,
+        "seed_sd": NaN
+      },
+      "sample.ordinal_mae": {
+        "point": 0.11851851851851852,
+        "lo": 0.08888888888888889,
+        "hi": 0.14453703703703652,
+        "seed_mean": 0.11851851851851852,
+        "seed_sd": NaN
+      },
+      "sample.qwk": {
+        "point": 0.9198253275109171,
+        "lo": 0.8951055120906879,
+        "hi": 0.9361517699274834,
+        "seed_mean": 0.9198253275109171,
+        "seed_sd": NaN
+      },
+      "sample.mae": {
+        "point": NaN,
+        "lo": NaN,
+        "hi": NaN,
+        "seed_mean": NaN,
+        "seed_sd": NaN
+      },
+      "sample.rmse": {
+        "point": NaN,
+        "lo": NaN,
+        "hi": NaN,
+        "seed_mean": NaN,
+        "seed_sd": NaN
+      },
+      "sample.r2": {
+        "point": NaN,
+        "lo": NaN,
+        "hi": NaN,
+        "seed_mean": NaN,
+        "seed_sd": NaN
+      },
+      "sample.bias": {
+        "point": NaN,
+        "lo": NaN,
+        "hi": NaN,
+        "seed_mean": NaN,
+        "seed_sd": NaN
+      },
+      "sample.spearman": {
+        "point": NaN,
+        "lo": NaN,
+        "hi": NaN,
+        "seed_mean": NaN,
+        "seed_sd": NaN
+      },
+      "sample.within_condition_spearman": {
+        "point": NaN,
+        "lo": NaN,
+        "hi": NaN,
+        "seed_mean": NaN,
+        "seed_sd": NaN
+      },
+      "sample.mae_gt": {
+        "point": 0.33400339874412777,
+        "lo": 0.2864387021985107,
+        "hi": 0.38369153635493847,
+        "seed_mean": 0.33400339874412777,
+        "seed_sd": NaN
+      },
+      "sample.rmse_gt": {
+        "point": 0.430848282788996,
+        "lo": 0.37283076462007214,
+        "hi": 0.48632934045789017,
+        "seed_mean": 0.43084828278899595,
+        "seed_sd": NaN
+      },
+      "sample.r2_gt": {
+        "point": 0.8066233404338634,
+        "lo": 0.7319491052324393,
+        "hi": 0.8570440051581169,
+        "seed_mean": 0.8066233404338634,
+        "seed_sd": NaN
+      },
+      "sample.bias_gt": {
+        "point": 0.2534477616006717,
+        "lo": 0.19060516470555594,
+        "hi": 0.31655744209180164,
+        "seed_mean": 0.25344776160067173,
+        "seed_sd": NaN
+      },
+      "sample.spearman_gt": {
+        "point": 0.8805409615434442,
+        "lo": 0.8142935042389453,
+        "hi": 0.9190769590639815,
+        "seed_mean": 0.8805409615434442,
+        "seed_sd": NaN
+      },
+      "sample.within_condition_spearman_gt": {
+        "point": 0.8757928397127838,
+        "lo": 0.7618216954642886,
+        "hi": 0.9174443748971074,
+        "seed_mean": 0.8757928397127838,
+        "seed_sd": NaN
+      },
+      "run.mae": {
+        "point": 0.13307819651991834,
+        "lo": 0.10561954450432068,
+        "hi": 0.16025075463844282,
+        "seed_mean": 0.13307819651991837,
+        "seed_sd": NaN
+      },
+      "run.rmse": {
+        "point": 0.16656859961849949,
+        "lo": 0.13598984991620602,
+        "hi": 0.19484337363098386,
+        "seed_mean": 0.1665685996184995,
+        "seed_sd": NaN
+      },
+      "run.r2": {
+        "point": 0.9700484852263392,
+        "lo": 0.9551856762250768,
+        "hi": 0.9803764628830814,
+        "seed_mean": 0.9700484852263392,
+        "seed_sd": NaN
+      },
+      "run.bias": {
+        "point": -0.01197260677554008,
+        "lo": -0.0551845175188968,
+        "hi": 0.031115707130814425,
+        "seed_mean": -0.01197260677554008,
+        "seed_sd": NaN
+      },
+      "run.spearman": {
+        "point": 0.9718860236644582,
+        "lo": 0.9431984922269763,
+        "hi": 0.9806722755023269,
+        "seed_mean": 0.9718860236644582,
+        "seed_sd": NaN
+      },
+      "run.within_condition_spearman": {
+        "point": 0.9084983515724995,
+        "lo": 0.5219364486303333,
+        "hi": 0.9445571248163553,
+        "seed_mean": 0.9084983515724995,
+        "seed_sd": NaN
+      },
+      "run.mae_gt": {
+        "point": 0.13194653917661037,
+        "lo": 0.1054213967876869,
+        "hi": 0.15912248487688266,
+        "seed_mean": 0.1319465391766104,
+        "seed_sd": NaN
+      },
+      "run.rmse_gt": {
+        "point": 0.16553598386736568,
+        "lo": 0.13451717324193285,
+        "hi": 0.19328216090668512,
+        "seed_mean": 0.16553598386736565,
+        "seed_sd": NaN
+      },
+      "run.r2_gt": {
+        "point": 0.9703896932817144,
+        "lo": 0.9557040405399974,
+        "hi": 0.9804018710239922,
+        "seed_mean": 0.9703896932817144,
+        "seed_sd": NaN
+      },
+      "run.bias_gt": {
+        "point": -0.01237347526681304,
+        "lo": -0.05518077311730256,
+        "hi": 0.030599839295869728,
+        "seed_mean": -0.01237347526681304,
+        "seed_sd": NaN
+      },
+      "run.spearman_gt": {
+        "point": 0.9736992567181245,
+        "lo": 0.9460386660665832,
+        "hi": 0.9823731138112627,
+        "seed_mean": 0.9736992567181245,
+        "seed_sd": NaN
+      },
+      "run.within_condition_spearman_gt": {
+        "point": 0.9088240899561653,
+        "lo": 0.5384506008813708,
+        "hi": 0.9472241747112536,
+        "seed_mean": 0.9088240899561653,
+        "seed_sd": NaN
+      }
+    },
+    "conditions_only|default": {
+      "sample.macro_f1": {
+        "point": 0.5244708994708994,
+        "lo": 0.48253968253968255,
+        "hi": 0.560985797827903,
+        "seed_mean": 0.5244708994708994,
+        "seed_sd": 0.0
+      },
+      "sample.balanced_accuracy": {
+        "point": 0.55116588135798,
+        "lo": 0.5059578301556352,
+        "hi": 0.596079288689471,
+        "seed_mean": 0.55116588135798,
+        "seed_sd": 0.0
+      },
+      "sample.ordinal_mae": {
+        "point": 0.31851851851851853,
+        "lo": 0.2222222222222222,
+        "hi": 0.4186111111111106,
+        "seed_mean": 0.31851851851851853,
+        "seed_sd": 0.0
+      },
+      "sample.qwk": {
+        "point": 0.6340066440108443,
+        "lo": 0.5146657822870164,
+        "hi": 0.7396607887599398,
+        "seed_mean": 0.6340066440108443,
+        "seed_sd": 0.0
+      },
+      "sample.mae": {
+        "point": NaN,
+        "lo": NaN,
+        "hi": NaN,
+        "seed_mean": NaN,
+        "seed_sd": NaN
+      },
+      "sample.rmse": {
+        "point": NaN,
+        "lo": NaN,
+        "hi": NaN,
+        "seed_mean": NaN,
+        "seed_sd": NaN
+      },
+      "sample.r2": {
+        "point": NaN,
+        "lo": NaN,
+        "hi": NaN,
+        "seed_mean": NaN,
+        "seed_sd": NaN
+      },
+      "sample.bias": {
+        "point": NaN,
+        "lo": NaN,
+        "hi": NaN,
+        "seed_mean": NaN,
+        "seed_sd": NaN
+      },
+      "sample.spearman": {
+        "point": NaN,
+        "lo": NaN,
+        "hi": NaN,
+        "seed_mean": NaN,
+        "seed_sd": NaN
+      },
+      "sample.within_condition_spearman": {
+        "point": NaN,
+        "lo": NaN,
+        "hi": NaN,
+        "seed_mean": NaN,
+        "seed_sd": NaN
+      },
+      "sample.mae_gt": {
+        "point": NaN,
+        "lo": NaN,
+        "hi": NaN,
+        "seed_mean": NaN,
+        "seed_sd": NaN
+      },
+      "sample.rmse_gt": {
+        "point": NaN,
+        "lo": NaN,
+        "hi": NaN,
+        "seed_mean": NaN,
+        "seed_sd": NaN
+      },
+      "sample.r2_gt": {
+        "point": NaN,
+        "lo": NaN,
+        "hi": NaN,
+        "seed_mean": NaN,
+        "seed_sd": NaN
+      },
+      "sample.bias_gt": {
+        "point": NaN,
+        "lo": NaN,
+        "hi": NaN,
+        "seed_mean": NaN,
+        "seed_sd": NaN
+      },
+      "sample.spearman_gt": {
+        "point": NaN,
+        "lo": NaN,
+        "hi": NaN,
+        "seed_mean": NaN,
+        "seed_sd": NaN
+      },
+      "sample.within_condition_spearman_gt": {
+        "point": NaN,
+        "lo": NaN,
+        "hi": NaN,
+        "seed_mean": NaN,
+        "seed_sd": NaN
+      },
+      "run.mae": {
+        "point": 0.42315029605107496,
+        "lo": 0.35133163188407457,
+        "hi": 0.49477940968949835,
+        "seed_mean": 0.4231502960510749,
+        "seed_sd": 0.0
+      },
+      "run.rmse": {
+        "point": 0.5089895962815765,
+        "lo": 0.4375300461078357,
+        "hi": 0.5809239869026845,
+        "seed_mean": 0.5089895962815765,
+        "seed_sd": 0.0
+      },
+      "run.r2": {
+        "point": 0.720327133812854,
+        "lo": 0.5954681507485782,
+        "hi": 0.8034205657265185,
+        "seed_mean": 0.720327133812854,
+        "seed_sd": 0.0
+      },
+      "run.bias": {
+        "point": -0.04083652356523361,
+        "lo": -0.17209326950026674,
+        "hi": 0.09683101809616422,
+        "seed_mean": -0.04083652356523361,
+        "seed_sd": 0.0
+      },
+      "run.spearman": {
+        "point": 0.8593377686991853,
+        "lo": 0.7670979635546462,
+        "hi": 0.9024681121904462,
+        "seed_mean": 0.8593377686991853,
+        "seed_sd": 0.0
+      },
+      "run.within_condition_spearman": {
+        "point": -0.10967729687841067,
+        "lo": -0.4798849059315801,
+        "hi": 0.21728405770223472,
+        "seed_mean": -0.10967729687841067,
+        "seed_sd": 0.0
+      },
+      "run.mae_gt": {
+        "point": 0.4230625625224926,
+        "lo": 0.35147818793884816,
+        "hi": 0.4951214997486012,
+        "seed_mean": 0.42306256252249264,
+        "seed_sd": 0.0
+      },
+      "run.rmse_gt": {
+        "point": 0.5082509485700657,
+        "lo": 0.4367664222819901,
+        "hi": 0.5789326363233618,
+        "seed_mean": 0.5082509485700657,
+        "seed_sd": 0.0
+      },
+      "run.r2_gt": {
+        "point": 0.7208648855883281,
+        "lo": 0.595276415561895,
+        "hi": 0.8031632788268824,
+        "seed_mean": 0.7208648855883281,
+        "seed_sd": 1.3597399555105182e-16
+      },
+      "run.bias_gt": {
+        "point": -0.04123739205650657,
+        "lo": -0.17383437673587288,
+        "hi": 0.09419916393814463,
+        "seed_mean": -0.04123739205650657,
+        "seed_sd": 0.0
+      },
+      "run.spearman_gt": {
+        "point": 0.8611619452473719,
+        "lo": 0.7706471607334329,
+        "hi": 0.9038659543979034,
+        "seed_mean": 0.8611619452473719,
+        "seed_sd": 0.0
+      },
+      "run.within_condition_spearman_gt": {
+        "point": -0.10635864662417742,
+        "lo": -0.4693717634209362,
+        "hi": 0.23764757992765317,
+        "seed_mean": -0.10635864662417742,
+        "seed_sd": 1.6996749443881478e-17
+      }
+    },
+    "descriptor_agg_rf|default": {
+      "sample.macro_f1": {
+        "point": 0.7066869314176961,
+        "lo": 0.6390330928929377,
+        "hi": 0.7756363129265831,
+        "seed_mean": 0.7066869314176961,
+        "seed_sd": 0.006893362412647295
+      },
+      "sample.balanced_accuracy": {
+        "point": 0.7041279046353348,
+        "lo": 0.647909995772899,
+        "hi": 0.7652688475714106,
+        "seed_mean": 0.7041279046353348,
+        "seed_sd": 0.007274231312091449
+      },
+      "sample.ordinal_mae": {
+        "point": 0.11851851851851851,
+        "lo": 0.08148148148148149,
+        "hi": 0.1580246913580247,
+        "seed_mean": 0.11851851851851851,
+        "seed_sd": 0.009799078929868846
+      },
+      "sample.qwk": {
+        "point": 0.9185803773961294,
+        "lo": 0.8942931115220372,
+        "hi": 0.9391585414894263,
+        "seed_mean": 0.9185803773961294,
+        "seed_sd": 0.008008789762589114
+      },
+      "sample.mae": {
+        "point": NaN,
+        "lo": NaN,
+        "hi": NaN,
+        "seed_mean": NaN,
+        "seed_sd": NaN
+      },
+      "sample.rmse": {
+        "point": NaN,
+        "lo": NaN,
+        "hi": NaN,
+        "seed_mean": NaN,
+        "seed_sd": NaN
+      },
+      "sample.r2": {
+        "point": NaN,
+        "lo": NaN,
+        "hi": NaN,
+        "seed_mean": NaN,
+        "seed_sd": NaN
+      },
+      "sample.bias": {
+        "point": NaN,
+        "lo": NaN,
+        "hi": NaN,
+        "seed_mean": NaN,
+        "seed_sd": NaN
+      },
+      "sample.spearman": {
+        "point": NaN,
+        "lo": NaN,
+        "hi": NaN,
+        "seed_mean": NaN,
+        "seed_sd": NaN
+      },
+      "sample.within_condition_spearman": {
+        "point": NaN,
+        "lo": NaN,
+        "hi": NaN,
+        "seed_mean": NaN,
+        "seed_sd": NaN
+      },
+      "sample.mae_gt": {
+        "point": NaN,
+        "lo": NaN,
+        "hi": NaN,
+        "seed_mean": NaN,
+        "seed_sd": NaN
+      },
+      "sample.rmse_gt": {
+        "point": NaN,
+        "lo": NaN,
+        "hi": NaN,
+        "seed_mean": NaN,
+        "seed_sd": NaN
+      },
+      "sample.r2_gt": {
+        "point": NaN,
+        "lo": NaN,
+        "hi": NaN,
+        "seed_mean": NaN,
+        "seed_sd": NaN
+      },
+      "sample.bias_gt": {
+        "point": NaN,
+        "lo": NaN,
+        "hi": NaN,
+        "seed_mean": NaN,
+        "seed_sd": NaN
+      },
+      "sample.spearman_gt": {
+        "point": NaN,
+        "lo": NaN,
+        "hi": NaN,
+        "seed_mean": NaN,
+        "seed_sd": NaN
+      },
+      "sample.within_condition_spearman_gt": {
+        "point": NaN,
+        "lo": NaN,
+        "hi": NaN,
+        "seed_mean": NaN,
+        "seed_sd": NaN
+      },
+      "run.mae": {
+        "point": 0.3666333170216333,
+        "lo": 0.30334165973251037,
+        "hi": 0.42846699606588945,
+        "seed_mean": 0.3666333170216333,
+        "seed_sd": 0.0067165179857543835
+      },
+      "run.rmse": {
+        "point": 0.43708551785411065,
+        "lo": 0.36952674772940297,
+        "hi": 0.4973099762051375,
+        "seed_mean": 0.43708551785411065,
+        "seed_sd": 0.0075516095394214805
+      },
+      "run.r2": {
+        "point": 0.793722541086208,
+        "lo": 0.7048368360325559,
+        "hi": 0.85390069807102,
+        "seed_mean": 0.793722541086208,
+        "seed_sd": 0.0071542764973545935
+      },
+      "run.bias": {
+        "point": 0.01629544136865074,
+        "lo": -0.10028910537828231,
+        "hi": 0.130647428402569,
+        "seed_mean": 0.01629544136865074,
+        "seed_sd": 0.008420106312210364
+      },
+      "run.spearman": {
+        "point": 0.8438822798531426,
+        "lo": 0.7487193933083651,
+        "hi": 0.9027135096240174,
+        "seed_mean": 0.8438822798531426,
+        "seed_sd": 0.007199793072804763
+      },
+      "run.within_condition_spearman": {
+        "point": 0.8254779013868444,
+        "lo": 0.4515186364112696,
+        "hi": 0.9088276980203274,
+        "seed_mean": 0.8254779013868444,
+        "seed_sd": 0.008352310481943327
+      },
+      "run.mae_gt": {
+        "point": 0.36598462524856235,
+        "lo": 0.3027276812983393,
+        "hi": 0.42700226196313884,
+        "seed_mean": 0.36598462524856235,
+        "seed_sd": 0.00711378337817042
+      },
+      "run.rmse_gt": {
+        "point": 0.43708634802673335,
+        "lo": 0.3698264591264683,
+        "hi": 0.4981013537063694,
+        "seed_mean": 0.43708634802673346,
+        "seed_sd": 0.007309455962678689
+      },
+      "run.r2_gt": {
+        "point": 0.793522123833914,
+        "lo": 0.7037179523358709,
+        "hi": 0.8538220884520725,
+        "seed_mean": 0.7935221238339137,
+        "seed_sd": 0.006931608821914682
+      },
+      "run.bias_gt": {
+        "point": 0.015894572877377774,
+        "lo": -0.1006351283288434,
+        "hi": 0.12992729012612053,
+        "seed_mean": 0.015894572877377774,
+        "seed_sd": 0.008420106312210364
+      },
+      "run.spearman_gt": {
+        "point": 0.845580665699404,
+        "lo": 0.7524603053615488,
+        "hi": 0.9054066862520617,
+        "seed_mean": 0.845580665699404,
+        "seed_sd": 0.007060558995265685
+      },
+      "run.within_condition_spearman_gt": {
+        "point": 0.8236452576075216,
+        "lo": 0.4462608897488283,
+        "hi": 0.9094007759159074,
+        "seed_mean": 0.8236452576075216,
+        "seed_sd": 0.008289670323983528
+      }
+    },
+    "physics_conditions|default": {
+      "sample.macro_f1": {
+        "point": 0.6006833308386968,
+        "lo": 0.5483166524240247,
+        "hi": 0.6604307736935976,
+        "seed_mean": 0.6006833308386968,
+        "seed_sd": 0.0
+      },
+      "sample.balanced_accuracy": {
+        "point": 0.6240143369175627,
+        "lo": 0.5666666666666667,
+        "hi": 0.6767751039809863,
+        "seed_mean": 0.6240143369175627,
+        "seed_sd": 0.0
+      },
+      "sample.ordinal_mae": {
+        "point": 0.17037037037037037,
+        "lo": 0.10731481481481497,
+        "hi": 0.24814814814814815,
+        "seed_mean": 0.17037037037037037,
+        "seed_sd": 0.0
+      },
+      "sample.qwk": {
+        "point": 0.8484905166286335,
+        "lo": 0.7528807221511309,
+        "hi": 0.917708462488416,
+        "seed_mean": 0.8484905166286335,
+        "seed_sd": 1.3597399555105182e-16
+      },
+      "sample.mae": {
+        "point": NaN,
+        "lo": NaN,
+        "hi": NaN,
+        "seed_mean": NaN,
+        "seed_sd": NaN
+      },
+      "sample.rmse": {
+        "point": NaN,
+        "lo": NaN,
+        "hi": NaN,
+        "seed_mean": NaN,
+        "seed_sd": NaN
+      },
+      "sample.r2": {
+        "point": NaN,
+        "lo": NaN,
+        "hi": NaN,
+        "seed_mean": NaN,
+        "seed_sd": NaN
+      },
+      "sample.bias": {
+        "point": NaN,
+        "lo": NaN,
+        "hi": NaN,
+        "seed_mean": NaN,
+        "seed_sd": NaN
+      },
+      "sample.spearman": {
+        "point": NaN,
+        "lo": NaN,
+        "hi": NaN,
+        "seed_mean": NaN,
+        "seed_sd": NaN
+      },
+      "sample.within_condition_spearman": {
+        "point": NaN,
+        "lo": NaN,
+        "hi": NaN,
+        "seed_mean": NaN,
+        "seed_sd": NaN
+      },
+      "sample.mae_gt": {
+        "point": 0.2272395088477878,
+        "lo": 0.2034351414802871,
+        "hi": 0.25254186260888534,
+        "seed_mean": 0.2272395088477878,
+        "seed_sd": 0.0
+      },
+      "sample.rmse_gt": {
+        "point": 0.28867906969518115,
+        "lo": 0.2595904360427277,
+        "hi": 0.31794072934825846,
+        "seed_mean": 0.28867906969518115,
+        "seed_sd": 0.0
+      },
+      "sample.r2_gt": {
+        "point": 0.913186769944116,
+        "lo": 0.8806539572205878,
+        "hi": 0.9339102989384843,
+        "seed_mean": 0.913186769944116,
+        "seed_sd": 0.0
+      },
+      "sample.bias_gt": {
+        "point": 0.022562868477933994,
+        "lo": -0.026476040112588663,
+        "hi": 0.07231640595457352,
+        "seed_mean": 0.022562868477933984,
+        "seed_sd": 0.0
+      },
+      "sample.spearman_gt": {
+        "point": 0.9176565445951855,
+        "lo": 0.8634236916163401,
+        "hi": 0.9412134723864537,
+        "seed_mean": 0.9176565445951855,
+        "seed_sd": 0.0
+      },
+      "sample.within_condition_spearman_gt": {
+        "point": 0.8875302358971543,
+        "lo": 0.7673755679187889,
+        "hi": 0.927360583050521,
+        "seed_mean": 0.8875302358971543,
+        "seed_sd": 0.0
+      },
+      "run.mae": {
+        "point": 0.20090684206802634,
+        "lo": 0.16805394663658063,
+        "hi": 0.23397317234220763,
+        "seed_mean": 0.20090684206802634,
+        "seed_sd": 0.000611783334067513
+      },
+      "run.rmse": {
+        "point": 0.23825841627096414,
+        "lo": 0.19893123170798482,
+        "hi": 0.2758513460535037,
+        "seed_mean": 0.23825841627096414,
+        "seed_sd": 0.0008764410134256761
+      },
+      "run.r2": {
+        "point": 0.9387179984634016,
+        "lo": 0.904502249224825,
+        "hi": 0.9602471451111094,
+        "seed_mean": 0.9387179984634016,
+        "seed_sd": 0.0004504513602060785
+      },
+      "run.bias": {
+        "point": -0.019304848580303,
+        "lo": -0.08023526707577996,
+        "hi": 0.0408899959951308,
+        "seed_mean": -0.019304848580303,
+        "seed_sd": 0.00023473576812666456
+      },
+      "run.spearman": {
+        "point": 0.9584294334956583,
+        "lo": 0.914119495160698,
+        "hi": 0.9778415789260851,
+        "seed_mean": 0.9584294334956583,
+        "seed_sd": 0.0005615522702583421
+      },
+      "run.within_condition_spearman": {
+        "point": 0.9314960581589758,
+        "lo": 0.7399447232164341,
+        "hi": 0.9730414651993078,
+        "seed_mean": 0.9314960581589758,
+        "seed_sd": 0.0014906589291431012
+      },
+      "run.mae_gt": {
+        "point": 0.20021468204167173,
+        "lo": 0.16745801134601557,
+        "hi": 0.2335869935707701,
+        "seed_mean": 0.20021468204167178,
+        "seed_sd": 0.0004735149449005788
+      },
+      "run.rmse_gt": {
+        "point": 0.23810823621020835,
+        "lo": 0.19787169506763708,
+        "hi": 0.27622872284356836,
+        "seed_mean": 0.23810823621020835,
+        "seed_sd": 0.0008811592723156693
+      },
+      "run.r2_gt": {
+        "point": 0.938735220000905,
+        "lo": 0.9040694371419613,
+        "hi": 0.9603953814536625,
+        "seed_mean": 0.938735220000905,
+        "seed_sd": 0.00045303076826953354
+      },
+      "run.bias_gt": {
+        "point": -0.01970571707157596,
+        "lo": -0.08114503101811914,
+        "hi": 0.041012904775038196,
+        "seed_mean": -0.01970571707157596,
+        "seed_sd": 0.00023473576812666456
+      },
+      "run.spearman_gt": {
+        "point": 0.9578679880566671,
+        "lo": 0.9102667090464874,
+        "hi": 0.9774869309726409,
+        "seed_mean": 0.9578679880566671,
+        "seed_sd": 0.0005408499244976217
+      },
+      "run.within_condition_spearman_gt": {
+        "point": 0.9286195286195285,
+        "lo": 0.7526754029242889,
+        "hi": 0.9739444445431248,
+        "seed_mean": 0.9286195286195285,
+        "seed_sd": 0.0016915254929819666
+      }
+    },
+    "physics_only|default": {
+      "sample.macro_f1": {
+        "point": 0.6006833308386968,
+        "lo": 0.5483166524240247,
+        "hi": 0.6604307736935976,
+        "seed_mean": 0.6006833308386968,
+        "seed_sd": 0.0
+      },
+      "sample.balanced_accuracy": {
+        "point": 0.6240143369175627,
+        "lo": 0.5666666666666667,
+        "hi": 0.6767751039809863,
+        "seed_mean": 0.6240143369175627,
+        "seed_sd": 0.0
+      },
+      "sample.ordinal_mae": {
+        "point": 0.17037037037037037,
+        "lo": 0.10731481481481497,
+        "hi": 0.24814814814814815,
+        "seed_mean": 0.17037037037037037,
+        "seed_sd": 0.0
+      },
+      "sample.qwk": {
+        "point": 0.8484905166286335,
+        "lo": 0.7528807221511309,
+        "hi": 0.917708462488416,
+        "seed_mean": 0.8484905166286335,
+        "seed_sd": 1.3597399555105182e-16
+      },
+      "sample.mae": {
+        "point": NaN,
+        "lo": NaN,
+        "hi": NaN,
+        "seed_mean": NaN,
+        "seed_sd": NaN
+      },
+      "sample.rmse": {
+        "point": NaN,
+        "lo": NaN,
+        "hi": NaN,
+        "seed_mean": NaN,
+        "seed_sd": NaN
+      },
+      "sample.r2": {
+        "point": NaN,
+        "lo": NaN,
+        "hi": NaN,
+        "seed_mean": NaN,
+        "seed_sd": NaN
+      },
+      "sample.bias": {
+        "point": NaN,
+        "lo": NaN,
+        "hi": NaN,
+        "seed_mean": NaN,
+        "seed_sd": NaN
+      },
+      "sample.spearman": {
+        "point": NaN,
+        "lo": NaN,
+        "hi": NaN,
+        "seed_mean": NaN,
+        "seed_sd": NaN
+      },
+      "sample.within_condition_spearman": {
+        "point": NaN,
+        "lo": NaN,
+        "hi": NaN,
+        "seed_mean": NaN,
+        "seed_sd": NaN
+      },
+      "sample.mae_gt": {
+        "point": 0.2272395088477878,
+        "lo": 0.2034351414802871,
+        "hi": 0.25254186260888534,
+        "seed_mean": 0.2272395088477878,
+        "seed_sd": 0.0
+      },
+      "sample.rmse_gt": {
+        "point": 0.28867906969518115,
+        "lo": 0.2595904360427277,
+        "hi": 0.31794072934825846,
+        "seed_mean": 0.28867906969518115,
+        "seed_sd": 0.0
+      },
+      "sample.r2_gt": {
+        "point": 0.913186769944116,
+        "lo": 0.8806539572205878,
+        "hi": 0.9339102989384843,
+        "seed_mean": 0.913186769944116,
+        "seed_sd": 0.0
+      },
+      "sample.bias_gt": {
+        "point": 0.022562868477933994,
+        "lo": -0.026476040112588663,
+        "hi": 0.07231640595457352,
+        "seed_mean": 0.022562868477933984,
+        "seed_sd": 0.0
+      },
+      "sample.spearman_gt": {
+        "point": 0.9176565445951855,
+        "lo": 0.8634236916163401,
+        "hi": 0.9412134723864537,
+        "seed_mean": 0.9176565445951855,
+        "seed_sd": 0.0
+      },
+      "sample.within_condition_spearman_gt": {
+        "point": 0.8875302358971543,
+        "lo": 0.7673755679187889,
+        "hi": 0.927360583050521,
+        "seed_mean": 0.8875302358971543,
+        "seed_sd": 0.0
+      },
+      "run.mae": {
+        "point": 0.20004625867178802,
+        "lo": 0.1681671779454713,
+        "hi": 0.23319666447065987,
+        "seed_mean": 0.20004625867178796,
+        "seed_sd": 0.0
+      },
+      "run.rmse": {
+        "point": 0.2368272023490311,
+        "lo": 0.1968481295995969,
+        "hi": 0.27472447538138683,
+        "seed_mean": 0.23682720234903107,
+        "seed_sd": 0.0
+      },
+      "run.r2": {
+        "point": 0.9394525730871895,
+        "lo": 0.9054930178591534,
+        "hi": 0.9607836950855726,
+        "seed_mean": 0.9394525730871898,
+        "seed_sd": 1.3597399555105182e-16
+      },
+      "run.bias": {
+        "point": -0.019536720349861026,
+        "lo": -0.07989633577840542,
+        "hi": 0.040387949812683024,
+        "seed_mean": -0.019536720349861026,
+        "seed_sd": 0.0
+      },
+      "run.spearman": {
+        "point": 0.958963122624166,
+        "lo": 0.9141503830525023,
+        "hi": 0.9782787405255423,
+        "seed_mean": 0.958963122624166,
+        "seed_sd": 0.0
+      },
+      "run.within_condition_spearman": {
+        "point": 0.9338466524785879,
+        "lo": 0.7449205882484068,
+        "hi": 0.9736149636545987,
+        "seed_mean": 0.9338466524785879,
+        "seed_sd": 0.0
+      },
+      "run.mae_gt": {
+        "point": 0.199506953537214,
+        "lo": 0.16773707200787513,
+        "hi": 0.23330777242339176,
+        "seed_mean": 0.19950695353721395,
+        "seed_sd": 3.3993498887762956e-17
+      },
+      "run.rmse_gt": {
+        "point": 0.2366652974348775,
+        "lo": 0.1964917898945871,
+        "hi": 0.2747128749965242,
+        "seed_mean": 0.2366652974348775,
+        "seed_sd": 0.0
+      },
+      "run.r2_gt": {
+        "point": 0.9394760533170744,
+        "lo": 0.905114281387226,
+        "hi": 0.9609527363630719,
+        "seed_mean": 0.9394760533170744,
+        "seed_sd": 0.0
+      },
+      "run.bias_gt": {
+        "point": -0.019937588841133988,
+        "lo": -0.08041200584557538,
+        "hi": 0.0404775040133828,
+        "seed_mean": -0.019937588841133988,
+        "seed_sd": 0.0
+      },
+      "run.spearman_gt": {
+        "point": 0.9582999809414904,
+        "lo": 0.9112545687001186,
+        "hi": 0.9779373102724255,
+        "seed_mean": 0.9582999809414904,
+        "seed_sd": 1.3597399555105182e-16
+      },
+      "run.within_condition_spearman_gt": {
+        "point": 0.9313893653516293,
+        "lo": 0.7569440070182328,
+        "hi": 0.9746630064992441,
+        "seed_mean": 0.9313893653516293,
+        "seed_sd": 0.0
+      }
+    }
+  }
+}

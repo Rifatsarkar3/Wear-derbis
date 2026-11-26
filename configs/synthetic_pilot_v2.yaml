@@ -1,0 +1,7 @@
+# Synthetic pilot with renderer v2 (bichromatic illumination, ferrographic chains, correlated particle shading):
+# RENDERING ONLY - physics, budgets, particles and labels are identical to configs/synthetic_pilot.yaml for the same
+# seed. PIPELINE VERIFICATION ONLY, never evidence. Realism vs real ferrograms: docs/renderer_realism.md.
+base: synthetic_pilot.yaml
+name: synthetic_pilot_v2
+imaging:
+  renderer: v2

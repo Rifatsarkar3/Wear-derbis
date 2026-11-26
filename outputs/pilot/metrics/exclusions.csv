@@ -1,0 +1,25 @@
+protocol,model,variant,reason,n_runs
+cv,conditions_only,default,eta not transferable,0
+cv,conditions_only,default,no observed sample,0
+cv,conditions_only,default,coverage below min,0
+cv,descriptor_agg_rf,default,eta not transferable,0
+cv,descriptor_agg_rf,default,no observed sample,0
+cv,descriptor_agg_rf,default,coverage below min,0
+cv,physics_conditions,default,eta not transferable,0
+cv,physics_conditions,default,no observed sample,0
+cv,physics_conditions,default,coverage below min,0
+cv,physics_only,default,eta not transferable,0
+cv,physics_only,default,no observed sample,0
+cv,physics_only,default,coverage below min,0
+cv,wearpg,full,eta not transferable,0
+cv,wearpg,full,no observed sample,0
+cv,wearpg,full,coverage below min,0
+cv,wearpg,no_mechanism_link,eta not transferable,0
+cv,wearpg,no_mechanism_link,no observed sample,0
+cv,wearpg,no_mechanism_link,coverage below min,0
+cv,wearpg,no_physics,eta not transferable,0
+cv,wearpg,no_physics,no observed sample,0
+cv,wearpg,no_physics,coverage below min,0
+cv,wearpg,with_conditions,eta not transferable,0
+cv,wearpg,with_conditions,no observed sample,0
+cv,wearpg,with_conditions,coverage below min,0

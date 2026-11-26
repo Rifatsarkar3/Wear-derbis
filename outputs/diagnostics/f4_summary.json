@@ -1,0 +1,137 @@
+{
+  "note": "NEW analysis (DIAG); frozen pre-specified verdicts unchanged; rules: outputs/agent_logs/DIAG.md",
+  "status": "post_hoc_diagnostic",
+  "n_images": 412,
+  "n_particles": 6692,
+  "n_particles_by_split": {
+    "trainO": 5350,
+    "testO": 1342
+  },
+  "graph_geom_features": [
+    "graph_mean_r_norm",
+    "graph_std_r_norm",
+    "graph_mean_curv_s1",
+    "graph_std_curv_s1",
+    "graph_mean_curv_s2",
+    "graph_std_curv_s2",
+    "graph_mean_curv_s4",
+    "graph_std_curv_s4",
+    "graph_mean_curv_s8",
+    "graph_std_curv_s8",
+    "graph_mean_turning",
+    "graph_std_turning",
+    "graph_mean_convexity_defect",
+    "graph_std_convexity_defect",
+    "graph_mean_roughness",
+    "graph_std_roughness"
+  ],
+  "adapted_rule": "smooth_sigma = 2.0 * s (frozen 2.0 at s = 1)",
+  "same_code_check": {
+    "n_shared_rows": 173,
+    "max_abs_diff_graph_geom": 0.0
+  },
+  "full_set_graph_geom_spearman": {
+    "mask|scale0.5": {
+      "stability_graph_geom": 0.9277274074804702,
+      "group_spearman": 0.9277274074804702
+    },
+    "mask|scale0.25": {
+      "stability_graph_geom": 0.8841197428156728,
+      "group_spearman": 0.8841197428156728
+    },
+    "pipeline_frozen|scale0.5": {
+      "stability_graph_geom": 0.7325194710221854,
+      "group_spearman": 0.7325194710221854
+    },
+    "pipeline_frozen|scale0.25": {
+      "stability_graph_geom": 0.5752096828702298,
+      "group_spearman": 0.5752096828702298
+    },
+    "pipeline_adapted|scale0.5": {
+      "stability_graph_geom": 0.8872236289927287,
+      "group_spearman": 0.8872236289927287
+    },
+    "pipeline_adapted|scale0.25": {
+      "stability_graph_geom": 0.8156075557678356,
+      "group_spearman": 0.8156075557678356
+    }
+  },
+  "F_min": {
+    "pipeline_frozen": {
+      "F_min_by_scale_trainO": {
+        "0.5": 96.0,
+        "0.25": NaN
+      },
+      "F_min_trainO": NaN
+    },
+    "pipeline_adapted": {
+      "F_min_by_scale_trainO": {
+        "0.5": 8.0,
+        "0.25": 40.0
+      },
+      "F_min_trainO": 40.0
+    },
+    "mask": {
+      "F_min_by_scale_trainO": {
+        "0.5": 8.0,
+        "0.25": 8.0
+      },
+      "F_min_trainO": 8.0
+    }
+  },
+  "recommended_variant": "pipeline_adapted",
+  "validation_testO": {
+    "pipeline_frozen": {
+      "F_min": null,
+      "validated": false,
+      "reason": "no grid size reaches the target on trainO"
+    },
+    "pipeline_adapted": {
+      "F_min": 40.0,
+      "testO": {
+        "0.5": {
+          "n": 119,
+          "point": 0.8320680814698762,
+          "lo": 0.763252531506652,
+          "hi": 0.8729073566684078
+        },
+        "0.25": {
+          "n": 23,
+          "point": 0.8349802371541502,
+          "lo": 0.6118307091627536,
+          "hi": 0.9306021245194354
+        }
+      },
+      "validated": true
+    }
+  },
+  "fractal_floor_feret_px": 40,
+  "adapted_vs_frozen": {
+    "scale0.5": {
+      "n_matched_adapted": 1822,
+      "n_matched_frozen": 1276,
+      "n_common": 1217,
+      "S_adapted_own_set": 0.8872236289927287,
+      "S_frozen_own_set": 0.7325194710221854,
+      "diff": 0.16900523550288526,
+      "lo": 0.14427551881592415,
+      "hi": 0.1896307082856873,
+      "p_value": 0.0009995002498750624,
+      "rel_diff": 0.22924305216613153,
+      "adaptation_helps": true
+    },
+    "scale0.25": {
+      "n_matched_adapted": 736,
+      "n_matched_frozen": 271,
+      "n_common": 229,
+      "S_adapted_own_set": 0.8156075557678356,
+      "S_frozen_own_set": 0.5752096828702298,
+      "diff": 0.2746614474024627,
+      "lo": 0.20552201694580594,
+      "hi": 0.3427043121888955,
+      "p_value": 0.0009995002498750624,
+      "rel_diff": 0.454930070312231,
+      "adaptation_helps": true
+    }
+  }
+}
